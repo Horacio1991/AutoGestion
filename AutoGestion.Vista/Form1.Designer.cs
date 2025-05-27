@@ -142,6 +142,7 @@
             mnuRegistrarCompra.Name = "mnuRegistrarCompra";
             mnuRegistrarCompra.Size = new Size(180, 22);
             mnuRegistrarCompra.Text = "Registrar Compra";
+            mnuRegistrarCompra.Click += mnuRegistrarCompra_Click;
             // 
             // gestionComisionesToolStripMenuItem
             // 

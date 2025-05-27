@@ -78,5 +78,13 @@ namespace AutoGestion.Vista
             control.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(control);
         }
+
+        private void mnuRegistrarCompra_Click(object sender, EventArgs e)
+        {
+            panelContenido.Controls.Clear();
+            var control = new RegistrarDatos();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
+        }
     }
 }

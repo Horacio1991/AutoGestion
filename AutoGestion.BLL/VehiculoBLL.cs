@@ -47,5 +47,17 @@ namespace AutoGestion.BLL
             }
         }
 
+        public void ActualizarDatosVehiculo(Vehiculo vehiculo, string datosTecnicos)
+        {
+            var lista = _repo.ObtenerTodos();
+            var v = lista.FirstOrDefault(x => x.Dominio == vehiculo.Dominio);
+            if (v != null)
+            {
+                v.Estado = datosTecnicos;
+                _repo.GuardarLista(lista);
+            }
+        }
+
+
     }
 }

@@ -23,6 +23,9 @@
     <Compile Update="RegistrarCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="RegistrarDatos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="RegistrarOferta.cs">
       <SubType>UserControl</SubType>
     </Compile>
