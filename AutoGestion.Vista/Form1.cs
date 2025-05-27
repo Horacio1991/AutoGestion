@@ -54,5 +54,13 @@ namespace AutoGestion.Vista
             control.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(control);
         }
+
+        private void mnuRegistrarOferta_Click(object sender, EventArgs e)
+        {
+            panelContenido.Controls.Clear();
+            var control = new RegistrarOferta();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
+        }
     }
 }

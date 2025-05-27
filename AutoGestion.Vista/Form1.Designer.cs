@@ -70,42 +70,42 @@
             // mnuSolicitarModelo
             // 
             mnuSolicitarModelo.Name = "mnuSolicitarModelo";
-            mnuSolicitarModelo.Size = new Size(180, 22);
+            mnuSolicitarModelo.Size = new Size(160, 22);
             mnuSolicitarModelo.Text = "Solicitar Modelo";
             mnuSolicitarModelo.Click += mnuSolicitarModelo_Click;
             // 
             // mnuRegistrarCliente
             // 
             mnuRegistrarCliente.Name = "mnuRegistrarCliente";
-            mnuRegistrarCliente.Size = new Size(180, 22);
+            mnuRegistrarCliente.Size = new Size(160, 22);
             mnuRegistrarCliente.Text = "Registrar Cliente";
             mnuRegistrarCliente.Click += mnuRegistrarCliente_Click;
             // 
             // mnuRealizarPago
             // 
             mnuRealizarPago.Name = "mnuRealizarPago";
-            mnuRealizarPago.Size = new Size(180, 22);
+            mnuRealizarPago.Size = new Size(160, 22);
             mnuRealizarPago.Text = "Realizar Pago";
             mnuRealizarPago.Click += mnuRealizarPago_Click;
             // 
             // mnuAutorizarVenta
             // 
             mnuAutorizarVenta.Name = "mnuAutorizarVenta";
-            mnuAutorizarVenta.Size = new Size(180, 22);
+            mnuAutorizarVenta.Size = new Size(160, 22);
             mnuAutorizarVenta.Text = "Autorizar Venta";
             mnuAutorizarVenta.Click += mnuAutorizarVenta_Click;
             // 
             // mnuEmitirFactura
             // 
             mnuEmitirFactura.Name = "mnuEmitirFactura";
-            mnuEmitirFactura.Size = new Size(180, 22);
+            mnuEmitirFactura.Size = new Size(160, 22);
             mnuEmitirFactura.Text = "Emitir Factura";
             mnuEmitirFactura.Click += mnuEmitirFactura_Click;
             // 
             // mnuRealizarEntrega
             // 
             mnuRealizarEntrega.Name = "mnuRealizarEntrega";
-            mnuRealizarEntrega.Size = new Size(180, 22);
+            mnuRealizarEntrega.Size = new Size(160, 22);
             mnuRealizarEntrega.Text = "Realizar Entrega";
             mnuRealizarEntrega.Click += mnuRealizarEntrega_Click;
             // 
@@ -119,25 +119,26 @@
             // mnuRegistrarOferta
             // 
             mnuRegistrarOferta.Name = "mnuRegistrarOferta";
-            mnuRegistrarOferta.Size = new Size(166, 22);
+            mnuRegistrarOferta.Size = new Size(180, 22);
             mnuRegistrarOferta.Text = "Registrar Oferta";
+            mnuRegistrarOferta.Click += mnuRegistrarOferta_Click;
             // 
             // mnuEvaluarVehiculo
             // 
             mnuEvaluarVehiculo.Name = "mnuEvaluarVehiculo";
-            mnuEvaluarVehiculo.Size = new Size(166, 22);
+            mnuEvaluarVehiculo.Size = new Size(180, 22);
             mnuEvaluarVehiculo.Text = "Evaluar Vehículo";
             // 
             // mnuTasarVehiculo
             // 
             mnuTasarVehiculo.Name = "mnuTasarVehiculo";
-            mnuTasarVehiculo.Size = new Size(166, 22);
+            mnuTasarVehiculo.Size = new Size(180, 22);
             mnuTasarVehiculo.Text = "Tasar Vehículo";
             // 
             // mnuRegistrarCompra
             // 
             mnuRegistrarCompra.Name = "mnuRegistrarCompra";
-            mnuRegistrarCompra.Size = new Size(166, 22);
+            mnuRegistrarCompra.Size = new Size(180, 22);
             mnuRegistrarCompra.Text = "Registrar Compra";
             // 
             // gestionComisionesToolStripMenuItem

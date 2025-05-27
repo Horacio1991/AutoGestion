@@ -68,3 +68,4 @@ C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.AutorizarVenta.resources
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.EmitirFactura.resources
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RealizarEntrega.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RegistrarOferta.resources

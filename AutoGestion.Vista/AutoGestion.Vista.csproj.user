@@ -20,6 +20,9 @@
     <Compile Update="RegistrarCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="RegistrarOferta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="SolicitarModelo.cs">
       <SubType>UserControl</SubType>
     </Compile>
