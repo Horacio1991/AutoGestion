@@ -84,23 +84,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Educaccion\\.nuget\\packages\\": {},
+    "C:\\Users\\hory_\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.BLL\\AutoGestion.BLL.csproj",
+      "projectUniqueName": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BLL\\AutoGestion.BLL.csproj",
       "projectName": "AutoGestion.BLL",
-      "projectPath": "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.BLL\\AutoGestion.BLL.csproj",
-      "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.BLL\\obj\\",
+      "projectPath": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BLL\\AutoGestion.BLL.csproj",
+      "packagesPath": "C:\\Users\\hory_\\.nuget\\packages\\",
+      "outputPath": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Educaccion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hory_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -115,17 +115,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {
-              "projectPath": "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj"
+            "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BE\\AutoGestion.BE.csproj": {
+              "projectPath": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BE\\AutoGestion.BE.csproj"
             },
-            "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.DAO\\AutoGestion.DAO.csproj": {
-              "projectPath": "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.DAO\\AutoGestion.DAO.csproj"
+            "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.DAO\\AutoGestion.DAO.csproj": {
+              "projectPath": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.DAO\\AutoGestion.DAO.csproj"
             },
-            "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.Mapeadores\\AutoGestion.Mapeadores.csproj": {
-              "projectPath": "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.Mapeadores\\AutoGestion.Mapeadores.csproj"
+            "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Mapeadores\\AutoGestion.Mapeadores.csproj": {
+              "projectPath": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Mapeadores\\AutoGestion.Mapeadores.csproj"
             },
-            "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj": {
-              "projectPath": "C:\\Users\\Educaccion\\source\\repos\\AutoGestion\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj"
+            "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj": {
+              "projectPath": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj"
             }
           }
         }
@@ -140,7 +140,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -161,7 +161,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -10,3 +10,15 @@ C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BE\obj\Debug\net9.0\Aut
 C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BE\obj\Debug\net9.0\refint\AutoGestion.BE.dll
 C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.pdb
 C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BE\obj\Debug\net9.0\ref\AutoGestion.BE.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\bin\Debug\net9.0\AutoGestion.BE.deps.json
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\bin\Debug\net9.0\AutoGestion.BE.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\bin\Debug\net9.0\AutoGestion.BE.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.GeneratedMSBuildEditorConfig.editorconfig
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.AssemblyInfoInputs.cache
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.AssemblyInfo.cs
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.csproj.CoreCompileInputs.cache
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.sourcelink.json
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\refint\AutoGestion.BE.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\AutoGestion.BE.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BE\obj\Debug\net9.0\ref\AutoGestion.BE.dll

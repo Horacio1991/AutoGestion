@@ -20,3 +20,25 @@ C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BLL\obj\Debug\net9.0\Au
 C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BLL\obj\Debug\net9.0\refint\AutoGestion.BLL.dll
 C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.pdb
 C:\Users\Educaccion\source\repos\AutoGestion\AutoGestion.BLL\obj\Debug\net9.0\ref\AutoGestion.BLL.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.BLL.deps.json
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.BLL.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.BLL.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.BE.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.DAO.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.Mapeadores.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.Servicios.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.BE.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.DAO.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.Mapeadores.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\bin\Debug\net9.0\AutoGestion.Servicios.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.csproj.AssemblyReference.cache
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.AssemblyInfoInputs.cache
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.AssemblyInfo.cs
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.csproj.CoreCompileInputs.cache
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.sourcelink.json
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGest.3D91D937.Up2Date
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\refint\AutoGestion.BLL.dll
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\AutoGestion.BLL.pdb
+E:\TP FINAL\AutoGestionWPF\AutoGestion.BLL\obj\Debug\net9.0\ref\AutoGestion.BLL.dll
