@@ -35,5 +35,17 @@ namespace AutoGestion.BLL
                 .Take(5)
                 .ToList();
         }
+
+        public void ActualizarEstadoStock(Vehiculo vehiculo, string estado)
+        {
+            var lista = _repo.ObtenerTodos();
+            var v = lista.FirstOrDefault(x => x.Dominio == vehiculo.Dominio);
+            if (v != null)
+            {
+                v.Estado = estado;
+                _repo.GuardarLista(lista);
+            }
+        }
+
     }
 }

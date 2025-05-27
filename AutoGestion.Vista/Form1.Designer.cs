@@ -135,6 +135,7 @@
             mnuTasarVehiculo.Name = "mnuTasarVehiculo";
             mnuTasarVehiculo.Size = new Size(180, 22);
             mnuTasarVehiculo.Text = "Tasar Vehículo";
+            mnuTasarVehiculo.Click += mnuTasarVehiculo_Click;
             // 
             // mnuRegistrarCompra
             // 

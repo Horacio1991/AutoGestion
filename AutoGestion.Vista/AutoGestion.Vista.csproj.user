@@ -29,5 +29,8 @@
     <Compile Update="SolicitarModelo.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="TasarVehiculo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
