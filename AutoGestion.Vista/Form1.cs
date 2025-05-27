@@ -38,5 +38,13 @@ namespace AutoGestion.Vista
             control.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(control);
         }
+
+        private void mnuEmitirFactura_Click(object sender, EventArgs e)
+        {
+            panelContenido.Controls.Clear();
+            var control = new EmitirFactura();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
+        }
     }
 }

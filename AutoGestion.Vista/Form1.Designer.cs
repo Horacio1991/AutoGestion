@@ -100,6 +100,7 @@
             mnuEmitirFactura.Name = "mnuEmitirFactura";
             mnuEmitirFactura.Size = new Size(180, 22);
             mnuEmitirFactura.Text = "Emitir Factura";
+            mnuEmitirFactura.Click += mnuEmitirFactura_Click;
             // 
             // mnuRealizarEntrega
             // 

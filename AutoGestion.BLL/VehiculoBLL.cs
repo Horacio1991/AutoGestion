@@ -13,6 +13,11 @@ namespace AutoGestion.BLL
     {
         private readonly XmlRepository<Vehiculo> _repo = new("vehiculos.xml");
 
+        private int ObtenerNuevoID()
+        {
+            var lista = _repo.ObtenerTodos();
+            return lista.Any() ? lista.Max(v => v.ID) + 1 : 1;
+        }
         public List<Vehiculo> BuscarVehiculosPorModelo(string modelo)
         {
             return _repo.ObtenerTodos()

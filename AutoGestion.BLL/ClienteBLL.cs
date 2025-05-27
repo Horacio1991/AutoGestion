@@ -17,6 +17,12 @@ namespace AutoGestion.BLL
             _repo = new XmlRepository<Cliente>("clientes.xml");
         }
 
+        private int ObtenerNuevoID()
+        {
+            var lista = _repo.ObtenerTodos();
+            return lista.Any() ? lista.Max(c => c.ID) + 1 : 1;
+        }
+
         public Cliente BuscarClientePorDNI(string dni)
         {
             return _repo.ObtenerTodos().FirstOrDefault(c => c.Dni == dni);

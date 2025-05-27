@@ -9,6 +9,7 @@ namespace AutoGestion.BE
     [Serializable]
     public class Vehiculo
     {
+        public int ID { get; set; } // ID único para el vehículo
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public int Año { get; set; }

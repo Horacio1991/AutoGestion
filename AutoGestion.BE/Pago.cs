@@ -9,6 +9,7 @@ namespace AutoGestion.BE
     [Serializable]
     public class Pago
     {
+        public int ID { get; set; } // ID único para el pago
         public string TipoPago { get; set; } // Contado o Financiado
         public decimal Monto { get; set; }
         public int Cuotas { get; set; } // Solo si es financiado

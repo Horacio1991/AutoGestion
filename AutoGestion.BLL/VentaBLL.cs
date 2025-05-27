@@ -9,6 +9,11 @@ namespace AutoGestion.BLL
     {
         private readonly XmlRepository<Venta> _repo = new("ventas.xml");
 
+        private int ObtenerNuevoID()
+        {
+            var lista = _repo.ObtenerTodos();
+            return lista.Any() ? lista.Max(v => v.ID) + 1 : 1;
+        }
         public List<Venta> ObtenerVentasPendientes()
         {
             return _repo.ObtenerTodos().Where(v => v.Estado == "Pendiente").ToList();
@@ -37,5 +42,17 @@ namespace AutoGestion.BLL
         {
             _repo.Agregar(venta);
         }
+
+        public void MarcarComoFacturada(int id)
+        {
+            var lista = _repo.ObtenerTodos();
+            var venta = lista.FirstOrDefault(v => v.ID == id);
+            if (venta != null)
+            {
+                venta.Estado = "Facturada";
+                _repo.GuardarLista(lista);
+            }
+        }
+
     }
 }

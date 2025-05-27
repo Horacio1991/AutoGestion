@@ -5,6 +5,7 @@ namespace AutoGestion.BE
     [Serializable]
     public class Venta
     {
+        public int ID { get; set; } // ID único para la venta
         public Cliente Cliente { get; set; }
         public Vehiculo Vehiculo { get; set; }
         public Pago Pago { get; set; }
