@@ -22,5 +22,13 @@ namespace AutoGestion.Vista
             control.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(control);
         }
+
+        private void mnuRealizarPago_Click(object sender, EventArgs e)
+        {
+            panelContenido.Controls.Clear();
+            var control = new RealizarPago();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
+        }
     }
 }

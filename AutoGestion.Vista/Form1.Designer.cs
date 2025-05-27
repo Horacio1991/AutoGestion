@@ -86,6 +86,7 @@
             mnuRealizarPago.Name = "mnuRealizarPago";
             mnuRealizarPago.Size = new Size(180, 22);
             mnuRealizarPago.Text = "Realizar Pago";
+            mnuRealizarPago.Click += mnuRealizarPago_Click;
             // 
             // mnuAutorizarVenta
             // 

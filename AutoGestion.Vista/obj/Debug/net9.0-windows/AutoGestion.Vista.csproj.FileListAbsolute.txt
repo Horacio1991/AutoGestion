@@ -31,3 +31,37 @@ E:\TP FINAL\AutoGestionWPF\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestio
 E:\TP FINAL\AutoGestionWPF\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.genruntimeconfig.cache
 E:\TP FINAL\AutoGestionWPF\AutoGestion.Vista\obj\Debug\net9.0-windows\ref\AutoGestion.Vista.dll
 E:\TP FINAL\AutoGestionWPF\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.SolicitarModelo.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Vista.exe
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Vista.deps.json
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Vista.runtimeconfig.json
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Vista.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Vista.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.BE.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.BLL.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.CTRL_Vista.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.DAO.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Mapeadores.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Servicios.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.CTRL_Vista.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.BE.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.BLL.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.DAO.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Mapeadores.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\bin\Debug\net9.0-windows\AutoGestion.Servicios.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.csproj.AssemblyReference.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.Form1.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RealizarPago.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RegistrarCliente.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.SolicitarModelo.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.csproj.GenerateResource.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.AssemblyInfoInputs.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.AssemblyInfo.cs
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.csproj.CoreCompileInputs.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.sourcelink.json
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGest.DB77BBA9.Up2Date
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\refint\AutoGestion.Vista.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.genruntimeconfig.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\ref\AutoGestion.Vista.dll

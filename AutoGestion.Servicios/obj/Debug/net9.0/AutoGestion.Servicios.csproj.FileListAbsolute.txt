@@ -30,3 +30,19 @@ E:\TP FINAL\AutoGestionWPF\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Se
 E:\TP FINAL\AutoGestionWPF\AutoGestion.Servicios\obj\Debug\net9.0\refint\AutoGestion.Servicios.dll
 E:\TP FINAL\AutoGestionWPF\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.pdb
 E:\TP FINAL\AutoGestionWPF\AutoGestion.Servicios\obj\Debug\net9.0\ref\AutoGestion.Servicios.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\bin\Debug\net9.0\AutoGestion.Servicios.deps.json
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\bin\Debug\net9.0\AutoGestion.Servicios.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\bin\Debug\net9.0\AutoGestion.Servicios.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\bin\Debug\net9.0\AutoGestion.BE.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\bin\Debug\net9.0\AutoGestion.BE.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.csproj.AssemblyReference.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.AssemblyInfoInputs.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.AssemblyInfo.cs
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.csproj.CoreCompileInputs.cache
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.sourcelink.json
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGest.76C5927E.Up2Date
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\refint\AutoGestion.Servicios.dll
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\AutoGestion.Servicios.pdb
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Servicios\obj\Debug\net9.0\ref\AutoGestion.Servicios.dll

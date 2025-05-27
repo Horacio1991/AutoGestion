@@ -1,54 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\TP FINAL\\AutoGestionWPF\\",
+  "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\realizarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\realizarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\realizarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\realizarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\obj\\Debug\\net9.0-windows\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AutoGestion.Vista\\obj\\Debug\\net9.0-windows\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|E:\\TP FINAL\\AutoGestionWPF\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9F202F6-1814-4645-ACCB-DA7E3D07173F}|AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.ctrl_vista\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9F202F6-1814-4645-ACCB-DA7E3D07173F}|AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj|solutionrelative:autogestion.ctrl_vista\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|e:\\tp final\\autogestionwpf\\autogestion.bll\\clientebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\clientebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|e:\\tp final\\autogestionwpf\\autogestion.be\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E1AF3EA-1046-49C7-B149-E9EB3557C1B8}|AutoGestion.DAO\\AutoGestion.DAO.csproj|e:\\tp final\\autogestionwpf\\autogestion.dao\\xmlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E1AF3EA-1046-49C7-B149-E9EB3557C1B8}|AutoGestion.DAO\\AutoGestion.DAO.csproj|solutionrelative:autogestion.dao\\xmlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\realizarpago.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\realizarpago.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,155 +22,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SolicitarModelo.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\SolicitarModelo.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\SolicitarModelo.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RealizarPago.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\RealizarPago.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\RealizarPago.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T00:27:34.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SolicitarModelo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\SolicitarModelo.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\SolicitarModelo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T00:16:12.48Z",
+              "WhenOpened": "2025-05-27T12:40:25.038Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegistrarCliente.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\RegistrarCliente.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarCliente.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\RegistrarCliente.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarCliente.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDAAAAANAAAAAAAAAA==",
+              "Title": "RealizarPago.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.Designer.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\RealizarPago.Designer.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.Designer.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\RealizarPago.Designer.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAewFoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T00:03:55.646Z",
+              "WhenOpened": "2025-05-27T12:27:38.729Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:40:34.513Z",
-              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\Form1.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAEwBYAAAAxAAAAAAAAAA==",
+              "Title": "RealizarPago.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\RealizarPago.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\RealizarPago.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAD8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:39:45.635Z",
+              "WhenOpened": "2025-05-27T12:26:59.087Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegistrarCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\RegistrarCliente.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarCliente.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\RegistrarCliente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarCliente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:57:53.859Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.g.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\obj\\Debug\\net9.0-windows\\MainWindow.g.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\obj\\Debug\\net9.0-windows\\MainWindow.g.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\obj\\Debug\\net9.0-windows\\MainWindow.g.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\obj\\Debug\\net9.0-windows\\MainWindow.g.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAApwAsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:10:16.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": ".gitignore",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-26T18:45:49.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.CTRL_Vista\\ClienteController.cs",
-              "RelativeDocumentMoniker": "AutoGestion.CTRL_Vista\\ClienteController.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.CTRL_Vista\\ClienteController.cs",
-              "RelativeToolTip": "AutoGestion.CTRL_Vista\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:32:09.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClienteBLL.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BLL\\ClienteBLL.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BLL\\ClienteBLL.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BLL\\ClienteBLL.cs",
-              "RelativeToolTip": "AutoGestion.BLL\\ClienteBLL.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:26:34.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BE\\Cliente.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BE\\Cliente.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.BE\\Cliente.cs",
-              "RelativeToolTip": "AutoGestion.BE\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:25:54.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "XmlRepository.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.DAO\\XmlRepository.cs",
-              "RelativeDocumentMoniker": "AutoGestion.DAO\\XmlRepository.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.DAO\\XmlRepository.cs",
-              "RelativeToolTip": "AutoGestion.DAO\\XmlRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:19:17.469Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             }
           ]
         }
