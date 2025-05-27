@@ -93,6 +93,7 @@
             mnuAutorizarVenta.Name = "mnuAutorizarVenta";
             mnuAutorizarVenta.Size = new Size(180, 22);
             mnuAutorizarVenta.Text = "Autorizar Venta";
+            mnuAutorizarVenta.Click += mnuAutorizarVenta_Click;
             // 
             // mnuEmitirFactura
             // 
