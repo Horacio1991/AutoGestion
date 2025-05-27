@@ -128,6 +128,7 @@
             mnuEvaluarVehiculo.Name = "mnuEvaluarVehiculo";
             mnuEvaluarVehiculo.Size = new Size(180, 22);
             mnuEvaluarVehiculo.Text = "Evaluar Vehículo";
+            mnuEvaluarVehiculo.Click += mnuEvaluarVehiculo_Click;
             // 
             // mnuTasarVehiculo
             // 
