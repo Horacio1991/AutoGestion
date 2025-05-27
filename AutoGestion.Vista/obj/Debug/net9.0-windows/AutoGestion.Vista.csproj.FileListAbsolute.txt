@@ -72,3 +72,4 @@ C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.EvaluarEstado.resources
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.TasarVehiculo.resources
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RegistrarDatos.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RegistrarComision.resources

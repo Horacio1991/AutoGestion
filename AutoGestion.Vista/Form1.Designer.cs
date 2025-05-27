@@ -119,28 +119,28 @@
             // mnuRegistrarOferta
             // 
             mnuRegistrarOferta.Name = "mnuRegistrarOferta";
-            mnuRegistrarOferta.Size = new Size(180, 22);
+            mnuRegistrarOferta.Size = new Size(166, 22);
             mnuRegistrarOferta.Text = "Registrar Oferta";
             mnuRegistrarOferta.Click += mnuRegistrarOferta_Click;
             // 
             // mnuEvaluarVehiculo
             // 
             mnuEvaluarVehiculo.Name = "mnuEvaluarVehiculo";
-            mnuEvaluarVehiculo.Size = new Size(180, 22);
+            mnuEvaluarVehiculo.Size = new Size(166, 22);
             mnuEvaluarVehiculo.Text = "Evaluar Vehículo";
             mnuEvaluarVehiculo.Click += mnuEvaluarVehiculo_Click;
             // 
             // mnuTasarVehiculo
             // 
             mnuTasarVehiculo.Name = "mnuTasarVehiculo";
-            mnuTasarVehiculo.Size = new Size(180, 22);
+            mnuTasarVehiculo.Size = new Size(166, 22);
             mnuTasarVehiculo.Text = "Tasar Vehículo";
             mnuTasarVehiculo.Click += mnuTasarVehiculo_Click;
             // 
             // mnuRegistrarCompra
             // 
             mnuRegistrarCompra.Name = "mnuRegistrarCompra";
-            mnuRegistrarCompra.Size = new Size(180, 22);
+            mnuRegistrarCompra.Size = new Size(166, 22);
             mnuRegistrarCompra.Text = "Registrar Compra";
             mnuRegistrarCompra.Click += mnuRegistrarCompra_Click;
             // 
@@ -156,6 +156,7 @@
             mnuRegistrarComision.Name = "mnuRegistrarComision";
             mnuRegistrarComision.Size = new Size(190, 22);
             mnuRegistrarComision.Text = "Registrar Comisión";
+            mnuRegistrarComision.Click += mnuRegistrarComision_Click;
             // 
             // mnuConsultarComisiones
             // 

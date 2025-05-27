@@ -65,6 +65,14 @@ namespace AutoGestion.BLL
             }
         }
 
+        public List<Venta> ObtenerVentasSinComision(List<Comision> comisiones)
+        {
+            var ventas = _repo.ObtenerTodos().Where(v => v.Estado == "Entregada").ToList();
+            var idsConComision = comisiones.Select(c => c.Venta.ID);
+            return ventas.Where(v => !idsConComision.Contains(v.ID)).ToList();
+        }
+
+
 
     }
 }
