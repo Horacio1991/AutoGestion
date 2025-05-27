@@ -107,6 +107,7 @@
             mnuRealizarEntrega.Name = "mnuRealizarEntrega";
             mnuRealizarEntrega.Size = new Size(180, 22);
             mnuRealizarEntrega.Text = "Realizar Entrega";
+            mnuRealizarEntrega.Click += mnuRealizarEntrega_Click;
             // 
             // gestiónComprasToolStripMenuItem
             // 

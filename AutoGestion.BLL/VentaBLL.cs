@@ -54,5 +54,17 @@ namespace AutoGestion.BLL
             }
         }
 
+        public void MarcarComoEntregada(int id)
+        {
+            var lista = _repo.ObtenerTodos();
+            var venta = lista.FirstOrDefault(v => v.ID == id);
+            if (venta != null)
+            {
+                venta.Estado = "Entregada";
+                _repo.GuardarLista(lista);
+            }
+        }
+
+
     }
 }
