@@ -5,6 +5,9 @@
     <Compile Update="AutorizarVenta.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ConsultarComisiones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="EmitirFactura.cs">
       <SubType>UserControl</SubType>
     </Compile>

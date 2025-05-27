@@ -163,6 +163,7 @@
             mnuConsultarComisiones.Name = "mnuConsultarComisiones";
             mnuConsultarComisiones.Size = new Size(190, 22);
             mnuConsultarComisiones.Text = "Consultar Comisiones";
+            mnuConsultarComisiones.Click += mnuConsultarComisiones_Click;
             // 
             // gestiónTurnosToolStripMenuItem
             // 
