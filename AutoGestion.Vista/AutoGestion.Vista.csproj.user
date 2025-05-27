@@ -23,6 +23,9 @@
     <Compile Update="RealizarPago.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="RegistrarAsistencia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="RegistrarCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>

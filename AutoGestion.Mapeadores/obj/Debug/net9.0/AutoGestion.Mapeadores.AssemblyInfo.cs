@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoGestion.Mapeadores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c1b7d3957d3b0b9fb79664cced3008d44f9e969")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f30828303743adc5befe7382c1651e63f54195ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoGestion.Mapeadores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoGestion.Mapeadores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

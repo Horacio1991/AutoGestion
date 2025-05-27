@@ -110,5 +110,13 @@ namespace AutoGestion.Vista
             control.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(control);
         }
+
+        private void mnuRegistrarAsistencia_Click(object sender, EventArgs e)
+        {
+            panelContenido.Controls.Clear();
+            var control = new RegistrarAsistencia();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
+        }
     }
 }

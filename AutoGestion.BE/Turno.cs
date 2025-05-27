@@ -15,5 +15,8 @@ namespace AutoGestion.BE
         public DateTime Fecha { get; set; }
         public TimeSpan Hora { get; set; }
         public string Asistencia { get; set; } // Pendiente / Asistió / No asistió
+        public string Observaciones { get; set; }
+
+
     }
 }

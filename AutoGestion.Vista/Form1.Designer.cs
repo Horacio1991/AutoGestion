@@ -184,6 +184,7 @@
             mnuRegistrarAsistencia.Name = "mnuRegistrarAsistencia";
             mnuRegistrarAsistencia.Size = new Size(180, 22);
             mnuRegistrarAsistencia.Text = "Registrar Asistencia";
+            mnuRegistrarAsistencia.Click += mnuRegistrarAsistencia_Click;
             // 
             // panelContenido
             // 
