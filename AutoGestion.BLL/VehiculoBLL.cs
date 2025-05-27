@@ -58,6 +58,13 @@ namespace AutoGestion.BLL
             }
         }
 
+        public Vehiculo BuscarVehiculoPorDominio(string dominio)
+        {
+            return _repo.ObtenerTodos()
+                        .FirstOrDefault(v => v.Dominio.Equals(dominio, StringComparison.OrdinalIgnoreCase));
+        }
+
+
 
     }
 }

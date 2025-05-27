@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\comision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\comision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.bll\\vehiculobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\vehiculobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.bll\\turnobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\turnobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,28 +27,8 @@
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\consultarcomisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\consultarcomisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\consultarcomisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\consultarcomisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.bll\\comisionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\comisionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarcomision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcomision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarcomision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcomision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.bll\\ventabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\ventabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +38,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VehiculoBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VehiculoBLL.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BLL\\VehiculoBLL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VehiculoBLL.cs",
+              "RelativeToolTip": "AutoGestion.BLL\\VehiculoBLL.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:51:28.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistrarTurno.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarTurno.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarTurno.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarTurno.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\RegistrarTurno.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:49:46.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistrarTurno.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarTurno.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarTurno.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarTurno.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\RegistrarTurno.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:45:39.051Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TurnoBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\TurnoBLL.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BLL\\TurnoBLL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\TurnoBLL.cs",
+              "RelativeToolTip": "AutoGestion.BLL\\TurnoBLL.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:43:12.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Turno.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Turno.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BE\\Turno.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Turno.cs",
+              "RelativeToolTip": "AutoGestion.BE\\Turno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:42:47.453Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -58,45 +110,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConsultarComisiones.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\ConsultarComisiones.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\ConsultarComisiones.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\ConsultarComisiones.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\ConsultarComisiones.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:36:06.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ConsultarComisiones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\ConsultarComisiones.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\ConsultarComisiones.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\ConsultarComisiones.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\ConsultarComisiones.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:25:50.053Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Form1.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
               "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Form1.cs",
               "RelativeToolTip": "AutoGestion.Vista\\Form1.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAqwGoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAkwG4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T18:21:38.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Form1.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
@@ -105,70 +132,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T18:21:35.197Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RegistrarComision.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarComision.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarComision.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarComision.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarComision.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAiwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:21:20.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegistrarComision.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarComision.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarComision.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarComision.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarComision.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:14:08.071Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VentaBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VentaBLL.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BLL\\VentaBLL.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VentaBLL.cs",
-              "RelativeToolTip": "AutoGestion.BLL\\VentaBLL.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAqwEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:13:27.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ComisionBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\ComisionBLL.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BLL\\ComisionBLL.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\ComisionBLL.cs",
-              "RelativeToolTip": "AutoGestion.BLL\\ComisionBLL.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:13:03.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Comision.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Comision.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BE\\Comision.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Comision.cs",
-              "RelativeToolTip": "AutoGestion.BE\\Comision.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAArwAwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:12:39.55Z",
-              "EditorCaption": ""
             }
           ]
         },

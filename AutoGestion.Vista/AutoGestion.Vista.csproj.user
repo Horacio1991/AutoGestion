@@ -35,6 +35,9 @@
     <Compile Update="RegistrarOferta.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="RegistrarTurno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="SolicitarModelo.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -175,13 +175,14 @@
             // mnuRegistrarTurno
             // 
             mnuRegistrarTurno.Name = "mnuRegistrarTurno";
-            mnuRegistrarTurno.Size = new Size(176, 22);
+            mnuRegistrarTurno.Size = new Size(180, 22);
             mnuRegistrarTurno.Text = "Registrar Turno";
+            mnuRegistrarTurno.Click += mnuRegistrarTurno_Click;
             // 
             // mnuRegistrarAsistencia
             // 
             mnuRegistrarAsistencia.Name = "mnuRegistrarAsistencia";
-            mnuRegistrarAsistencia.Size = new Size(176, 22);
+            mnuRegistrarAsistencia.Size = new Size(180, 22);
             mnuRegistrarAsistencia.Text = "Registrar Asistencia";
             // 
             // panelContenido
