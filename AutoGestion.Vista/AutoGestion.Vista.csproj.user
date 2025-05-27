@@ -8,5 +8,8 @@
     <Compile Update="RegistrarCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="SolicitarModelo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

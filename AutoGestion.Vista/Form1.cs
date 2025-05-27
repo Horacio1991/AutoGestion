@@ -14,5 +14,13 @@ namespace AutoGestion.Vista
             control.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(control);
         }
+
+        private void mnuSolicitarModelo_Click(object sender, EventArgs e)
+        {
+            panelContenido.Controls.Clear();
+            var control = new SolicitarModelo();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
+        }
     }
 }

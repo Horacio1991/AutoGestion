@@ -72,6 +72,7 @@
             mnuSolicitarModelo.Name = "mnuSolicitarModelo";
             mnuSolicitarModelo.Size = new Size(180, 22);
             mnuSolicitarModelo.Text = "Solicitar Modelo";
+            mnuSolicitarModelo.Click += mnuSolicitarModelo_Click;
             // 
             // mnuRegistrarCliente
             // 

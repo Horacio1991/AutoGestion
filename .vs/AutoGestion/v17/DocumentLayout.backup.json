@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\TP FINAL\\AutoGestionWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\registrarcliente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcliente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|e:\\tp final\\autogestionwpf\\autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -58,37 +58,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Program.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Program.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Program.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T00:13:50.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RegistrarCliente.Designer.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\RegistrarCliente.Designer.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarCliente.Designer.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\RegistrarCliente.Designer.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarCliente.Designer.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAlwIcAAAAMAAAAAAAAAA==",
+              "Title": "SolicitarModelo.cs",
+              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\SolicitarModelo.cs",
+              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\SolicitarModelo.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T00:09:08.754Z",
+              "WhenOpened": "2025-05-27T00:27:34.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "SolicitarModelo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\SolicitarModelo.cs",
+              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\SolicitarModelo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\SolicitarModelo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T00:16:12.48Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RegistrarCliente.cs",
               "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\RegistrarCliente.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarCliente.cs",
@@ -97,6 +96,31 @@
               "ViewState": "AgIAAB4AAAAAAAAAAAAowDAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T00:03:55.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
+              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:40:34.513Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
+              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAEwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:39:45.635Z",
               "EditorCaption": ""
             },
             {
@@ -110,31 +134,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T23:57:53.859Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:40:34.513Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
-              "ToolTip": "E:\\TP FINAL\\AutoGestionWPF\\AutoGestion.Vista\\Form1.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\Form1.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwA4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:39:45.635Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
