@@ -48,12 +48,14 @@
             mnuRegistrarTurno = new ToolStripMenuItem();
             mnuRegistrarAsistencia = new ToolStripMenuItem();
             panelContenido = new Panel();
+            seguridadToolStripMenuItem = new ToolStripMenuItem();
+            asignarRolesToolStripMenuItem = new ToolStripMenuItem();
             menuPrincipal.SuspendLayout();
             SuspendLayout();
             // 
             // menuPrincipal
             // 
-            menuPrincipal.Items.AddRange(new ToolStripItem[] { gestionVentasToolStripMenuItem, gestiónComprasToolStripMenuItem, gestionComisionesToolStripMenuItem, gestiónTurnosToolStripMenuItem });
+            menuPrincipal.Items.AddRange(new ToolStripItem[] { gestionVentasToolStripMenuItem, gestiónComprasToolStripMenuItem, gestionComisionesToolStripMenuItem, gestiónTurnosToolStripMenuItem, seguridadToolStripMenuItem });
             menuPrincipal.Location = new Point(0, 0);
             menuPrincipal.Name = "menuPrincipal";
             menuPrincipal.Size = new Size(800, 24);
@@ -175,14 +177,14 @@
             // mnuRegistrarTurno
             // 
             mnuRegistrarTurno.Name = "mnuRegistrarTurno";
-            mnuRegistrarTurno.Size = new Size(180, 22);
+            mnuRegistrarTurno.Size = new Size(176, 22);
             mnuRegistrarTurno.Text = "Registrar Turno";
             mnuRegistrarTurno.Click += mnuRegistrarTurno_Click;
             // 
             // mnuRegistrarAsistencia
             // 
             mnuRegistrarAsistencia.Name = "mnuRegistrarAsistencia";
-            mnuRegistrarAsistencia.Size = new Size(180, 22);
+            mnuRegistrarAsistencia.Size = new Size(176, 22);
             mnuRegistrarAsistencia.Text = "Registrar Asistencia";
             mnuRegistrarAsistencia.Click += mnuRegistrarAsistencia_Click;
             // 
@@ -194,6 +196,20 @@
             panelContenido.Name = "panelContenido";
             panelContenido.Size = new Size(800, 426);
             panelContenido.TabIndex = 1;
+            // 
+            // seguridadToolStripMenuItem
+            // 
+            seguridadToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { asignarRolesToolStripMenuItem });
+            seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
+            seguridadToolStripMenuItem.Size = new Size(72, 20);
+            seguridadToolStripMenuItem.Text = "Seguridad";
+            // 
+            // asignarRolesToolStripMenuItem
+            // 
+            asignarRolesToolStripMenuItem.Name = "asignarRolesToolStripMenuItem";
+            asignarRolesToolStripMenuItem.Size = new Size(180, 22);
+            asignarRolesToolStripMenuItem.Text = "Asignar Roles";
+            asignarRolesToolStripMenuItem.Click += asignarRolesToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -233,5 +249,7 @@
         private ToolStripMenuItem mnuRegistrarTurno;
         private ToolStripMenuItem mnuRegistrarAsistencia;
         private Panel panelContenido;
+        private ToolStripMenuItem seguridadToolStripMenuItem;
+        private ToolStripMenuItem asignarRolesToolStripMenuItem;
     }
 }

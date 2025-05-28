@@ -76,3 +76,4 @@ C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.ConsultarComisiones.resources
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RegistrarTurno.resources
 C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.RegistrarAsistencia.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.AsignarRoles.resources
