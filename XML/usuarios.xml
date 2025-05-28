@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUsuarioSerializable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UsuarioSerializable>
+    <Nombre>Mariela</Nombre>
+    <Clave>123</Clave>
+    <RolNombre>Administracion</RolNombre>
+    <Permisos>
+      <string>Autorizar Venta</string>
+      <string>Emitir Factura</string>
+      <string>Registrar Comisión</string>
+      <string>Asignar Roles</string>
+    </Permisos>
+  </UsuarioSerializable>
+  <UsuarioSerializable>
+    <Nombre>admin</Nombre>
+    <Clave>123</Clave>
+    <RolNombre>SuperAdmin</RolNombre>
+    <Permisos>
+      <string>Solicitar Modelo</string>
+      <string>Realizar Pago</string>
+      <string>Autorizar Venta</string>
+      <string>Emitir Factura</string>
+      <string>Realizar Entrega</string>
+      <string>Registrar Oferta</string>
+      <string>Evaluar Vehículo</string>
+      <string>Tasar Vehículo</string>
+      <string>Registrar Compra</string>
+      <string>Registrar Comisión</string>
+      <string>Consultar Comisiones</string>
+      <string>Registrar Turno</string>
+      <string>Registrar Asistencia</string>
+      <string>Asignar Roles</string>
+    </Permisos>
+  </UsuarioSerializable>
+  <UsuarioSerializable>
+    <Nombre>Horacio</Nombre>
+    <Clave>123</Clave>
+    <RolNombre>Vendedor</RolNombre>
+    <Permisos>
+      <string>Solicitar Modelo</string>
+      <string>Registrar Cliente</string>
+      <string>Realizar Pago</string>
+      <string>Registrar Turno</string>
+      <string>Registrar Asistencia</string>
+      <string>Realizar Entrega</string>
+      <string>Consultar Comisiones</string>
+    </Permisos>
+  </UsuarioSerializable>
+  <UsuarioSerializable>
+    <Nombre>Oscar</Nombre>
+    <Clave>123</Clave>
+    <RolNombre>Encargado de Compras</RolNombre>
+    <Permisos>
+      <string>Registrar Oferta</string>
+      <string>Evaluar Vehículo</string>
+      <string>Tasar Vehículo</string>
+      <string>Registrar Compra</string>
+    </Permisos>
+  </UsuarioSerializable>
+  <UsuarioSerializable>
+    <Nombre>Noemi</Nombre>
+    <Clave>123</Clave>
+    <RolNombre>Administracion</RolNombre>
+    <Permisos>
+      <string>Autorizar Venta</string>
+      <string>Emitir Factura</string>
+      <string>Registrar Comisión</string>
+    </Permisos>
+  </UsuarioSerializable>
+</ArrayOfUsuarioSerializable>

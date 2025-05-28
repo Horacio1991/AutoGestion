@@ -28,6 +28,7 @@ namespace AutoGestion.Servicios
             var serializer = new XmlSerializer(typeof(List<UsuarioSerializable>));
             using var writer = new StreamWriter(ruta);
             serializer.Serialize(writer, serializables);
+            
         }
 
 
