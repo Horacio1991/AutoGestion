@@ -30,7 +30,6 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             txtNuevoPermiso = new TextBox();
-            label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             lstUsuarios = new ListBox();
@@ -44,6 +43,7 @@
             tvPermisos = new TreeView();
             btnGuardarRol = new Button();
             label4 = new Label();
+            label3 = new Label();
             label5 = new Label();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -86,16 +86,6 @@
             txtNuevoPermiso.Name = "txtNuevoPermiso";
             txtNuevoPermiso.Size = new Size(158, 23);
             txtNuevoPermiso.TabIndex = 11;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Sans Serif Collection", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(331, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(94, 45);
-            label3.TabIndex = 2;
-            label3.Text = "Permisos";
             // 
             // label2
             // 
@@ -214,6 +204,16 @@
             label4.Size = new Size(157, 45);
             label4.TabIndex = 3;
             label4.Text = "Estructura del Rol";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Sans Serif Collection", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(331, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(94, 45);
+            label3.TabIndex = 2;
+            label3.Text = "Permisos";
             // 
             // label5
             // 

@@ -47,9 +47,9 @@
             gestiónTurnosToolStripMenuItem = new ToolStripMenuItem();
             mnuRegistrarTurno = new ToolStripMenuItem();
             mnuRegistrarAsistencia = new ToolStripMenuItem();
-            panelContenido = new Panel();
             seguridadToolStripMenuItem = new ToolStripMenuItem();
-            asignarRolesToolStripMenuItem = new ToolStripMenuItem();
+            mnuAsignarRoles = new ToolStripMenuItem();
+            panelContenido = new Panel();
             menuPrincipal.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,42 +72,42 @@
             // mnuSolicitarModelo
             // 
             mnuSolicitarModelo.Name = "mnuSolicitarModelo";
-            mnuSolicitarModelo.Size = new Size(160, 22);
+            mnuSolicitarModelo.Size = new Size(180, 22);
             mnuSolicitarModelo.Text = "Solicitar Modelo";
             mnuSolicitarModelo.Click += mnuSolicitarModelo_Click;
             // 
             // mnuRegistrarCliente
             // 
             mnuRegistrarCliente.Name = "mnuRegistrarCliente";
-            mnuRegistrarCliente.Size = new Size(160, 22);
+            mnuRegistrarCliente.Size = new Size(180, 22);
             mnuRegistrarCliente.Text = "Registrar Cliente";
             mnuRegistrarCliente.Click += mnuRegistrarCliente_Click;
             // 
             // mnuRealizarPago
             // 
             mnuRealizarPago.Name = "mnuRealizarPago";
-            mnuRealizarPago.Size = new Size(160, 22);
+            mnuRealizarPago.Size = new Size(180, 22);
             mnuRealizarPago.Text = "Realizar Pago";
             mnuRealizarPago.Click += mnuRealizarPago_Click;
             // 
             // mnuAutorizarVenta
             // 
             mnuAutorizarVenta.Name = "mnuAutorizarVenta";
-            mnuAutorizarVenta.Size = new Size(160, 22);
+            mnuAutorizarVenta.Size = new Size(180, 22);
             mnuAutorizarVenta.Text = "Autorizar Venta";
             mnuAutorizarVenta.Click += mnuAutorizarVenta_Click;
             // 
             // mnuEmitirFactura
             // 
             mnuEmitirFactura.Name = "mnuEmitirFactura";
-            mnuEmitirFactura.Size = new Size(160, 22);
+            mnuEmitirFactura.Size = new Size(180, 22);
             mnuEmitirFactura.Text = "Emitir Factura";
             mnuEmitirFactura.Click += mnuEmitirFactura_Click;
             // 
             // mnuRealizarEntrega
             // 
             mnuRealizarEntrega.Name = "mnuRealizarEntrega";
-            mnuRealizarEntrega.Size = new Size(160, 22);
+            mnuRealizarEntrega.Size = new Size(180, 22);
             mnuRealizarEntrega.Text = "Realizar Entrega";
             mnuRealizarEntrega.Click += mnuRealizarEntrega_Click;
             // 
@@ -121,28 +121,28 @@
             // mnuRegistrarOferta
             // 
             mnuRegistrarOferta.Name = "mnuRegistrarOferta";
-            mnuRegistrarOferta.Size = new Size(166, 22);
+            mnuRegistrarOferta.Size = new Size(180, 22);
             mnuRegistrarOferta.Text = "Registrar Oferta";
             mnuRegistrarOferta.Click += mnuRegistrarOferta_Click;
             // 
             // mnuEvaluarVehiculo
             // 
             mnuEvaluarVehiculo.Name = "mnuEvaluarVehiculo";
-            mnuEvaluarVehiculo.Size = new Size(166, 22);
+            mnuEvaluarVehiculo.Size = new Size(180, 22);
             mnuEvaluarVehiculo.Text = "Evaluar Vehículo";
             mnuEvaluarVehiculo.Click += mnuEvaluarVehiculo_Click;
             // 
             // mnuTasarVehiculo
             // 
             mnuTasarVehiculo.Name = "mnuTasarVehiculo";
-            mnuTasarVehiculo.Size = new Size(166, 22);
+            mnuTasarVehiculo.Size = new Size(180, 22);
             mnuTasarVehiculo.Text = "Tasar Vehículo";
             mnuTasarVehiculo.Click += mnuTasarVehiculo_Click;
             // 
             // mnuRegistrarCompra
             // 
             mnuRegistrarCompra.Name = "mnuRegistrarCompra";
-            mnuRegistrarCompra.Size = new Size(166, 22);
+            mnuRegistrarCompra.Size = new Size(180, 22);
             mnuRegistrarCompra.Text = "Registrar Compra";
             mnuRegistrarCompra.Click += mnuRegistrarCompra_Click;
             // 
@@ -177,16 +177,30 @@
             // mnuRegistrarTurno
             // 
             mnuRegistrarTurno.Name = "mnuRegistrarTurno";
-            mnuRegistrarTurno.Size = new Size(176, 22);
+            mnuRegistrarTurno.Size = new Size(180, 22);
             mnuRegistrarTurno.Text = "Registrar Turno";
             mnuRegistrarTurno.Click += mnuRegistrarTurno_Click;
             // 
             // mnuRegistrarAsistencia
             // 
             mnuRegistrarAsistencia.Name = "mnuRegistrarAsistencia";
-            mnuRegistrarAsistencia.Size = new Size(176, 22);
+            mnuRegistrarAsistencia.Size = new Size(180, 22);
             mnuRegistrarAsistencia.Text = "Registrar Asistencia";
             mnuRegistrarAsistencia.Click += mnuRegistrarAsistencia_Click;
+            // 
+            // seguridadToolStripMenuItem
+            // 
+            seguridadToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mnuAsignarRoles });
+            seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
+            seguridadToolStripMenuItem.Size = new Size(72, 20);
+            seguridadToolStripMenuItem.Text = "Seguridad";
+            // 
+            // mnuAsignarRoles
+            // 
+            mnuAsignarRoles.Name = "mnuAsignarRoles";
+            mnuAsignarRoles.Size = new Size(180, 22);
+            mnuAsignarRoles.Text = "Asignar Roles";
+            mnuAsignarRoles.Click += asignarRolesToolStripMenuItem_Click;
             // 
             // panelContenido
             // 
@@ -196,20 +210,6 @@
             panelContenido.Name = "panelContenido";
             panelContenido.Size = new Size(800, 426);
             panelContenido.TabIndex = 1;
-            // 
-            // seguridadToolStripMenuItem
-            // 
-            seguridadToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { asignarRolesToolStripMenuItem });
-            seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            seguridadToolStripMenuItem.Size = new Size(72, 20);
-            seguridadToolStripMenuItem.Text = "Seguridad";
-            // 
-            // asignarRolesToolStripMenuItem
-            // 
-            asignarRolesToolStripMenuItem.Name = "asignarRolesToolStripMenuItem";
-            asignarRolesToolStripMenuItem.Size = new Size(180, 22);
-            asignarRolesToolStripMenuItem.Text = "Asignar Roles";
-            asignarRolesToolStripMenuItem.Click += asignarRolesToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -221,6 +221,7 @@
             MainMenuStrip = menuPrincipal;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             menuPrincipal.ResumeLayout(false);
             menuPrincipal.PerformLayout();
             ResumeLayout(false);
@@ -250,6 +251,6 @@
         private ToolStripMenuItem mnuRegistrarAsistencia;
         private Panel panelContenido;
         private ToolStripMenuItem seguridadToolStripMenuItem;
-        private ToolStripMenuItem asignarRolesToolStripMenuItem;
+        private ToolStripMenuItem mnuAsignarRoles;
     }
 }

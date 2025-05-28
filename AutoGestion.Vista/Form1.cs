@@ -1,3 +1,5 @@
+using AutoGestion.BE.Seguridad;
+
 namespace AutoGestion.Vista
 {
     public partial class Form1 : Form
@@ -125,6 +127,39 @@ namespace AutoGestion.Vista
             var control = new AsignarRoles();
             control.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(control);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            var usuario = Sesion.UsuarioActual;
+
+            // Si es superadmin, ve todo
+            if (usuario.Nombre.ToLower() == "admin")
+                return;
+
+            // -------- GESTIÓN DE VENTAS --------
+            mnuSolicitarModelo.Visible = usuario.TienePermiso("Solicitar Modelo");
+            mnuRealizarPago.Visible = usuario.TienePermiso("Realizar Pago");
+            mnuAutorizarVenta.Visible = usuario.TienePermiso("Autorizar Venta");
+            mnuEmitirFactura.Visible = usuario.TienePermiso("Emitir Factura");
+            mnuRealizarEntrega.Visible = usuario.TienePermiso("Realizar Entrega");
+
+            // -------- GESTIÓN DE COMPRAS --------
+            mnuRegistrarOferta.Visible = usuario.TienePermiso("Registrar Oferta");
+            mnuEvaluarVehiculo.Visible = usuario.TienePermiso("Evaluar Vehículo");
+            mnuTasarVehiculo.Visible = usuario.TienePermiso("Tasar Vehículo");
+            mnuRegistrarCompra.Visible = usuario.TienePermiso("Registrar Compra");
+
+            // -------- GESTIÓN DE COMISIONES --------
+            mnuRegistrarComision.Visible = usuario.TienePermiso("Registrar Comisión");
+            mnuConsultarComisiones.Visible = usuario.TienePermiso("Consultar Comisiones");
+
+            // -------- GESTIÓN DE TURNOS --------
+            mnuRegistrarTurno.Visible = usuario.TienePermiso("Registrar Turno");
+            mnuRegistrarAsistencia.Visible = usuario.TienePermiso("Registrar Asistencia");
+
+            // -------- SEGURIDAD --------
+            mnuAsignarRoles.Visible = usuario.TienePermiso("Asignar Roles");
         }
     }
 }
