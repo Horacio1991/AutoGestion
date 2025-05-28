@@ -1,20 +1,29 @@
-﻿using AutoGestion.BE.Seguridad;
-using AutoGestion.Entidades.Seguridad;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using AutoGestion.Entidades.Seguridad;
+using AutoGestion.Servicios;
 
 namespace AutoGestion.Vista
 {
     public partial class FormLogin : Form
     {
-        private List<Usuario> _usuarios = new List<Usuario>();
+        private List<Usuario> _usuarios = new();
 
         public FormLogin()
         {
             InitializeComponent();
-            CargarUsuariosDePrueba(); // Temporal
+            Load += FormLogin_Load;
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            _usuarios = UsuarioXmlService.Leer();
+
+            // Opcional: mostrar usuarios cargados (para pruebas)
+            if (_usuarios.Count == 0)
+                MessageBox.Show("No hay usuarios cargados en el sistema.");
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -32,28 +41,13 @@ namespace AutoGestion.Vista
                 return;
             }
 
-            // Guardamos en sesión
+            // Guardar en sesión
             Sesion.UsuarioActual = usuario;
 
-            // Abrimos el menú principal
-            Form1 main = new Form1();
-            main.Show();
+            // Abrir FormMain
+            Form1 formMain = new Form1();
+            formMain.Show();
             this.Hide();
-        }
-
-        // Esto lo vamos a reemplazar por XML luego
-        private void CargarUsuariosDePrueba()
-        {
-            var venta = new PermisoCompuesto { Nombre = "Gestión de Ventas" };
-            venta.Agregar(new PermisoSimple { Nombre = "Registrar Venta" });
-            venta.Agregar(new PermisoSimple { Nombre = "Emitir Factura" });
-
-            _usuarios.Add(new Usuario
-            {
-                Nombre = "admin",
-                Clave = "123",
-                Rol = venta
-            });
         }
     }
 }

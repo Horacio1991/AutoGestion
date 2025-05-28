@@ -1,4 +1,5 @@
-using AutoGestion.BE.Seguridad;
+using AutoGestion.Entidades.Seguridad;
+
 
 namespace AutoGestion.Vista
 {
@@ -143,6 +144,7 @@ namespace AutoGestion.Vista
             mnuAutorizarVenta.Visible = usuario.TienePermiso("Autorizar Venta");
             mnuEmitirFactura.Visible = usuario.TienePermiso("Emitir Factura");
             mnuRealizarEntrega.Visible = usuario.TienePermiso("Realizar Entrega");
+            mnuRegistrarCliente.Visible = usuario.TienePermiso("Registrar Cliente");
 
             // -------- GESTIÓN DE COMPRAS --------
             mnuRegistrarOferta.Visible = usuario.TienePermiso("Registrar Oferta");
@@ -160,6 +162,21 @@ namespace AutoGestion.Vista
 
             // -------- SEGURIDAD --------
             mnuAsignarRoles.Visible = usuario.TienePermiso("Asignar Roles");
+        }
+
+        private void mnuCerrarSesion_Click(object sender, EventArgs e)
+        {
+            var confirm = MessageBox.Show("¿Seguro que querés cerrar sesión?", "Cerrar sesión", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
+            {
+                Sesion.UsuarioActual = null;
+
+                // Volver al login
+                FormLogin login = new FormLogin();
+                login.Show();
+
+                this.Close(); // cerrar el FormMain
+            }
         }
     }
 }
