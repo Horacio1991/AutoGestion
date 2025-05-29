@@ -41,5 +41,7 @@ namespace AutoGestion.DAO
             var serializer = new XmlSerializer(typeof(List<T>));
             serializer.Serialize(fs, lista);
         }
+
+
     }
 }

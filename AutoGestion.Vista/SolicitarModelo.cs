@@ -2,6 +2,7 @@
 using AutoGestion.BLL;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace AutoGestion.Vista
@@ -13,6 +14,21 @@ namespace AutoGestion.Vista
         public SolicitarModelo()
         {
             InitializeComponent();
+            CargarTodosLosVehiculos();
+        }
+
+        private void CargarTodosLosVehiculos()
+        {
+            try
+            {
+                List<Vehiculo> lista = _vehiculoBLL.ObtenerTodos(); // <-- método nuevo que ahora vamos a crear
+                dgvResultados.DataSource = null;
+                dgvResultados.DataSource = lista;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar vehículos: " + ex.Message);
+            }
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -31,6 +47,7 @@ namespace AutoGestion.Vista
                 if (lista.Count == 0)
                 {
                     lista = _vehiculoBLL.BuscarVehiculosSimilares(modelo);
+
                     if (lista.Count == 0)
                     {
                         MessageBox.Show("No se encontraron vehículos disponibles.");
@@ -48,6 +65,11 @@ namespace AutoGestion.Vista
             {
                 MessageBox.Show("Error al buscar vehículos: " + ex.Message);
             }
+        }
+
+        private void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            CargarTodosLosVehiculos();
         }
     }
 }

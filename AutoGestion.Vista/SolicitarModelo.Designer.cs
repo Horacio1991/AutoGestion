@@ -34,11 +34,7 @@
             btnBuscar = new Button();
             lblResultados = new Label();
             dgvResultados = new DataGridView();
-            Marca = new DataGridViewTextBoxColumn();
-            Modelo = new DataGridViewTextBoxColumn();
-            Año = new DataGridViewTextBoxColumn();
-            Color = new DataGridViewTextBoxColumn();
-            Km = new DataGridViewTextBoxColumn();
+            btnMostrarTodos = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvResultados).BeginInit();
             SuspendLayout();
             // 
@@ -93,48 +89,28 @@
             // 
             dgvResultados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvResultados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvResultados.Columns.AddRange(new DataGridViewColumn[] { Marca, Modelo, Año, Color, Km });
             dgvResultados.Location = new Point(10, 123);
             dgvResultados.Name = "dgvResultados";
             dgvResultados.ReadOnly = true;
             dgvResultados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvResultados.Size = new Size(541, 222);
+            dgvResultados.Size = new Size(787, 300);
             dgvResultados.TabIndex = 5;
             // 
-            // Marca
+            // btnMostrarTodos
             // 
-            Marca.HeaderText = "Marca";
-            Marca.Name = "Marca";
-            Marca.ReadOnly = true;
-            // 
-            // Modelo
-            // 
-            Modelo.HeaderText = "Modelo";
-            Modelo.Name = "Modelo";
-            Modelo.ReadOnly = true;
-            // 
-            // Año
-            // 
-            Año.HeaderText = "Año";
-            Año.Name = "Año";
-            Año.ReadOnly = true;
-            // 
-            // Color
-            // 
-            Color.HeaderText = "Color";
-            Color.Name = "Color";
-            Color.ReadOnly = true;
-            // 
-            // Km
-            // 
-            Km.HeaderText = "Km";
-            Km.Name = "Km";
-            Km.ReadOnly = true;
+            btnMostrarTodos.Location = new Point(410, 48);
+            btnMostrarTodos.Name = "btnMostrarTodos";
+            btnMostrarTodos.Size = new Size(114, 23);
+            btnMostrarTodos.TabIndex = 6;
+            btnMostrarTodos.Text = "Mostrar Todos";
+            btnMostrarTodos.UseVisualStyleBackColor = true;
+            btnMostrarTodos.Click += btnMostrarTodos_Click;
             // 
             // SolicitarModelo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnMostrarTodos);
             Controls.Add(dgvResultados);
             Controls.Add(lblResultados);
             Controls.Add(btnBuscar);
@@ -142,7 +118,7 @@
             Controls.Add(lblModelo);
             Controls.Add(lblBuscarVehiculo);
             Name = "SolicitarModelo";
-            Size = new Size(554, 348);
+            Size = new Size(800, 426);
             ((System.ComponentModel.ISupportInitialize)dgvResultados).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -156,10 +132,6 @@
         private Button btnBuscar;
         private Label lblResultados;
         private DataGridView dgvResultados;
-        private DataGridViewTextBoxColumn Marca;
-        private DataGridViewTextBoxColumn Modelo;
-        private DataGridViewTextBoxColumn Año;
-        private DataGridViewTextBoxColumn Color;
-        private DataGridViewTextBoxColumn Km;
+        private Button btnMostrarTodos;
     }
 }

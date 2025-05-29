@@ -27,13 +27,12 @@ namespace AutoGestion.BLL
 
         public List<Vehiculo> BuscarVehiculosSimilares(string modelo)
         {
-            var todos = _repo.ObtenerTodos();
-            var palabra = modelo.Split(' ').FirstOrDefault()?.ToLower() ?? "";
+            var lista = _repo.ObtenerTodos();
 
-            return todos
-                .Where(v => v.Modelo.ToLower().Contains(palabra) && v.Estado == "Disponible")
-                .Take(5)
-                .ToList();
+            return lista.Where(v =>
+                v.Modelo.Contains(modelo, StringComparison.OrdinalIgnoreCase) ||
+                v.Marca.Contains(modelo, StringComparison.OrdinalIgnoreCase)
+            ).ToList();
         }
 
         public void ActualizarEstadoStock(Vehiculo vehiculo, string estado)
@@ -63,6 +62,14 @@ namespace AutoGestion.BLL
             return _repo.ObtenerTodos()
                         .FirstOrDefault(v => v.Dominio.Equals(dominio, StringComparison.OrdinalIgnoreCase));
         }
+
+        public List<Vehiculo> ObtenerTodos()
+        {
+            return _repo.ObtenerTodos();
+        }
+
+
+
 
 
 
