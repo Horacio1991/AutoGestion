@@ -72,6 +72,13 @@ namespace AutoGestion.BLL
             return ventas.Where(v => !idsConComision.Contains(v.ID)).ToList();
         }
 
+        public void FinalizarVenta(Venta venta)
+        {
+            var lista = _repo.ObtenerTodos();
+            lista.Add(venta);
+            _repo.GuardarLista(lista);
+        }
+
 
 
     }

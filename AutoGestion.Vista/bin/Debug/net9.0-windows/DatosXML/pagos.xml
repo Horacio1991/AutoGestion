@@ -1,2 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfPago xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfPago xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pago>
+    <ID>1</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>10000000</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T10:47:03.1741259-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>2</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>1111111111</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T10:48:27.4368438-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>3</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>10000000</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles>Compra Un Ford Focus</Detalles>
+    <FechaPago>2025-05-29T10:52:09.6592627-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>4</ID>
+    <TipoPago>Financiación</TipoPago>
+    <Monto>100000000</Monto>
+    <Cuotas>12</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T10:52:43.5767779-03:00</FechaPago>
+  </Pago>
+</ArrayOfPago>

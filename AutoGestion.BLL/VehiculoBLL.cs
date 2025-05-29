@@ -68,6 +68,12 @@ namespace AutoGestion.BLL
             return _repo.ObtenerTodos();
         }
 
+        public List<Vehiculo> ObtenerDisponibles()
+        {
+            return _repo.ObtenerTodos().Where(v => v.Estado == "Disponible").ToList();
+        }
+
+
 
 
 
