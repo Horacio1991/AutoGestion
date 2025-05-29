@@ -49,12 +49,12 @@
             dgvVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvVentas.Location = new Point(3, 46);
             dgvVentas.Name = "dgvVentas";
-            dgvVentas.Size = new Size(508, 238);
+            dgvVentas.Size = new Size(794, 238);
             dgvVentas.TabIndex = 1;
             // 
             // btnEmitir
             // 
-            btnEmitir.Location = new Point(362, 301);
+            btnEmitir.Location = new Point(319, 317);
             btnEmitir.Name = "btnEmitir";
             btnEmitir.Size = new Size(149, 47);
             btnEmitir.TabIndex = 2;
@@ -70,7 +70,7 @@
             Controls.Add(dgvVentas);
             Controls.Add(label1);
             Name = "EmitirFactura";
-            Size = new Size(514, 397);
+            Size = new Size(800, 426);
             ((System.ComponentModel.ISupportInitialize)dgvVentas).EndInit();
             ResumeLayout(false);
             PerformLayout();

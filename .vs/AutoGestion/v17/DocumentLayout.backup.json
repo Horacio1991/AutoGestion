@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.bll\\ventabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\ventabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\modelos\\ventavista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\modelos\\ventavista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RealizarPago.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\RealizarPago.cs",
@@ -71,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RealizarPago.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RealizarPago.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\RealizarPago.cs",
@@ -83,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VehiculoBLL.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VehiculoBLL.cs",
               "RelativeDocumentMoniker": "AutoGestion.BLL\\VehiculoBLL.cs",
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "XmlRepository.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.DAO\\XmlRepository.cs",
               "RelativeDocumentMoniker": "AutoGestion.DAO\\XmlRepository.cs",
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "VentaBLL.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VentaBLL.cs",
               "RelativeDocumentMoniker": "AutoGestion.BLL\\VentaBLL.cs",
@@ -148,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AutorizarVenta.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AutorizarVenta.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\AutorizarVenta.cs",
@@ -161,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "AutorizarVenta.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AutorizarVenta.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\AutorizarVenta.cs",
