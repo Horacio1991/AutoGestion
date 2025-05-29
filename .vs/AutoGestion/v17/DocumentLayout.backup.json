@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9F202F6-1814-4645-ACCB-DA7E3D07173F}|AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.ctrl_vista\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F202F6-1814-4645-ACCB-DA7E3D07173F}|AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj|solutionrelative:autogestion.ctrl_vista\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\solicitarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.servicios\\generadorid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|solutionrelative:autogestion.servicios\\generadorid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.bll\\vehiculobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\vehiculobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -29,6 +33,19 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GeneradorID.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Servicios\\GeneradorID.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Servicios\\GeneradorID.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Servicios\\GeneradorID.cs",
+              "RelativeToolTip": "AutoGestion.Servicios\\GeneradorID.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:26:02.977Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
@@ -38,45 +55,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VehiculoBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VehiculoBLL.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BLL\\VehiculoBLL.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\VehiculoBLL.cs",
-              "RelativeToolTip": "AutoGestion.BLL\\VehiculoBLL.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:38:02.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SolicitarModelo.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\SolicitarModelo.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\SolicitarModelo.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\SolicitarModelo.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\SolicitarModelo.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAuwEoAAAABAAAAAAAAAA==",
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.CTRL_Vista\\ClienteController.cs",
+              "RelativeDocumentMoniker": "AutoGestion.CTRL_Vista\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.CTRL_Vista\\ClienteController.cs",
+              "RelativeToolTip": "AutoGestion.CTRL_Vista\\ClienteController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:09:49.141Z",
+              "WhenOpened": "2025-05-29T12:18:02.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SolicitarModelo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\SolicitarModelo.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\SolicitarModelo.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\SolicitarModelo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\SolicitarModelo.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "RegistrarCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarCliente.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarCliente.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarCliente.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\RegistrarCliente.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:03:51.351Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-29T12:10:09.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "RegistrarCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarCliente.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarCliente.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\RegistrarCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:10:05.759Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Form1.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",

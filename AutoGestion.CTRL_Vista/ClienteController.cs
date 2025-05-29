@@ -1,10 +1,11 @@
-﻿using System;
+﻿using AutoGestion.BE;
+using AutoGestion.BLL;
+using AutoGestion.Servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AutoGestion.BE;
-using AutoGestion.BLL;
 
 namespace AutoGestion.CTRL_Vista
 {
@@ -28,15 +29,17 @@ namespace AutoGestion.CTRL_Vista
         {
             try
             {
-                var cliente = new Cliente
+                Cliente nuevo = new Cliente
                 {
+                    ID = GeneradorID.ObtenerID<Cliente>(), // <-- ESTA LÍNEA ES LA CLAVE
                     Dni = dni,
                     Nombre = nombre,
                     Apellido = apellido,
-                    Contacto = contacto
+                    Contacto = contacto,
+                    FechaRegistro = DateTime.Now
                 };
 
-                return _clienteBLL.RegistrarCliente(cliente);
+                return _clienteBLL.RegistrarCliente(nuevo);
             }
             catch (Exception ex)
             {
