@@ -113,6 +113,7 @@ namespace AutoGestion.Vista
                 };
 
                 _ventaBLL.FinalizarVenta(venta);
+                _vehiculoBLL.ActualizarEstadoVehiculo(vehiculo, "En Proceso");
                 MessageBox.Show("Pago registrado y venta pendiente creada.");
 
                 // Limpiar todo

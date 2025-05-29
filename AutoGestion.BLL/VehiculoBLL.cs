@@ -13,11 +13,6 @@ namespace AutoGestion.BLL
     {
         private readonly XmlRepository<Vehiculo> _repo = new("vehiculos.xml");
 
-        private int ObtenerNuevoID()
-        {
-            var lista = _repo.ObtenerTodos();
-            return lista.Any() ? lista.Max(v => v.ID) + 1 : 1;
-        }
         public List<Vehiculo> BuscarVehiculosPorModelo(string modelo)
         {
             return _repo.ObtenerTodos()
@@ -71,6 +66,18 @@ namespace AutoGestion.BLL
         public List<Vehiculo> ObtenerDisponibles()
         {
             return _repo.ObtenerTodos().Where(v => v.Estado == "Disponible").ToList();
+        }
+
+        public void ActualizarEstadoVehiculo(Vehiculo vehiculo, string nuevoEstado)
+        {
+            var lista = _repo.ObtenerTodos();
+            var existente = lista.FirstOrDefault(v => v.ID == vehiculo.ID);
+
+            if (existente != null)
+            {
+                existente.Estado = nuevoEstado;
+                _repo.GuardarLista(lista);
+            }
         }
 
 

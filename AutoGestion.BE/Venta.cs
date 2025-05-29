@@ -12,5 +12,7 @@ namespace AutoGestion.BE
         public string Estado { get; set; } // "Pendiente", "Autorizada", "Rechazada"
         public DateTime Fecha { get; set; } = DateTime.Now;
         public decimal Total => Pago?.Monto ?? 0;
+        public string MotivoRechazo { get; set; }
+
     }
 }

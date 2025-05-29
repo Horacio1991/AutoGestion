@@ -1,5 +1,6 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Vista.Modelos;
 using System;
 using System.Windows.Forms;
 
@@ -17,29 +18,83 @@ namespace AutoGestion.Vista
 
         private void CargarVentas()
         {
+            var ventas = _ventaBLL.ObtenerVentasPendientes();
+
+            List<VentaVista> vista = ventas.Select(v => new VentaVista
+            {
+                ID = v.ID,
+                Cliente = $"{v.Cliente?.Nombre} {v.Cliente?.Apellido}",
+                Vehiculo = $"{v.Vehiculo?.Marca} {v.Vehiculo?.Modelo} ({v.Vehiculo?.Dominio})",
+                TipoPago = v.Pago?.TipoPago,
+                Monto = v.Pago?.Monto ?? 0,
+                Estado = v.Estado,
+                Fecha = v.Fecha.ToShortDateString()
+            }).ToList();
+
             dgvVentas.DataSource = null;
-            dgvVentas.DataSource = _ventaBLL.ObtenerVentasPendientes();
+            dgvVentas.DataSource = vista;
             dgvVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvVentas.ReadOnly = true;
+            dgvVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void btnAutorizar_Click(object sender, EventArgs e)
         {
-            if (dgvVentas.CurrentRow == null) return;
+            var vistaSeleccionada = dgvVentas.CurrentRow?.DataBoundItem as VentaVista;
+            if (vistaSeleccionada == null) return;
 
-            int index = dgvVentas.CurrentRow.Index;
-            _ventaBLL.AutorizarVenta(index);
-            MessageBox.Show("Venta autorizada.");
+            // Buscar la venta real por ID
+            var ventaReal = _ventaBLL.ObtenerVentasPendientes()
+                .FirstOrDefault(v => v.ID == vistaSeleccionada.ID);
+
+            if (ventaReal == null)
+            {
+                MessageBox.Show("No se pudo encontrar la venta.");
+                return;
+            }
+
+            bool exito = _ventaBLL.AutorizarVenta(ventaReal.ID);
+
+            if (exito)
+                MessageBox.Show("Venta autorizada.");
+            else
+                MessageBox.Show("La venta fue rechazada automáticamente: el vehículo ya fue vendido.");
+
             CargarVentas();
         }
+
 
         private void btnRechazar_Click(object sender, EventArgs e)
         {
-            if (dgvVentas.CurrentRow == null) return;
+            var vistaSeleccionada = dgvVentas.CurrentRow?.DataBoundItem as VentaVista;
+            if (vistaSeleccionada == null) return;
 
-            int index = dgvVentas.CurrentRow.Index;
-            _ventaBLL.RechazarVenta(index);
-            MessageBox.Show("Venta rechazada.");
+            string motivo = txtMotivoRechazo.Text.Trim();
+            if (string.IsNullOrEmpty(motivo))
+            {
+                MessageBox.Show("Debe ingresar el motivo del rechazo.");
+                return;
+            }
+
+            // Buscar la venta real por ID
+            var ventaReal = _ventaBLL.ObtenerVentasPendientes()
+                .FirstOrDefault(v => v.ID == vistaSeleccionada.ID);
+
+            if (ventaReal == null)
+            {
+                MessageBox.Show("No se pudo encontrar la venta.");
+                return;
+            }
+
+            bool exito = _ventaBLL.RechazarVenta(ventaReal.ID, motivo);
+
+            if (exito)
+                MessageBox.Show("Venta rechazada.");
+            else
+                MessageBox.Show("No se pudo rechazar la venta.");
+
             CargarVentas();
         }
+
     }
 }

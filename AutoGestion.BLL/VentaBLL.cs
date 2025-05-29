@@ -8,12 +8,9 @@ namespace AutoGestion.BLL
     public class VentaBLL
     {
         private readonly XmlRepository<Venta> _repo = new("ventas.xml");
+        private readonly VehiculoBLL _vehiculoBLL = new();
 
-        private int ObtenerNuevoID()
-        {
-            var lista = _repo.ObtenerTodos();
-            return lista.Any() ? lista.Max(v => v.ID) + 1 : 1;
-        }
+
         public List<Venta> ObtenerVentasPendientes()
         {
             return _repo.ObtenerTodos().Where(v => v.Estado == "Pendiente").ToList();
@@ -24,19 +21,49 @@ namespace AutoGestion.BLL
             return _repo.ObtenerTodos()[index];
         }
 
-        public void AutorizarVenta(int index)
+        public bool AutorizarVenta(int ventaId)
         {
             var lista = _repo.ObtenerTodos();
-            lista[index].Estado = "Autorizada";
+            var venta = lista.FirstOrDefault(v => v.ID == ventaId);
+
+            if (venta == null) return false;
+
+            // Verifica si ya hay una venta autorizada para el mismo vehículo
+            bool yaVendida = lista.Any(v =>
+                v.Estado == "Autorizada" &&
+                v.Vehiculo?.Dominio == venta.Vehiculo?.Dominio
+            );
+
+            if (yaVendida)
+            {
+                venta.Estado = "Rechazada";
+                venta.MotivoRechazo = "Vehículo ya vendido en otra operación.";
+                _repo.GuardarLista(lista);
+                return false;
+            }
+
+            venta.Estado = "Autorizada";
             _repo.GuardarLista(lista);
+            return true;
         }
 
-        public void RechazarVenta(int index)
+
+        public bool RechazarVenta(int ventaId, string motivo)
         {
             var lista = _repo.ObtenerTodos();
-            lista[index].Estado = "Rechazada";
+            var venta = lista.FirstOrDefault(v => v.ID == ventaId);
+
+            if (venta == null) return false;
+
+            venta.Estado = "Rechazada";
+            venta.MotivoRechazo = motivo;
+
+            _vehiculoBLL.ActualizarEstadoVehiculo(venta.Vehiculo, "Disponible");
+
             _repo.GuardarLista(lista);
+            return true;
         }
+
 
         public void RegistrarVenta(Venta venta)
         {

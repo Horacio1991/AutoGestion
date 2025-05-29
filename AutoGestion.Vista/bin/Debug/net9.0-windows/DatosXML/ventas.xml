@@ -28,7 +28,7 @@
       <Detalles>Compra Un Ford Focus</Detalles>
       <FechaPago>2025-05-29T10:52:09.6592627-03:00</FechaPago>
     </Pago>
-    <Estado>Pendiente</Estado>
+    <Estado>Autorizada</Estado>
     <Fecha>2025-05-29T10:52:09.7286814-03:00</Fecha>
   </Venta>
   <Venta>
@@ -59,7 +59,135 @@
       <Detalles />
       <FechaPago>2025-05-29T10:52:43.5767779-03:00</FechaPago>
     </Pago>
-    <Estado>Pendiente</Estado>
+    <Estado>Autorizada</Estado>
     <Fecha>2025-05-29T10:52:43.5891998-03:00</Fecha>
+  </Venta>
+  <Venta>
+    <ID>3</ID>
+    <Cliente>
+      <ID>1</ID>
+      <Dni>30000001</Dni>
+      <Nombre>Juan</Nombre>
+      <Apellido>Pérez</Apellido>
+      <Contacto>juan.perez@mail.com</Contacto>
+      <FechaRegistro>2024-05-01T00:00:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>1</ID>
+      <Marca>Ford</Marca>
+      <Modelo>Focus</Modelo>
+      <Año>2021</Año>
+      <Color>Gris</Color>
+      <Km>15000</Km>
+      <Dominio>ABC123</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <Pago>
+      <ID>5</ID>
+      <TipoPago>Efectivo</TipoPago>
+      <Monto>10000000000</Monto>
+      <Cuotas>0</Cuotas>
+      <Detalles />
+      <FechaPago>2025-05-29T11:31:30.458183-03:00</FechaPago>
+    </Pago>
+    <Estado>Rechazada</Estado>
+    <Fecha>2025-05-29T11:31:30.5136354-03:00</Fecha>
+    <MotivoRechazo>Vehículo ya vendido en otra operación.</MotivoRechazo>
+  </Venta>
+  <Venta>
+    <ID>4</ID>
+    <Cliente>
+      <ID>2</ID>
+      <Dni>30000002</Dni>
+      <Nombre>Lucía</Nombre>
+      <Apellido>Gómez</Apellido>
+      <Contacto>lucia.gomez@mail.com</Contacto>
+      <FechaRegistro>2024-05-02T00:00:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>1</ID>
+      <Marca>Ford</Marca>
+      <Modelo>Focus</Modelo>
+      <Año>2021</Año>
+      <Color>Gris</Color>
+      <Km>15000</Km>
+      <Dominio>ABC123</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <Pago>
+      <ID>6</ID>
+      <TipoPago>Efectivo</TipoPago>
+      <Monto>1000000000000</Monto>
+      <Cuotas>0</Cuotas>
+      <Detalles />
+      <FechaPago>2025-05-29T11:32:54.9175103-03:00</FechaPago>
+    </Pago>
+    <Estado>Rechazada</Estado>
+    <Fecha>2025-05-29T11:32:54.9201435-03:00</Fecha>
+    <MotivoRechazo>Vehículo ya vendido en otra operación.</MotivoRechazo>
+  </Venta>
+  <Venta>
+    <ID>5</ID>
+    <Cliente>
+      <ID>5</ID>
+      <Dni>30000005</Dni>
+      <Nombre>Pedro</Nombre>
+      <Apellido>Fernández</Apellido>
+      <Contacto>pedro.fernandez@mail.com</Contacto>
+      <FechaRegistro>2024-05-05T00:00:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>4</ID>
+      <Marca>Renault</Marca>
+      <Modelo>Sandero</Modelo>
+      <Año>2022</Año>
+      <Color>Blanco</Color>
+      <Km>5000</Km>
+      <Dominio>JKL111</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <Pago>
+      <ID>7</ID>
+      <TipoPago>Efectivo</TipoPago>
+      <Monto>123123123123</Monto>
+      <Cuotas>0</Cuotas>
+      <Detalles />
+      <FechaPago>2025-05-29T11:33:21.5240676-03:00</FechaPago>
+    </Pago>
+    <Estado>Rechazada</Estado>
+    <Fecha>2025-05-29T11:33:21.5278257-03:00</Fecha>
+    <MotivoRechazo>el pago no tiene sentido</MotivoRechazo>
+  </Venta>
+  <Venta>
+    <ID>6</ID>
+    <Cliente>
+      <ID>7</ID>
+      <Dni>30000007</Dni>
+      <Nombre>Diego</Nombre>
+      <Apellido>Castro</Apellido>
+      <Contacto>diego.castro@mail.com</Contacto>
+      <FechaRegistro>2024-05-07T00:00:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>6</ID>
+      <Marca>Fiat</Marca>
+      <Modelo>Argo</Modelo>
+      <Año>2021</Año>
+      <Color>Gris</Color>
+      <Km>12000</Km>
+      <Dominio>PQR333</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <Pago>
+      <ID>8</ID>
+      <TipoPago>Efectivo</TipoPago>
+      <Monto>111111</Monto>
+      <Cuotas>0</Cuotas>
+      <Detalles />
+      <FechaPago>2025-05-29T11:46:44.0926038-03:00</FechaPago>
+    </Pago>
+    <Estado>Rechazada</Estado>
+    <Fecha>2025-05-29T11:46:44.181103-03:00</Fecha>
+    <MotivoRechazo>mal ingresado el monto</MotivoRechazo>
   </Venta>
 </ArrayOfVenta>

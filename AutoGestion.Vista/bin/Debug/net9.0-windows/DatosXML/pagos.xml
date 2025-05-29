@@ -32,4 +32,36 @@
     <Detalles />
     <FechaPago>2025-05-29T10:52:43.5767779-03:00</FechaPago>
   </Pago>
+  <Pago>
+    <ID>5</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>10000000000</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T11:31:30.458183-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>6</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>1000000000000</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T11:32:54.9175103-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>7</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>123123123123</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T11:33:21.5240676-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>8</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>111111</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T11:46:44.0926038-03:00</FechaPago>
+  </Pago>
 </ArrayOfPago>
