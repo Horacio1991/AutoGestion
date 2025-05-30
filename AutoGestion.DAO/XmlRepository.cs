@@ -42,6 +42,14 @@ namespace AutoGestion.DAO
             serializer.Serialize(fs, lista);
         }
 
+        public void Guardar(T item)
+        {
+            var lista = ObtenerTodos();
+            lista.Add(item);
+            GuardarLista(lista);
+        }
+
+
 
 
 

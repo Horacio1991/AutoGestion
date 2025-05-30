@@ -8,7 +8,7 @@
     <Color>Gris</Color>
     <Km>15000</Km>
     <Dominio>ABC123</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>2</ID>
@@ -158,7 +158,7 @@
     <Color>Blanco</Color>
     <Km>4000</Km>
     <Dominio>TUV404</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>17</ID>

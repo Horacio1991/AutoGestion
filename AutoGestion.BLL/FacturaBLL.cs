@@ -1,5 +1,6 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.DAO;
+using AutoGestion.Servicios;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,15 +12,14 @@ namespace AutoGestion.BLL
 
         public Factura EmitirFactura(Factura factura)
         {
-            factura.ID = ObtenerNuevoID();
-            _repo.Agregar(factura);
-            return factura;
-        }
+            factura.ID = GeneradorID.ObtenerID<Factura>();
+            factura.Fecha = DateTime.Now;
 
-        private int ObtenerNuevoID()
-        {
             var lista = _repo.ObtenerTodos();
-            return lista.Any() ? lista.Max(f => f.ID) + 1 : 1;
+            lista.Add(factura);
+            _repo.GuardarLista(lista);
+
+            return factura;
         }
 
         public List<Factura> ObtenerTodas()

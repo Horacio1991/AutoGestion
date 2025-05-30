@@ -13,8 +13,11 @@ namespace AutoGestion.BLL
 
         public List<Venta> ObtenerVentasPendientes()
         {
-            return _repo.ObtenerTodos().Where(v => v.Estado == "Pendiente").ToList();
+            return _repo.ObtenerTodos()
+                        .Where(v => v.Estado != "Facturada")
+                        .ToList();
         }
+
 
         public Venta ObtenerDetalleVenta(int index)
         {
@@ -70,16 +73,18 @@ namespace AutoGestion.BLL
             _repo.Agregar(venta);
         }
 
-        public void MarcarComoFacturada(int id)
+        public void MarcarComoFacturada(int ventaId)
         {
             var lista = _repo.ObtenerTodos();
-            var venta = lista.FirstOrDefault(v => v.ID == id);
+            var venta = lista.FirstOrDefault(v => v.ID == ventaId);
+
             if (venta != null)
             {
                 venta.Estado = "Facturada";
                 _repo.GuardarLista(lista);
             }
         }
+
 
         public void MarcarComoEntregada(int id)
         {
@@ -105,6 +110,8 @@ namespace AutoGestion.BLL
             lista.Add(venta);
             _repo.GuardarLista(lista);
         }
+
+
 
 
 

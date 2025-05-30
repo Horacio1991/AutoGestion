@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoGestion.BE;
+using System;
 
 namespace AutoGestion.Vista.Modelos
 {
@@ -15,6 +12,20 @@ namespace AutoGestion.Vista.Modelos
         public decimal Monto { get; set; }
         public string Estado { get; set; }
         public string Fecha { get; set; }
+
+        // Método de utilidad para convertir desde Venta real
+        public static VentaVista DesdeVenta(Venta venta)
+        {
+            return new VentaVista
+            {
+                ID = venta.ID,
+                Cliente = $"{venta.Cliente?.Nombre} {venta.Cliente?.Apellido}",
+                Vehiculo = $"{venta.Vehiculo?.Marca} {venta.Vehiculo?.Modelo} ({venta.Vehiculo?.Dominio})",
+                TipoPago = venta.Pago?.TipoPago ?? "N/A",
+                Monto = venta.Total,
+                Estado = venta.Estado,
+                Fecha = venta.Fecha.ToShortDateString()
+            };
+        }
     }
 }
-
