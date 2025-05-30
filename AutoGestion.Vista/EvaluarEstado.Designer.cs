@@ -42,13 +42,15 @@
             txtDocumentacion = new TextBox();
             txtObservaciones = new TextBox();
             btnGuardar = new Button();
+            dtpFiltroFecha = new DateTimePicker();
+            btnFiltrarFecha = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sans Serif Collection", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(150, 21);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(147, 54);
             label1.TabIndex = 0;
@@ -57,7 +59,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 74);
+            label2.Location = new Point(24, 62);
             label2.Name = "label2";
             label2.Size = new Size(43, 15);
             label2.TabIndex = 1;
@@ -66,7 +68,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(24, 107);
+            label3.Location = new Point(24, 95);
             label3.Name = "label3";
             label3.Size = new Size(100, 15);
             label3.TabIndex = 2;
@@ -75,7 +77,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(24, 140);
+            label4.Location = new Point(24, 128);
             label4.Name = "label4";
             label4.Size = new Size(102, 15);
             label4.TabIndex = 3;
@@ -84,7 +86,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(24, 176);
+            label5.Location = new Point(24, 164);
             label5.Name = "label5";
             label5.Size = new Size(83, 15);
             label5.TabIndex = 4;
@@ -93,7 +95,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(24, 211);
+            label6.Location = new Point(24, 199);
             label6.Name = "label6";
             label6.Size = new Size(133, 15);
             label6.TabIndex = 5;
@@ -102,7 +104,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(24, 245);
+            label7.Location = new Point(24, 233);
             label7.Name = "label7";
             label7.Size = new Size(87, 15);
             label7.TabIndex = 6;
@@ -111,50 +113,50 @@
             // cmbOfertas
             // 
             cmbOfertas.FormattingEnabled = true;
-            cmbOfertas.Location = new Point(184, 66);
+            cmbOfertas.Location = new Point(184, 54);
             cmbOfertas.Name = "cmbOfertas";
             cmbOfertas.Size = new Size(193, 23);
             cmbOfertas.TabIndex = 7;
             // 
             // txtMotor
             // 
-            txtMotor.Location = new Point(182, 99);
+            txtMotor.Location = new Point(182, 87);
             txtMotor.Name = "txtMotor";
             txtMotor.Size = new Size(195, 23);
             txtMotor.TabIndex = 8;
             // 
             // txtCarroceria
             // 
-            txtCarroceria.Location = new Point(182, 132);
+            txtCarroceria.Location = new Point(182, 120);
             txtCarroceria.Name = "txtCarroceria";
             txtCarroceria.Size = new Size(195, 23);
             txtCarroceria.TabIndex = 9;
             // 
             // txtInterior
             // 
-            txtInterior.Location = new Point(182, 168);
+            txtInterior.Location = new Point(182, 156);
             txtInterior.Name = "txtInterior";
             txtInterior.Size = new Size(195, 23);
             txtInterior.TabIndex = 10;
             // 
             // txtDocumentacion
             // 
-            txtDocumentacion.Location = new Point(182, 203);
+            txtDocumentacion.Location = new Point(182, 191);
             txtDocumentacion.Name = "txtDocumentacion";
             txtDocumentacion.Size = new Size(195, 23);
             txtDocumentacion.TabIndex = 11;
             // 
             // txtObservaciones
             // 
-            txtObservaciones.Location = new Point(182, 237);
+            txtObservaciones.Location = new Point(182, 225);
             txtObservaciones.Multiline = true;
             txtObservaciones.Name = "txtObservaciones";
-            txtObservaciones.Size = new Size(195, 130);
+            txtObservaciones.Size = new Size(426, 130);
             txtObservaciones.TabIndex = 12;
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(184, 373);
+            btnGuardar.Location = new Point(288, 361);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(193, 47);
             btnGuardar.TabIndex = 13;
@@ -162,10 +164,29 @@
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
+            // dtpFiltroFecha
+            // 
+            dtpFiltroFecha.Location = new Point(408, 56);
+            dtpFiltroFecha.Name = "dtpFiltroFecha";
+            dtpFiltroFecha.Size = new Size(200, 23);
+            dtpFiltroFecha.TabIndex = 14;
+            // 
+            // btnFiltrarFecha
+            // 
+            btnFiltrarFecha.Location = new Point(408, 88);
+            btnFiltrarFecha.Name = "btnFiltrarFecha";
+            btnFiltrarFecha.Size = new Size(200, 23);
+            btnFiltrarFecha.TabIndex = 15;
+            btnFiltrarFecha.Text = "Filtrar";
+            btnFiltrarFecha.UseVisualStyleBackColor = true;
+            btnFiltrarFecha.Click += btnFiltrarFecha_Click;
+            // 
             // EvaluarEstado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnFiltrarFecha);
+            Controls.Add(dtpFiltroFecha);
             Controls.Add(btnGuardar);
             Controls.Add(txtObservaciones);
             Controls.Add(txtDocumentacion);
@@ -181,7 +202,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "EvaluarEstado";
-            Size = new Size(439, 440);
+            Size = new Size(800, 426);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -202,5 +223,7 @@
         private TextBox txtDocumentacion;
         private TextBox txtObservaciones;
         private Button btnGuardar;
+        private DateTimePicker dtpFiltroFecha;
+        private Button btnFiltrarFecha;
     }
 }

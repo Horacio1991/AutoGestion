@@ -9,11 +9,17 @@ namespace AutoGestion.BLL
     {
         private readonly XmlRepository<EvaluacionTecnica> _repo = new("evaluaciones.xml");
 
-        public void GuardarEvaluacion(EvaluacionTecnica evaluacion)
+        public void GuardarEvaluacion(OfertaCompra oferta, EvaluacionTecnica evaluacion)
         {
-            evaluacion.ID = ObtenerNuevoID();
-            _repo.Agregar(evaluacion);
+            evaluacion.ID = AutoGestion.Servicios.GeneradorID.ObtenerID<EvaluacionTecnica>();
+            var repo = new XmlRepository<EvaluacionTecnica>("evaluaciones.xml");
+            var lista = repo.ObtenerTodos();
+            lista.Add(evaluacion);
+            repo.GuardarLista(lista);
+
+            // Asociar por Oferta si hace falta otra lógica futura
         }
+
 
         public int ObtenerNuevoID()
         {

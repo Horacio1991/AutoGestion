@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfEvaluacionTecnica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfEvaluacionTecnica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EvaluacionTecnica>
+    <ID>1</ID>
+    <EstadoMotor>Bien</EstadoMotor>
+    <EstadoCarroceria>Bien</EstadoCarroceria>
+    <EstadoInterior>Bien</EstadoInterior>
+    <EstadoDocumentacion>Bien</EstadoDocumentacion>
+    <Observaciones>El auto esta en buenas condiciones</Observaciones>
+  </EvaluacionTecnica>
+</ArrayOfEvaluacionTecnica>

@@ -1,5 +1,6 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Vista.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,22 +14,27 @@ namespace AutoGestion.Vista
         private readonly EvaluacionBLL _evaluacionBLL = new();
         private List<OfertaCompra> _ofertasDisponibles;
 
+
         public EvaluarEstado()
         {
             InitializeComponent();
+            dtpFiltroFecha.Value = DateTime.Today;
             CargarOfertas();
         }
 
         private void CargarOfertas()
         {
             _ofertasDisponibles = _ofertaBLL.ObtenerOfertasConInspeccion();
-            cmbOfertas.DataSource = _ofertasDisponibles;
-            cmbOfertas.DisplayMember = "Vehiculo.Dominio";
+
+            var items = _ofertasDisponibles.Select(o => new OfertaComboItem { Oferta = o }).ToList();
+
+            cmbOfertas.DataSource = null;
+            cmbOfertas.DataSource = items;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (cmbOfertas.SelectedIndex == -1)
+            if (cmbOfertas.SelectedItem is not OfertaComboItem item)
             {
                 MessageBox.Show("Seleccione una oferta.");
                 return;
@@ -45,6 +51,7 @@ namespace AutoGestion.Vista
 
             var evaluacion = new EvaluacionTecnica
             {
+                ID = AutoGestion.Servicios.GeneradorID.ObtenerID<EvaluacionTecnica>(),
                 EstadoMotor = txtMotor.Text,
                 EstadoCarroceria = txtCarroceria.Text,
                 EstadoInterior = txtInterior.Text,
@@ -52,10 +59,28 @@ namespace AutoGestion.Vista
                 Observaciones = txtObservaciones.Text
             };
 
-            _evaluacionBLL.GuardarEvaluacion(evaluacion);
+            _evaluacionBLL.GuardarEvaluacion(item.Oferta, evaluacion);
             MessageBox.Show("Evaluación registrada correctamente.");
             LimpiarFormulario();
+            CargarOfertas();
         }
+
+        private void FiltrarPorFecha()
+        {
+            DateTime seleccionada = dtpFiltroFecha.Value.Date;
+
+            var ofertasFiltradas = _ofertasDisponibles
+                .Where(o => o.FechaInspeccion.Date == seleccionada)
+                .Select(o => new OfertaComboItem { Oferta = o })
+                .ToList();
+
+            cmbOfertas.DataSource = null;
+            cmbOfertas.DataSource = ofertasFiltradas;
+
+            if (ofertasFiltradas.Count == 0)
+                MessageBox.Show("No hay ofertas para la fecha seleccionada.");
+        }
+
 
         private void LimpiarFormulario()
         {
@@ -65,6 +90,11 @@ namespace AutoGestion.Vista
             txtDocumentacion.Clear();
             txtObservaciones.Clear();
             cmbOfertas.SelectedIndex = -1;
+        }
+
+        private void btnFiltrarFecha_Click(object sender, EventArgs e)
+        {
+            FiltrarPorFecha();
         }
     }
 }

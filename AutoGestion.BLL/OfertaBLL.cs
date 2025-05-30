@@ -35,8 +35,9 @@ namespace AutoGestion.BLL
         public List<OfertaCompra> ObtenerOfertasConInspeccion()
         {
             return _repo.ObtenerTodos()
-                        .Where(o => o.FechaInspeccion <= DateTime.Today)
+                        .Where(o => o.FechaInspeccion != DateTime.MinValue)
                         .ToList();
         }
+
     }
 }
