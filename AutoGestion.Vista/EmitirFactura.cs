@@ -1,6 +1,7 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
 using AutoGestion.Vista.Modelos;
+using AutoGestion.Vista.Servicios;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -75,6 +76,7 @@ namespace AutoGestion.Vista
             {
                 _facturaBLL.EmitirFactura(factura);
                 _ventaBLL.MarcarComoFacturada(venta.ID);
+                GeneradorFacturaPDF.Generar(factura);
                 MessageBox.Show("Factura emitida correctamente.");
                 CargarVentas();
             }

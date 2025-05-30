@@ -90,7 +90,7 @@
       <Detalles />
       <FechaPago>2025-05-29T11:31:30.458183-03:00</FechaPago>
     </Pago>
-    <Estado>Rechazada</Estado>
+    <Estado>Facturada</Estado>
     <Fecha>2025-05-29T11:31:30.5136354-03:00</Fecha>
     <MotivoRechazo>Vehículo ya vendido en otra operación.</MotivoRechazo>
   </Venta>
@@ -252,5 +252,98 @@
     </Pago>
     <Estado>Facturada</Estado>
     <Fecha>2025-05-29T20:45:01.8813115-03:00</Fecha>
+  </Venta>
+  <Venta>
+    <ID>9</ID>
+    <Cliente>
+      <ID>11</ID>
+      <Dni>36084790</Dni>
+      <Nombre>Horacio</Nombre>
+      <Apellido>Ortiz</Apellido>
+      <Contacto>horacio0291@gmail.com</Contacto>
+      <FechaRegistro>2025-05-29T09:28:19.7256203-03:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>3</ID>
+      <Marca>Volkswagen</Marca>
+      <Modelo>Golf</Modelo>
+      <Año>2019</Año>
+      <Color>Rojo</Color>
+      <Km>30000</Km>
+      <Dominio>GHI789</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <Pago>
+      <ID>11</ID>
+      <TipoPago>Efectivo</TipoPago>
+      <Monto>1111111111111</Monto>
+      <Cuotas>0</Cuotas>
+      <Detalles />
+      <FechaPago>2025-05-29T21:49:35.7842402-03:00</FechaPago>
+    </Pago>
+    <Estado>Facturada</Estado>
+    <Fecha>2025-05-29T21:49:35.8103872-03:00</Fecha>
+  </Venta>
+  <Venta>
+    <ID>10</ID>
+    <Cliente>
+      <ID>12</ID>
+      <Dni>36168344</Dni>
+      <Nombre>Belen</Nombre>
+      <Apellido>Uronich</Apellido>
+      <Contacto>beluronich@gmail.com</Contacto>
+      <FechaRegistro>2025-05-29T09:28:55.5673067-03:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>10</ID>
+      <Marca>Citroën</Marca>
+      <Modelo>C3</Modelo>
+      <Año>2022</Año>
+      <Color>Blanco</Color>
+      <Km>8000</Km>
+      <Dominio>BCD777</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <Pago>
+      <ID>12</ID>
+      <TipoPago>Transferencia</TipoPago>
+      <Monto>500000000000000</Monto>
+      <Cuotas>0</Cuotas>
+      <Detalles />
+      <FechaPago>2025-05-29T21:50:12.024763-03:00</FechaPago>
+    </Pago>
+    <Estado>Facturada</Estado>
+    <Fecha>2025-05-29T21:50:12.0262468-03:00</Fecha>
+  </Venta>
+  <Venta>
+    <ID>11</ID>
+    <Cliente>
+      <ID>12</ID>
+      <Dni>36168344</Dni>
+      <Nombre>Belen</Nombre>
+      <Apellido>Uronich</Apellido>
+      <Contacto>beluronich@gmail.com</Contacto>
+      <FechaRegistro>2025-05-29T09:28:55.5673067-03:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>13</ID>
+      <Marca>Volkswagen</Marca>
+      <Modelo>Polo</Modelo>
+      <Año>2022</Año>
+      <Color>Azul</Color>
+      <Km>7000</Km>
+      <Dominio>KLM101</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <Pago>
+      <ID>13</ID>
+      <TipoPago>Financiación</TipoPago>
+      <Monto>11111111111111111</Monto>
+      <Cuotas>4</Cuotas>
+      <Detalles />
+      <FechaPago>2025-05-29T21:54:11.2564546-03:00</FechaPago>
+    </Pago>
+    <Estado>Facturada</Estado>
+    <Fecha>2025-05-29T21:54:11.2747462-03:00</Fecha>
   </Venta>
 </ArrayOfVenta>

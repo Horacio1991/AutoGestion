@@ -80,4 +80,28 @@
     <Detalles />
     <FechaPago>2025-05-29T20:45:01.8798215-03:00</FechaPago>
   </Pago>
+  <Pago>
+    <ID>11</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>1111111111111</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T21:49:35.7842402-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>12</ID>
+    <TipoPago>Transferencia</TipoPago>
+    <Monto>500000000000000</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T21:50:12.024763-03:00</FechaPago>
+  </Pago>
+  <Pago>
+    <ID>13</ID>
+    <TipoPago>Financiación</TipoPago>
+    <Monto>11111111111111111</Monto>
+    <Cuotas>4</Cuotas>
+    <Detalles />
+    <FechaPago>2025-05-29T21:54:11.2564546-03:00</FechaPago>
+  </Pago>
 </ArrayOfPago>

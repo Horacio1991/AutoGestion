@@ -1,33 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\",
+  "WorkspaceRootPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tpfinal\\autogestion\\autogestion.vista\\emitirfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.vista\\emitirfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\emitirfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\autogestion.vista\\emitirfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\autogestion.vista\\emitirfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\emitirfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tpfinal\\autogestion\\autogestion.be\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.vista\\servicios\\generadorfacturapdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\servicios\\generadorfacturapdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tpfinal\\autogestion\\autogestion.vista\\modelos\\ventavista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\modelos\\ventavista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tpfinal\\autogestion\\autogestion.bll\\ventabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\autorizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.bll\\ventabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\ventabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E1AF3EA-1046-49C7-B149-E9EB3557C1B8}|AutoGestion.DAO\\AutoGestion.DAO.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tpfinal\\autogestion\\autogestion.dao\\xmlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.be\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.vista\\modelos\\ventavista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\modelos\\ventavista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1AF3EA-1046-49C7-B149-E9EB3557C1B8}|AutoGestion.DAO\\AutoGestion.DAO.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.dao\\xmlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E1AF3EA-1046-49C7-B149-E9EB3557C1B8}|AutoGestion.DAO\\AutoGestion.DAO.csproj|solutionrelative:autogestion.dao\\xmlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tpfinal\\autogestion\\autogestion.bll\\facturabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion.bll\\facturabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\facturabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,37 +54,87 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VentaVista.cs",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Vista\\Modelos\\VentaVista.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Modelos\\VentaVista.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Vista\\Modelos\\VentaVista.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\Modelos\\VentaVista.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GeneradorFacturaPDF.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\Servicios\\GeneradorFacturaPDF.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\Servicios\\GeneradorFacturaPDF.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\Servicios\\GeneradorFacturaPDF.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\Servicios\\GeneradorFacturaPDF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T23:58:19.091Z",
+              "WhenOpened": "2025-05-30T00:52:37.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "AutorizarVenta.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\AutorizarVenta.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\AutorizarVenta.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\AutorizarVenta.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\AutorizarVenta.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T00:48:19.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmitirFactura.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\EmitirFactura.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\EmitirFactura.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T14:53:33.595Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmitirFactura.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\EmitirFactura.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\EmitirFactura.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAawE4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T14:55:58.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutorizarVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\AutorizarVenta.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\AutorizarVenta.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\AutorizarVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\AutorizarVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T00:48:14.31Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "XmlRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.DAO\\XmlRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.DAO\\XmlRepository.cs",
               "RelativeDocumentMoniker": "AutoGestion.DAO\\XmlRepository.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.DAO\\XmlRepository.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.DAO\\XmlRepository.cs",
               "RelativeToolTip": "AutoGestion.DAO\\XmlRepository.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAIBJwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T23:43:25.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\Factura.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\Factura.cs",
               "RelativeDocumentMoniker": "AutoGestion.BE\\Factura.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\Factura.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\Factura.cs",
               "RelativeToolTip": "AutoGestion.BE\\Factura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -81,49 +143,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmitirFactura.cs",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\EmitirFactura.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\EmitirFactura.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAEwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:55:58.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmitirFactura.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\EmitirFactura.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Vista\\EmitirFactura.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\EmitirFactura.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:53:33.595Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "VentaBLL.cs",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BLL\\VentaBLL.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BLL\\VentaBLL.cs",
               "RelativeDocumentMoniker": "AutoGestion.BLL\\VentaBLL.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BLL\\VentaBLL.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BLL\\VentaBLL.cs",
               "RelativeToolTip": "AutoGestion.BLL\\VentaBLL.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T23:37:27.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
+              "Title": "VentaVista.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\Modelos\\VentaVista.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\Modelos\\VentaVista.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Vista\\Modelos\\VentaVista.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\Modelos\\VentaVista.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T23:58:19.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FacturaBLL.cs",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BLL\\FacturaBLL.cs",
+              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BLL\\FacturaBLL.cs",
               "RelativeDocumentMoniker": "AutoGestion.BLL\\FacturaBLL.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BLL\\FacturaBLL.cs",
+              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BLL\\FacturaBLL.cs",
               "RelativeToolTip": "AutoGestion.BLL\\FacturaBLL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

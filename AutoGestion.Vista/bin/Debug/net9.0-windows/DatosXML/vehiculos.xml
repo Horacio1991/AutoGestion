@@ -28,7 +28,7 @@
     <Color>Rojo</Color>
     <Km>30000</Km>
     <Dominio>GHI789</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>4</ID>
@@ -98,7 +98,7 @@
     <Color>Blanco</Color>
     <Km>8000</Km>
     <Dominio>BCD777</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>11</ID>
@@ -128,7 +128,7 @@
     <Color>Azul</Color>
     <Km>7000</Km>
     <Dominio>KLM101</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>14</ID>

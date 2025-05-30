@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {}
+    "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {
+    "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
+        "projectUniqueName": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
         "projectName": "AutoGestion.BE",
-        "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
+        "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
         "packagesPath": "C:\\Users\\hory_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\obj\\",
+        "outputPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

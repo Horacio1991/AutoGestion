@@ -2,9 +2,37 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "BouncyCastle.Cryptography/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.4": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.4.0"
+        },
+        "compile": {
+          "lib/net461/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/net461/itextsharp.dll": {}
+        }
+      },
       "AutoGestion.BE/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "iTextSharp": "5.5.13.4"
+        },
         "compile": {
           "bin/placeholder/AutoGestion.BE.dll": {}
         },
@@ -19,7 +47,8 @@
           "AutoGestion.BE": "1.0.0",
           "AutoGestion.DAO": "1.0.0",
           "AutoGestion.Mapeadores": "1.0.0",
-          "AutoGestion.Servicios": "1.0.0"
+          "AutoGestion.Servicios": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "compile": {
           "bin/placeholder/AutoGestion.BLL.dll": {}
@@ -32,7 +61,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "AutoGestion.BE": "1.0.0"
+          "AutoGestion.BE": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "compile": {
           "bin/placeholder/AutoGestion.DAO.dll": {}
@@ -45,7 +75,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "AutoGestion.BE": "1.0.0"
+          "AutoGestion.BE": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "compile": {
           "bin/placeholder/AutoGestion.Mapeadores.dll": {}
@@ -58,7 +89,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "AutoGestion.BE": "1.0.0"
+          "AutoGestion.BE": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "compile": {
           "bin/placeholder/AutoGestion.Servicios.dll": {}
@@ -70,6 +102,42 @@
     }
   },
   "libraries": {
+    "BouncyCastle.Cryptography/2.4.0": {
+      "sha512": "SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
+      "type": "package",
+      "path": "bouncycastle.cryptography/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bouncycastle.cryptography.2.4.0.nupkg.sha512",
+        "bouncycastle.cryptography.nuspec",
+        "lib/net461/BouncyCastle.Cryptography.dll",
+        "lib/net461/BouncyCastle.Cryptography.xml",
+        "lib/net6.0/BouncyCastle.Cryptography.dll",
+        "lib/net6.0/BouncyCastle.Cryptography.xml",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
+        "packageIcon.png"
+      ]
+    },
+    "iTextSharp/5.5.13.4": {
+      "sha512": "/cvCNv8AJ+XuD99u4NfHSSxkBJKTdvP36wcfQF9V1Cjzi1ycyFSa4vJ64a3DhFVUTKVO60WF8OmAqngQDTHgYA==",
+      "type": "package",
+      "path": "itextsharp/5.5.13.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "gnu-agpl-v3.0.md",
+        "itextsharp.5.5.13.4.nupkg.sha512",
+        "itextsharp.nuspec",
+        "lib/net461/iTextSharp.xml",
+        "lib/net461/itextsharp.dll",
+        "notice.txt"
+      ]
+    },
     "AutoGestion.BE/1.0.0": {
       "type": "project",
       "path": "../AutoGestion.BE/AutoGestion.BE.csproj",
@@ -100,7 +168,8 @@
     "net9.0": [
       "AutoGestion.BE >= 1.0.0",
       "AutoGestion.BLL >= 1.0.0",
-      "AutoGestion.Servicios >= 1.0.0"
+      "AutoGestion.Servicios >= 1.0.0",
+      "iTextSharp >= 5.5.13.4"
     ]
   },
   "packageFolders": {
@@ -110,11 +179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj",
+      "projectUniqueName": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj",
       "projectName": "AutoGestion.CTRL_Vista",
-      "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj",
+      "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.CTRL_Vista\\AutoGestion.CTRL_Vista.csproj",
       "packagesPath": "C:\\Users\\hory_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.CTRL_Vista\\obj\\",
+      "outputPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.CTRL_Vista\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -135,14 +204,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {
-              "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj"
+            "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {
+              "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj"
             },
-            "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BLL\\AutoGestion.BLL.csproj": {
-              "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.BLL\\AutoGestion.BLL.csproj"
+            "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BLL\\AutoGestion.BLL.csproj": {
+              "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BLL\\AutoGestion.BLL.csproj"
             },
-            "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj": {
-              "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TPFINAL\\AutoGestion\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj"
+            "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj": {
+              "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.Servicios\\AutoGestion.Servicios.csproj"
             }
           }
         }
@@ -162,6 +231,12 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "iTextSharp": {
+            "target": "Package",
+            "version": "[5.5.13.4, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -181,5 +256,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"iTextSharp 5.5.13.4\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "iTextSharp",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

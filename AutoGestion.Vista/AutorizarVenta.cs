@@ -2,6 +2,8 @@
 using AutoGestion.BLL;
 using AutoGestion.Vista.Modelos;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace AutoGestion.Vista
@@ -9,6 +11,7 @@ namespace AutoGestion.Vista
     public partial class AutorizarVenta : UserControl
     {
         private readonly VentaBLL _ventaBLL = new();
+        private List<Venta> _ventasPendientes = new();
 
         public AutorizarVenta()
         {
@@ -18,9 +21,9 @@ namespace AutoGestion.Vista
 
         private void CargarVentas()
         {
-            var ventas = _ventaBLL.ObtenerVentasPendientes();
+            _ventasPendientes = _ventaBLL.ObtenerVentasConEstadoPendiente();
 
-            List<VentaVista> vista = ventas.Select(v => new VentaVista
+            List<VentaVista> vista = _ventasPendientes.Select(v => new VentaVista
             {
                 ID = v.ID,
                 Cliente = $"{v.Cliente?.Nombre} {v.Cliente?.Apellido}",
@@ -43,9 +46,7 @@ namespace AutoGestion.Vista
             var vistaSeleccionada = dgvVentas.CurrentRow?.DataBoundItem as VentaVista;
             if (vistaSeleccionada == null) return;
 
-            // Buscar la venta real por ID
-            var ventaReal = _ventaBLL.ObtenerVentasPendientes()
-                .FirstOrDefault(v => v.ID == vistaSeleccionada.ID);
+            var ventaReal = _ventasPendientes.FirstOrDefault(v => v.ID == vistaSeleccionada.ID);
 
             if (ventaReal == null)
             {
@@ -63,7 +64,6 @@ namespace AutoGestion.Vista
             CargarVentas();
         }
 
-
         private void btnRechazar_Click(object sender, EventArgs e)
         {
             var vistaSeleccionada = dgvVentas.CurrentRow?.DataBoundItem as VentaVista;
@@ -76,9 +76,7 @@ namespace AutoGestion.Vista
                 return;
             }
 
-            // Buscar la venta real por ID
-            var ventaReal = _ventaBLL.ObtenerVentasPendientes()
-                .FirstOrDefault(v => v.ID == vistaSeleccionada.ID);
+            var ventaReal = _ventasPendientes.FirstOrDefault(v => v.ID == vistaSeleccionada.ID);
 
             if (ventaReal == null)
             {
@@ -95,6 +93,5 @@ namespace AutoGestion.Vista
 
             CargarVentas();
         }
-
     }
 }

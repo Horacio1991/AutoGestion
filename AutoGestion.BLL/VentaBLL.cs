@@ -10,6 +10,10 @@ namespace AutoGestion.BLL
         private readonly XmlRepository<Venta> _repo = new("ventas.xml");
         private readonly VehiculoBLL _vehiculoBLL = new();
 
+        public List<Venta> ObtenerTodas()
+        {
+            return _repo.ObtenerTodos();
+        }
 
         public List<Venta> ObtenerVentasPendientes()
         {
@@ -18,6 +22,12 @@ namespace AutoGestion.BLL
                         .ToList();
         }
 
+        public List<Venta> ObtenerVentasConEstadoPendiente()
+        {
+            return _repo.ObtenerTodos()
+                        .Where(v => v.Estado == "Pendiente")
+                        .ToList();
+        }
 
         public Venta ObtenerDetalleVenta(int index)
         {
@@ -50,7 +60,6 @@ namespace AutoGestion.BLL
             return true;
         }
 
-
         public bool RechazarVenta(int ventaId, string motivo)
         {
             var lista = _repo.ObtenerTodos();
@@ -66,7 +75,6 @@ namespace AutoGestion.BLL
             _repo.GuardarLista(lista);
             return true;
         }
-
 
         public void RegistrarVenta(Venta venta)
         {
@@ -84,7 +92,6 @@ namespace AutoGestion.BLL
                 _repo.GuardarLista(lista);
             }
         }
-
 
         public void MarcarComoEntregada(int id)
         {
@@ -110,10 +117,5 @@ namespace AutoGestion.BLL
             lista.Add(venta);
             _repo.GuardarLista(lista);
         }
-
-
-
-
-
     }
 }

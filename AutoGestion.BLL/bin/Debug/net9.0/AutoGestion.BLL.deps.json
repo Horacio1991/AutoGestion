@@ -11,13 +11,36 @@
           "AutoGestion.BE": "1.0.0",
           "AutoGestion.DAO": "1.0.0",
           "AutoGestion.Mapeadores": "1.0.0",
-          "AutoGestion.Servicios": "1.0.0"
+          "AutoGestion.Servicios": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "runtime": {
           "AutoGestion.BLL.dll": {}
         }
       },
+      "BouncyCastle.Cryptography/2.4.0": {
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.4.0.33771"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.4": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.4.0"
+        },
+        "runtime": {
+          "lib/net461/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.4",
+            "fileVersion": "5.5.13.4"
+          }
+        }
+      },
       "AutoGestion.BE/1.0.0": {
+        "dependencies": {
+          "iTextSharp": "5.5.13.4"
+        },
         "runtime": {
           "AutoGestion.BE.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -27,7 +50,8 @@
       },
       "AutoGestion.DAO/1.0.0": {
         "dependencies": {
-          "AutoGestion.BE": "1.0.0"
+          "AutoGestion.BE": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "runtime": {
           "AutoGestion.DAO.dll": {
@@ -38,7 +62,8 @@
       },
       "AutoGestion.Mapeadores/1.0.0": {
         "dependencies": {
-          "AutoGestion.BE": "1.0.0"
+          "AutoGestion.BE": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "runtime": {
           "AutoGestion.Mapeadores.dll": {
@@ -49,7 +74,8 @@
       },
       "AutoGestion.Servicios/1.0.0": {
         "dependencies": {
-          "AutoGestion.BE": "1.0.0"
+          "AutoGestion.BE": "1.0.0",
+          "iTextSharp": "5.5.13.4"
         },
         "runtime": {
           "AutoGestion.Servicios.dll": {
@@ -65,6 +91,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BouncyCastle.Cryptography/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
+      "path": "bouncycastle.cryptography/2.4.0",
+      "hashPath": "bouncycastle.cryptography.2.4.0.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/cvCNv8AJ+XuD99u4NfHSSxkBJKTdvP36wcfQF9V1Cjzi1ycyFSa4vJ64a3DhFVUTKVO60WF8OmAqngQDTHgYA==",
+      "path": "itextsharp/5.5.13.4",
+      "hashPath": "itextsharp.5.5.13.4.nupkg.sha512"
     },
     "AutoGestion.BE/1.0.0": {
       "type": "project",
