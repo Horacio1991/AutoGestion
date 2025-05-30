@@ -77,4 +77,11 @@
     <Apellido>Ortiz</Apellido>
     <Contacto>santiago.ortiz@gmail.com</Contacto>
   </Oferente>
+  <Oferente>
+    <ID>12</ID>
+    <Dni>36168344</Dni>
+    <Nombre>Belen</Nombre>
+    <Apellido>Uronich</Apellido>
+    <Contacto>beluronich@gmail.com</Contacto>
+  </Oferente>
 </ArrayOfOferente>

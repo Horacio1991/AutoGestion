@@ -1,4 +1,6 @@
 ﻿using AutoGestion.BE;
+using AutoGestion.DAO;
+using AutoGestion.Servicios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,40 +9,59 @@ namespace AutoGestion.BLL
 {
     public class TasaBLL
     {
-        private readonly Dictionary<string, (decimal Min, decimal Max)> _valoresReferencia;
-
-        public TasaBLL()
-        {
-            _valoresReferencia = new Dictionary<string, (decimal, decimal)>
-            {
-                { "Excelente", (2500000, 3000000) },
-                { "Muy bueno", (2000000, 2500000) },
-                { "Regular", (1500000, 2000000) }
-            };
-        }
-
-        public (decimal Min, decimal Max)? CalcularRangoTasacion(EvaluacionTecnica eval)
-        {
-            string estadoGlobal = ObtenerEstadoGlobal(eval);
-
-            if (_valoresReferencia.ContainsKey(estadoGlobal))
-                return _valoresReferencia[estadoGlobal];
-
-            return null;
-        }
-
-        private string ObtenerEstadoGlobal(EvaluacionTecnica e)
-        {
-            var estados = new[] { e.EstadoMotor, e.EstadoCarroceria, e.EstadoInterior, e.EstadoDocumentacion };
-            if (estados.All(s => s == "Excelente")) return "Excelente";
-            if (estados.All(s => s == "Muy bueno" || s == "Excelente")) return "Muy bueno";
-            return "Regular";
-        }
+        private readonly XmlRepository<Tasacion> _repo = new("tasaciones.xml");
 
         public void RegistrarTasacion(OfertaCompra oferta, decimal valorFinal)
         {
-            oferta.Vehiculo.Estado = "Tasar: " + valorFinal.ToString("C");
-            // Podés guardar la oferta actualizada o loguear la tasación
+            var nueva = new Tasacion
+            {
+                ID = GeneradorID.ObtenerID<Tasacion>(), // ✅ ID único
+                Oferta = oferta,
+                ValorFinal = valorFinal,
+                Fecha = DateTime.Now
+            };
+
+            _repo.Agregar(nueva);
+        }
+
+        public RangoTasacion CalcularRangoTasacion(string modelo, string estadoMotor, int kilometraje)
+        {
+            // Lógica ficticia y simple para demo
+            decimal baseMin = 1500000;
+            decimal baseMax = 2200000;
+
+            if (estadoMotor.Contains("Excelente"))
+            {
+                baseMin += 250000;
+                baseMax += 350000;
+            }
+            else if (estadoMotor.Contains("Regular"))
+            {
+                baseMin -= 250000;
+                baseMax -= 350000;
+            }
+
+            if (kilometraje < 50000)
+            {
+                baseMin += 150000;
+                baseMax += 200000;
+            }
+            else if (kilometraje > 150000)
+            {
+                baseMin -= 150000;
+                baseMax -= 200000;
+            }
+
+            return new RangoTasacion
+            {
+                Min = baseMin,
+                Max = baseMax
+            };
+        }
+
+        public List<Tasacion> ObtenerTodas()
+        {
+            return _repo.ObtenerTodos();
         }
     }
 }

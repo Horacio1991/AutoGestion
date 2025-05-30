@@ -39,5 +39,16 @@ namespace AutoGestion.BLL
                         .ToList();
         }
 
+        public List<OfertaCompra> ObtenerOfertasConEvaluacion()
+        {
+            var evaluaciones = new XmlRepository<EvaluacionTecnica>("evaluaciones.xml").ObtenerTodos();
+            var ofertas = _repo.ObtenerTodos();
+
+            return ofertas
+                .Where(o => evaluaciones.Any(e => e.ID == o.ID)) // se asume que comparten ID
+                .ToList();
+        }
+
+
     }
 }

@@ -46,7 +46,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sans Serif Collection", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(153, 0);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(145, 54);
             label1.TabIndex = 0;
@@ -126,6 +126,7 @@
             cmbOfertas.Name = "cmbOfertas";
             cmbOfertas.Size = new Size(188, 23);
             cmbOfertas.TabIndex = 9;
+            cmbOfertas.SelectedIndexChanged += cmbOfertas_SelectedIndexChanged_1;
             // 
             // cmbEstadoStock
             // 
@@ -162,7 +163,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "TasarVehiculo";
-            Size = new Size(442, 444);
+            Size = new Size(800, 426);
             ResumeLayout(false);
             PerformLayout();
         }

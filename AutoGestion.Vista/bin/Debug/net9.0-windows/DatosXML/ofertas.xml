@@ -3,127 +3,43 @@
   <OfertaCompra>
     <ID>1</ID>
     <Oferente>
-      <ID>1</ID>
-      <Dni>40000001</Dni>
-      <Nombre>Andrea</Nombre>
-      <Apellido>Vega</Apellido>
-      <Contacto>andrea.vega@mail.com</Contacto>
+      <ID>11</ID>
+      <Dni>36084790</Dni>
+      <Nombre>Santiago</Nombre>
+      <Apellido>Ortiz</Apellido>
+      <Contacto>santiago.ortiz@gmail.com</Contacto>
     </Oferente>
     <Vehiculo>
-      <ID>21</ID>
-      <Marca>Ford</Marca>
-      <Modelo>Focus</Modelo>
+      <ID>1</ID>
+      <Marca>Chevrolet</Marca>
+      <Modelo>Corsa II</Modelo>
       <Año>100</Año>
-      <Color>Rojo</Color>
+      <Color>Verde</Color>
       <Km>100</Km>
-      <Dominio>ZXC999</Dominio>
+      <Dominio>IWY960</Dominio>
       <Estado>En evaluación</Estado>
     </Vehiculo>
-    <FechaInspeccion>2025-06-01T12:02:15.913</FechaInspeccion>
+    <FechaInspeccion>2025-05-30T15:53:46.9790114-03:00</FechaInspeccion>
   </OfertaCompra>
   <OfertaCompra>
     <ID>2</ID>
     <Oferente>
-      <ID>11</ID>
-      <Dni>36084790</Dni>
-      <Nombre>Santiago</Nombre>
-      <Apellido>Ortiz</Apellido>
-      <Contacto>santiago.ortiz@gmail.com</Contacto>
+      <ID>12</ID>
+      <Dni>36168344</Dni>
+      <Nombre>Belen</Nombre>
+      <Apellido>Uronich</Apellido>
+      <Contacto>beluronich@gmail.com</Contacto>
     </Oferente>
     <Vehiculo>
-      <ID>21</ID>
+      <ID>2</ID>
       <Marca>Ford</Marca>
-      <Modelo>Fiesta</Modelo>
+      <Modelo>Focus</Modelo>
       <Año>100</Año>
-      <Color>Azul</Color>
+      <Color>Bordo</Color>
       <Km>100</Km>
-      <Dominio>xxx666</Dominio>
+      <Dominio>ABC999</Dominio>
       <Estado>En evaluación</Estado>
     </Vehiculo>
-    <FechaInspeccion>2025-05-30T12:04:00.8345214-03:00</FechaInspeccion>
-  </OfertaCompra>
-  <OfertaCompra>
-    <ID>3</ID>
-    <Oferente>
-      <ID>11</ID>
-      <Dni>36084790</Dni>
-      <Nombre>Santiago</Nombre>
-      <Apellido>Ortiz</Apellido>
-      <Contacto>santiago.ortiz@gmail.com</Contacto>
-    </Oferente>
-    <Vehiculo>
-      <ID>22</ID>
-      <Marca>prueba</Marca>
-      <Modelo>prueba</Modelo>
-      <Año>100</Año>
-      <Color>prueba</Color>
-      <Km>100</Km>
-      <Dominio>prueba</Dominio>
-      <Estado>En evaluación</Estado>
-    </Vehiculo>
-    <FechaInspeccion>2025-05-30T12:14:11.5077306-03:00</FechaInspeccion>
-  </OfertaCompra>
-  <OfertaCompra>
-    <ID>4</ID>
-    <Oferente>
-      <ID>11</ID>
-      <Dni>36084790</Dni>
-      <Nombre>Santiago</Nombre>
-      <Apellido>Ortiz</Apellido>
-      <Contacto>santiago.ortiz@gmail.com</Contacto>
-    </Oferente>
-    <Vehiculo>
-      <ID>23</ID>
-      <Marca>prueba 2</Marca>
-      <Modelo>prueba 2</Modelo>
-      <Año>100</Año>
-      <Color>prueba 2</Color>
-      <Km>10</Km>
-      <Dominio>prueba 2</Dominio>
-      <Estado>En evaluación</Estado>
-    </Vehiculo>
-    <FechaInspeccion>2025-05-30T12:14:11.5077306-03:00</FechaInspeccion>
-  </OfertaCompra>
-  <OfertaCompra>
-    <ID>5</ID>
-    <Oferente>
-      <ID>11</ID>
-      <Dni>36084790</Dni>
-      <Nombre>Santiago</Nombre>
-      <Apellido>Ortiz</Apellido>
-      <Contacto>santiago.ortiz@gmail.com</Contacto>
-    </Oferente>
-    <Vehiculo>
-      <ID>24</ID>
-      <Marca>Ford</Marca>
-      <Modelo>Fiesta</Modelo>
-      <Año>100</Año>
-      <Color>Rojo</Color>
-      <Km>100</Km>
-      <Dominio>XZC321</Dominio>
-      <Estado>En evaluación</Estado>
-    </Vehiculo>
-    <FechaInspeccion>2025-05-30T14:53:04.896</FechaInspeccion>
-  </OfertaCompra>
-  <OfertaCompra>
-    <ID>6</ID>
-    <Oferente>
-      <ID>11</ID>
-      <Dni>36084790</Dni>
-      <Nombre>Santiago</Nombre>
-      <Apellido>Ortiz</Apellido>
-      <Contacto>santiago.ortiz@gmail.com</Contacto>
-    </Oferente>
-    <Vehiculo>
-      <ID>25</ID>
-      <Marca>Prueba 3</Marca>
-      <Modelo>Prueba 3</Modelo>
-      <Año>100</Año>
-      <Color>Rojo</Color>
-      <Km>100</Km>
-      <Dominio>CCC212</Dominio>
-      <Estado>En evaluación</Estado>
-    </Vehiculo>
-    <FechaInspeccion>2025-05-31T14:54:33.477</FechaInspeccion>
+    <FechaInspeccion>2025-05-30T15:53:46.9790114-03:00</FechaInspeccion>
   </OfertaCompra>
 </ArrayOfOfertaCompra>

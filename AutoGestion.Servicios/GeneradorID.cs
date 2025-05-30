@@ -10,28 +10,21 @@ namespace AutoGestion.Servicios
     {
         public static int ObtenerID<T>()
         {
-            string tipo = typeof(T).Name.ToLower();
-            string nombreArchivo = tipo + "s.xml";
+            string nombreArchivo = typeof(T).Name.ToLower() + "s.xml";
             string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DatosXML", nombreArchivo);
 
             if (!File.Exists(ruta))
                 return 1;
 
             var serializer = new XmlSerializer(typeof(List<T>));
-            using var reader = new StreamReader(ruta);
-            var lista = (List<T>)serializer.Deserialize(reader);
+            using var stream = new FileStream(ruta, FileMode.Open);
+            var lista = (List<T>)serializer.Deserialize(stream);
 
-            // Busca la propiedad "ID" y obtiene el máximo
-            var prop = typeof(T).GetProperty("ID");
-            if (prop == null)
-                throw new Exception("La clase no tiene propiedad ID.");
+            var idProp = typeof(T).GetProperty("ID");
+            if (idProp == null) return 1;
 
-            var maxId = lista
-                .Select(x => (int)prop.GetValue(x))
-                .DefaultIfEmpty(0)
-                .Max();
-
-            return maxId + 1;
+            var ids = lista.Select(item => (int?)idProp.GetValue(item)).Where(i => i.HasValue).Select(i => i.Value);
+            return ids.Any() ? ids.Max() + 1 : 1;
         }
     }
 }

@@ -1,27 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPago xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Pago>
-    <ID>1</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>100</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-30T09:04:10.7374449-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>2</ID>
-    <TipoPago>Transferencia</TipoPago>
-    <Monto>200</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-30T09:04:26.1173431-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>3</ID>
-    <TipoPago>Tarjeta de Crédito</TipoPago>
-    <Monto>500</Monto>
-    <Cuotas>5</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-30T09:04:44.6096633-03:00</FechaPago>
-  </Pago>
+  
 </ArrayOfPago>
