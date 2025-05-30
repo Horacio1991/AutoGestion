@@ -21,8 +21,8 @@
       <Estado>Disponible</Estado>
     </Vehiculo>
     <FormaPago>Efectivo</FormaPago>
-    <Precio>10000000</Precio>
-    <Fecha>2025-05-29T21:01:56.7016588-03:00</Fecha>
+    <Precio>100</Precio>
+    <Fecha>2025-05-30T09:12:51.3867651-03:00</Fecha>
   </Factura>
   <Factura>
     <ID>2</ID>
@@ -44,128 +44,8 @@
       <Dominio>DEF456</Dominio>
       <Estado>Disponible</Estado>
     </Vehiculo>
-    <FormaPago>Financiación</FormaPago>
-    <Precio>100000000</Precio>
-    <Fecha>2025-05-29T21:02:21.6208648-03:00</Fecha>
-  </Factura>
-  <Factura>
-    <ID>3</ID>
-    <Cliente>
-      <ID>11</ID>
-      <Dni>36084790</Dni>
-      <Nombre>Horacio</Nombre>
-      <Apellido>Ortiz</Apellido>
-      <Contacto>horacio0291@gmail.com</Contacto>
-      <FechaRegistro>2025-05-29T09:28:19.7256203-03:00</FechaRegistro>
-    </Cliente>
-    <Vehiculo>
-      <ID>16</ID>
-      <Marca>Fiat</Marca>
-      <Modelo>Cronos</Modelo>
-      <Año>2023</Año>
-      <Color>Blanco</Color>
-      <Km>4000</Km>
-      <Dominio>TUV404</Dominio>
-      <Estado>Disponible</Estado>
-    </Vehiculo>
-    <FormaPago>Efectivo</FormaPago>
-    <Precio>10000000</Precio>
-    <Fecha>2025-05-29T21:05:48.6016177-03:00</Fecha>
-  </Factura>
-  <Factura>
-    <ID>4</ID>
-    <Cliente>
-      <ID>12</ID>
-      <Dni>36168344</Dni>
-      <Nombre>Belen</Nombre>
-      <Apellido>Uronich</Apellido>
-      <Contacto>beluronich@gmail.com</Contacto>
-      <FechaRegistro>2025-05-29T09:28:55.5673067-03:00</FechaRegistro>
-    </Cliente>
-    <Vehiculo>
-      <ID>10</ID>
-      <Marca>Citroën</Marca>
-      <Modelo>C3</Modelo>
-      <Año>2022</Año>
-      <Color>Blanco</Color>
-      <Km>8000</Km>
-      <Dominio>BCD777</Dominio>
-      <Estado>Disponible</Estado>
-    </Vehiculo>
     <FormaPago>Transferencia</FormaPago>
-    <Precio>500000000000000</Precio>
-    <Fecha>2025-05-29T21:50:29.7225784-03:00</Fecha>
-  </Factura>
-  <Factura>
-    <ID>5</ID>
-    <Cliente>
-      <ID>11</ID>
-      <Dni>36084790</Dni>
-      <Nombre>Horacio</Nombre>
-      <Apellido>Ortiz</Apellido>
-      <Contacto>horacio0291@gmail.com</Contacto>
-      <FechaRegistro>2025-05-29T09:28:19.7256203-03:00</FechaRegistro>
-    </Cliente>
-    <Vehiculo>
-      <ID>3</ID>
-      <Marca>Volkswagen</Marca>
-      <Modelo>Golf</Modelo>
-      <Año>2019</Año>
-      <Color>Rojo</Color>
-      <Km>30000</Km>
-      <Dominio>GHI789</Dominio>
-      <Estado>Disponible</Estado>
-    </Vehiculo>
-    <FormaPago>Efectivo</FormaPago>
-    <Precio>1111111111111</Precio>
-    <Fecha>2025-05-29T21:53:44.5231709-03:00</Fecha>
-  </Factura>
-  <Factura>
-    <ID>6</ID>
-    <Cliente>
-      <ID>12</ID>
-      <Dni>36168344</Dni>
-      <Nombre>Belen</Nombre>
-      <Apellido>Uronich</Apellido>
-      <Contacto>beluronich@gmail.com</Contacto>
-      <FechaRegistro>2025-05-29T09:28:55.5673067-03:00</FechaRegistro>
-    </Cliente>
-    <Vehiculo>
-      <ID>13</ID>
-      <Marca>Volkswagen</Marca>
-      <Modelo>Polo</Modelo>
-      <Año>2022</Año>
-      <Color>Azul</Color>
-      <Km>7000</Km>
-      <Dominio>KLM101</Dominio>
-      <Estado>Disponible</Estado>
-    </Vehiculo>
-    <FormaPago>Financiación</FormaPago>
-    <Precio>11111111111111111</Precio>
-    <Fecha>2025-05-29T21:54:30.0231351-03:00</Fecha>
-  </Factura>
-  <Factura>
-    <ID>7</ID>
-    <Cliente>
-      <ID>1</ID>
-      <Dni>30000001</Dni>
-      <Nombre>Juan</Nombre>
-      <Apellido>Pérez</Apellido>
-      <Contacto>juan.perez@mail.com</Contacto>
-      <FechaRegistro>2024-05-01T00:00:00</FechaRegistro>
-    </Cliente>
-    <Vehiculo>
-      <ID>1</ID>
-      <Marca>Ford</Marca>
-      <Modelo>Focus</Modelo>
-      <Año>2021</Año>
-      <Color>Gris</Color>
-      <Km>15000</Km>
-      <Dominio>ABC123</Dominio>
-      <Estado>Disponible</Estado>
-    </Vehiculo>
-    <FormaPago>Efectivo</FormaPago>
-    <Precio>10000000000</Precio>
-    <Fecha>2025-05-29T21:54:36.7204723-03:00</Fecha>
+    <Precio>200</Precio>
+    <Fecha>2025-05-30T09:13:06.4984433-03:00</Fecha>
   </Factura>
 </ArrayOfFactura>

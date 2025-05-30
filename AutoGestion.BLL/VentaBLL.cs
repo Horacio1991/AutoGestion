@@ -117,5 +117,13 @@ namespace AutoGestion.BLL
             lista.Add(venta);
             _repo.GuardarLista(lista);
         }
+
+        public List<Venta> ObtenerVentasFacturadas()
+        {
+            return _repo.ObtenerTodos()
+                        .Where(v => v.Estado == "Facturada")
+                        .ToList();
+        }
+
     }
 }

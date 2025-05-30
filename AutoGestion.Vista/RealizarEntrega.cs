@@ -1,6 +1,9 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Vista.Modelos;
+using AutoGestion.Vista.Servicios;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -9,7 +12,7 @@ namespace AutoGestion.Vista
     public partial class RealizarEntrega : UserControl
     {
         private readonly VentaBLL _ventaBLL = new();
-        private readonly ComprobanteBLL _comprobanteBLL = new();
+        private List<Venta> _ventasFacturadas = new();
 
         public RealizarEntrega()
         {
@@ -19,30 +22,53 @@ namespace AutoGestion.Vista
 
         private void CargarVentas()
         {
-            dgvEntregas.DataSource = null;
-            var lista = _ventaBLL.ObtenerVentasPendientes()
-                                 .Where(v => v.Estado == "Facturada")
-                                 .ToList();
-            dgvEntregas.DataSource = lista;
-            dgvEntregas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            _ventasFacturadas = _ventaBLL.ObtenerVentasFacturadas();
+
+            var vista = _ventasFacturadas.Select(v => new VentaVista
+            {
+                ID = v.ID,
+                Cliente = $"{v.Cliente?.Nombre} {v.Cliente?.Apellido}",
+                Vehiculo = $"{v.Vehiculo?.Marca} {v.Vehiculo?.Modelo} ({v.Vehiculo?.Dominio})",
+                TipoPago = v.Pago?.TipoPago,
+                Monto = v.Pago?.Monto ?? 0,
+                Estado = v.Estado,
+                Fecha = v.Fecha.ToShortDateString()
+            }).ToList();
+
+            dgvVentas.DataSource = null;
+            dgvVentas.DataSource = vista;
+            dgvVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvVentas.ReadOnly = true;
+            dgvVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
-        private void btnEntregar_Click(object sender, EventArgs e)
+        private void btnConfirmarEntrega_Click_1(object sender, EventArgs e)
         {
-            if (dgvEntregas.CurrentRow == null) return;
+            if (dgvVentas.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar una venta.");
+                return;
+            }
 
-            int index = dgvEntregas.CurrentRow.Index;
-            var venta = _ventaBLL.ObtenerVentasPendientes().Where(v => v.Estado == "Facturada").ToList()[index];
+            var seleccion = dgvVentas.CurrentRow.DataBoundItem as VentaVista;
+            var venta = _ventasFacturadas.FirstOrDefault(v => v.ID == seleccion.ID);
 
-            // Actualizar venta
+            if (venta == null)
+            {
+                MessageBox.Show("No se pudo encontrar la venta.");
+                return;
+            }
+
+            // Marcar como entregada
             _ventaBLL.MarcarComoEntregada(venta.ID);
 
-            // Registrar comprobante
-            var comprobante = new ComprobanteEntrega { Venta = venta };
-            _comprobanteBLL.RegistrarComprobante(comprobante);
+            // Generar comprobante en PDF
+            GeneradorComprobantePDF.Generar(venta);
 
-            MessageBox.Show("Entrega confirmada y comprobante generado.");
+            MessageBox.Show("Entrega registrada y comprobante generado.");
             CargarVentas();
         }
+
+    
     }
 }

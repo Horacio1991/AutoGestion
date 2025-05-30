@@ -96,4 +96,12 @@
     <Contacto>beluronich@gmail.com</Contacto>
     <FechaRegistro>2025-05-29T09:28:55.5673067-03:00</FechaRegistro>
   </Cliente>
+  <Cliente>
+    <ID>13</ID>
+    <Dni>53815805</Dni>
+    <Nombre>Charo</Nombre>
+    <Apellido>Ortiz</Apellido>
+    <Contacto>charo.ortiz2014@gmail.com</Contacto>
+    <FechaRegistro>2025-05-30T09:03:50.4051418-03:00</FechaRegistro>
+  </Cliente>
 </ArrayOfCliente>

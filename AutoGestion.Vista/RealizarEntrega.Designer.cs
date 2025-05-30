@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dgvEntregas = new DataGridView();
-            btnEntregar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvEntregas).BeginInit();
+            dgvVentas = new DataGridView();
+            btnConfirmarEntrega = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvVentas).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -44,34 +44,34 @@
             label1.TabIndex = 0;
             label1.Text = "Realizar Entrega";
             // 
-            // dgvEntregas
+            // dgvVentas
             // 
-            dgvEntregas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvEntregas.Location = new Point(3, 46);
-            dgvEntregas.Name = "dgvEntregas";
-            dgvEntregas.Size = new Size(474, 166);
-            dgvEntregas.TabIndex = 1;
+            dgvVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvVentas.Location = new Point(3, 46);
+            dgvVentas.Name = "dgvVentas";
+            dgvVentas.Size = new Size(794, 278);
+            dgvVentas.TabIndex = 1;
             // 
-            // btnEntregar
+            // btnConfirmarEntrega
             // 
-            btnEntregar.Location = new Point(317, 235);
-            btnEntregar.Name = "btnEntregar";
-            btnEntregar.Size = new Size(148, 45);
-            btnEntregar.TabIndex = 2;
-            btnEntregar.Text = "Confirmar Entrega";
-            btnEntregar.UseVisualStyleBackColor = true;
-            btnEntregar.Click += btnEntregar_Click;
+            btnConfirmarEntrega.Location = new Point(326, 348);
+            btnConfirmarEntrega.Name = "btnConfirmarEntrega";
+            btnConfirmarEntrega.Size = new Size(148, 45);
+            btnConfirmarEntrega.TabIndex = 2;
+            btnConfirmarEntrega.Text = "Confirmar Entrega";
+            btnConfirmarEntrega.UseVisualStyleBackColor = true;
+            btnConfirmarEntrega.Click += btnConfirmarEntrega_Click_1;
             // 
             // RealizarEntrega
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(btnEntregar);
-            Controls.Add(dgvEntregas);
+            Controls.Add(btnConfirmarEntrega);
+            Controls.Add(dgvVentas);
             Controls.Add(label1);
             Name = "RealizarEntrega";
-            Size = new Size(480, 339);
-            ((System.ComponentModel.ISupportInitialize)dgvEntregas).EndInit();
+            Size = new Size(800, 426);
+            ((System.ComponentModel.ISupportInitialize)dgvVentas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -79,7 +79,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView dgvEntregas;
-        private Button btnEntregar;
+        private DataGridView dgvVentas;
+        private Button btnConfirmarEntrega;
     }
 }

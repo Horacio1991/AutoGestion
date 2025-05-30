@@ -3,105 +3,25 @@
   <Pago>
     <ID>1</ID>
     <TipoPago>Efectivo</TipoPago>
-    <Monto>10000000</Monto>
+    <Monto>100</Monto>
     <Cuotas>0</Cuotas>
     <Detalles />
-    <FechaPago>2025-05-29T10:47:03.1741259-03:00</FechaPago>
+    <FechaPago>2025-05-30T09:04:10.7374449-03:00</FechaPago>
   </Pago>
   <Pago>
     <ID>2</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>1111111111</Monto>
+    <TipoPago>Transferencia</TipoPago>
+    <Monto>200</Monto>
     <Cuotas>0</Cuotas>
     <Detalles />
-    <FechaPago>2025-05-29T10:48:27.4368438-03:00</FechaPago>
+    <FechaPago>2025-05-30T09:04:26.1173431-03:00</FechaPago>
   </Pago>
   <Pago>
     <ID>3</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>10000000</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles>Compra Un Ford Focus</Detalles>
-    <FechaPago>2025-05-29T10:52:09.6592627-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>4</ID>
-    <TipoPago>Financiación</TipoPago>
-    <Monto>100000000</Monto>
-    <Cuotas>12</Cuotas>
+    <TipoPago>Tarjeta de Crédito</TipoPago>
+    <Monto>500</Monto>
+    <Cuotas>5</Cuotas>
     <Detalles />
-    <FechaPago>2025-05-29T10:52:43.5767779-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>5</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>10000000000</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T11:31:30.458183-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>6</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>1000000000000</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T11:32:54.9175103-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>7</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>123123123123</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T11:33:21.5240676-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>8</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>111111</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T11:46:44.0926038-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>9</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>1000000</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles>pago en efectivo</Detalles>
-    <FechaPago>2025-05-29T20:44:37.4087302-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>10</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>10000000</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T20:45:01.8798215-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>11</ID>
-    <TipoPago>Efectivo</TipoPago>
-    <Monto>1111111111111</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T21:49:35.7842402-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>12</ID>
-    <TipoPago>Transferencia</TipoPago>
-    <Monto>500000000000000</Monto>
-    <Cuotas>0</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T21:50:12.024763-03:00</FechaPago>
-  </Pago>
-  <Pago>
-    <ID>13</ID>
-    <TipoPago>Financiación</TipoPago>
-    <Monto>11111111111111111</Monto>
-    <Cuotas>4</Cuotas>
-    <Detalles />
-    <FechaPago>2025-05-29T21:54:11.2564546-03:00</FechaPago>
+    <FechaPago>2025-05-30T09:04:44.6096633-03:00</FechaPago>
   </Pago>
 </ArrayOfPago>

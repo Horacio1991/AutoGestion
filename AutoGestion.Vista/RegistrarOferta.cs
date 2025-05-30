@@ -1,5 +1,6 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Servicios;
 using System;
 using System.Windows.Forms;
 
@@ -16,120 +17,94 @@ namespace AutoGestion.Vista
             InitializeComponent();
         }
 
-        private void btnBuscarDni_Click(object sender, EventArgs e)
+        private void btnBuscarOferente_Click_1(object sender, EventArgs e)
         {
             string dni = txtDni.Text.Trim();
             if (string.IsNullOrEmpty(dni))
             {
-                MessageBox.Show("Ingrese un DNI.");
+                MessageBox.Show("Ingrese un DNI válido.");
                 return;
             }
 
-            _oferenteActual = _oferenteBLL.BuscarPorDni(dni);
-
-            if (_oferenteActual != null)
+            var oferente = _oferenteBLL.BuscarPorDni(dni);
+            if (oferente != null)
             {
-                txtNombre.Text = _oferenteActual.Nombre;
-                txtApellido.Text = _oferenteActual.Apellido;
-                txtContacto.Text = _oferenteActual.Contacto;
+                txtNombre.Text = oferente.Nombre;
+                txtApellido.Text = oferente.Apellido;
+                txtContacto.Text = oferente.Contacto;
                 MessageBox.Show("Oferente encontrado.");
             }
             else
             {
-                txtNombre.Clear();
-                txtApellido.Clear();
-                txtContacto.Clear();
-                MessageBox.Show("Oferente no encontrado. Ingrese los datos para registrarlo.");
+                MessageBox.Show("Oferente no encontrado. Complete los datos para registrarlo.");
             }
         }
 
-        private void btnRegistrarOferta_Click(object sender, EventArgs e)
+
+        private void btnGuardarOferta_Click(object sender, EventArgs e)
         {
-            // Validar oferente
-            string dni = txtDni.Text.Trim();
-            string nombre = txtNombre.Text.Trim();
-            string apellido = txtApellido.Text.Trim();
-            string contacto = txtContacto.Text.Trim();
-
-            if (string.IsNullOrEmpty(dni) || string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) || string.IsNullOrEmpty(contacto))
+            try
             {
-                MessageBox.Show("Complete todos los campos del oferente.");
-                return;
-            }
-
-            if (_oferenteActual == null)
-            {
-                _oferenteActual = new Oferente
+                // Buscar o crear oferente
+                var oferente = _oferenteBLL.BuscarPorDni(txtDni.Text.Trim());
+                if (oferente == null)
                 {
-                    Dni = dni,
-                    Nombre = nombre,
-                    Apellido = apellido,
-                    Contacto = contacto
+                    oferente = new Oferente
+                    {
+                        ID = GeneradorID.ObtenerID<Oferente>(),
+                        Dni = txtDni.Text.Trim(),
+                        Nombre = txtNombre.Text.Trim(),
+                        Apellido = txtApellido.Text.Trim(),
+                        Contacto = txtContacto.Text.Trim()
+                    };
+                    _oferenteBLL.GuardarOferente(oferente);
+                }
+
+                // Leer todas las ofertas para generar ID único de Vehículo
+                var ofertasAnteriores = _ofertaBLL.ObtenerTodas();
+                int ultimoIdVehiculo = ofertasAnteriores.Select(o => o.Vehiculo?.ID ?? 0).DefaultIfEmpty(0).Max();
+
+                // Crear vehículo
+                var vehiculo = new Vehiculo
+                {
+                    ID = ultimoIdVehiculo + 1,
+                    Marca = txtMarca.Text.Trim(),
+                    Modelo = txtModelo.Text.Trim(),
+                    Año = (int)numAnio.Value,
+                    Color = txtColor.Text.Trim(),
+                    Dominio = txtDominio.Text.Trim(),
+                    Km = (int)numKm.Value,
+                    Estado = "En evaluación"
                 };
-                _oferenteBLL.GuardarOferente(_oferenteActual);
+
+                // Crear oferta
+                var oferta = new OfertaCompra
+                {
+                    ID = GeneradorID.ObtenerID<OfertaCompra>(),
+                    Oferente = oferente,
+                    Vehiculo = vehiculo,
+                    FechaInspeccion = dtpFechaInspeccion.Value
+                };
+
+                _ofertaBLL.RegistrarOferta(oferta);
+                MessageBox.Show("Oferta registrada correctamente.");
+
+                // Limpiar campos
+                foreach (Control c in this.Controls)
+                {
+                    if (c is TextBox tb) tb.Clear();
+                }
+
+                numAnio.Value = numAnio.Minimum;
+                numKm.Value = 0;
             }
-
-            // Validar vehículo
-            string marca = txtMarca.Text.Trim();
-            string modelo = txtModelo.Text.Trim();
-            string color = txtColor.Text.Trim();
-            string dominio = txtDominio.Text.Trim();
-            if (!int.TryParse(txtAño.Text, out int año) || !int.TryParse(txtKm.Text, out int km))
+            catch (Exception ex)
             {
-                MessageBox.Show("Año y kilómetros deben ser numéricos.");
-                return;
+                MessageBox.Show("Error al registrar la oferta: " + ex.Message);
             }
-
-            if (string.IsNullOrEmpty(marca) || string.IsNullOrEmpty(modelo) || string.IsNullOrEmpty(dominio))
-            {
-                MessageBox.Show("Complete todos los campos del vehículo.");
-                return;
-            }
-
-            Vehiculo vehiculo = new Vehiculo
-            {
-                Marca = marca,
-                Modelo = modelo,
-                Año = año,
-                Color = color,
-                Km = km,
-                Dominio = dominio,
-                Estado = "Pendiente"
-            };
-
-            // Validar duplicado
-            if (_ofertaBLL.ValidarOfertaDuplicada(vehiculo))
-            {
-                MessageBox.Show("Ya existe una oferta registrada para este vehículo.");
-                return;
-            }
-
-            OfertaCompra oferta = new OfertaCompra
-            {
-                Oferente = _oferenteActual,
-                Vehiculo = vehiculo,
-                FechaInspeccion = dtpFechaInspeccion.Value
-            };
-
-            _ofertaBLL.RegistrarOferta(oferta);
-            MessageBox.Show("Oferta registrada correctamente.");
-            LimpiarFormulario();
         }
 
-        private void LimpiarFormulario()
-        {
-            txtDni.Clear();
-            txtNombre.Clear();
-            txtApellido.Clear();
-            txtContacto.Clear();
-            txtMarca.Clear();
-            txtModelo.Clear();
-            txtAño.Clear();
-            txtColor.Clear();
-            txtKm.Clear();
-            txtDominio.Clear();
-            dtpFechaInspeccion.Value = DateTime.Today;
-            _oferenteActual = null;
-        }
+
+
     }
 }
