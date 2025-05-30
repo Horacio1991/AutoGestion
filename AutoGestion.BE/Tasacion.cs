@@ -1,10 +1,13 @@
-﻿using AutoGestion.BE;
+﻿using System;
 
-[Serializable]
-public class Tasacion
+namespace AutoGestion.BE
 {
-    public int ID { get; set; }
-    public OfertaCompra Oferta { get; set; }
-    public decimal ValorFinal { get; set; }
-    public DateTime Fecha { get; set; }
+    [Serializable]
+    public class Tasacion
+    {
+        public int ID { get; set; }
+        public OfertaCompra Oferta { get; set; }
+        public decimal ValorFinal { get; set; }
+        public DateTime Fecha { get; set; } = DateTime.Now;
+    }
 }

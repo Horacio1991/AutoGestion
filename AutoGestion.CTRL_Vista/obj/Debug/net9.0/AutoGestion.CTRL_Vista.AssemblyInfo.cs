@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoGestion.CTRL_Vista")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d2fb73b1f86e14749357cf39805eba574fd2151")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c90335921aceae84ecfca30ac0c967d8e086bbf8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoGestion.CTRL_Vista")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoGestion.CTRL_Vista")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

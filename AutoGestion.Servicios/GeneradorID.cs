@@ -8,10 +8,30 @@ namespace AutoGestion.Servicios
 {
     public static class GeneradorID
     {
+        private static readonly Dictionary<string, string> NombresArchivos = new()
+        {
+            { "Cliente", "clientes.xml" },
+            { "Vehiculo", "vehiculos.xml" },
+            { "Venta", "ventas.xml" },
+            { "Pago", "pagos.xml" },
+            { "Factura", "facturas.xml" },
+            { "EvaluacionTecnica", "evaluaciones.xml" },
+            { "OfertaCompra", "ofertas.xml" },
+            { "Tasacion", "tasaciones.xml" },
+            { "Turno", "turnos.xml" },
+            { "Comision", "comisiones.xml" },
+            { "ComprobanteEntrega", "comprobantes.xml" },
+            { "Oferente", "oferentes.xml" }
+        };
+
         public static int ObtenerID<T>()
         {
-            string nombreArchivo = typeof(T).Name.ToLower() + "s.xml";
-            string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DatosXML", nombreArchivo);
+            string tipo = typeof(T).Name;
+            string archivo = NombresArchivos.ContainsKey(tipo)
+                ? NombresArchivos[tipo]
+                : tipo.ToLower() + "s.xml";
+
+            string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DatosXML", archivo);
 
             if (!File.Exists(ruta))
                 return 1;
@@ -20,10 +40,14 @@ namespace AutoGestion.Servicios
             using var stream = new FileStream(ruta, FileMode.Open);
             var lista = (List<T>)serializer.Deserialize(stream);
 
-            var idProp = typeof(T).GetProperty("ID");
-            if (idProp == null) return 1;
+            var prop = typeof(T).GetProperty("ID");
+            if (prop == null) return 1;
 
-            var ids = lista.Select(item => (int?)idProp.GetValue(item)).Where(i => i.HasValue).Select(i => i.Value);
+            var ids = lista
+                .Select(item => (int?)prop.GetValue(item))
+                .Where(id => id.HasValue)
+                .Select(id => id.Value);
+
             return ids.Any() ? ids.Max() + 1 : 1;
         }
     }
