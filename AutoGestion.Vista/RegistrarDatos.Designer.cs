@@ -52,7 +52,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 78);
+            label2.Location = new Point(184, 75);
             label2.Name = "label2";
             label2.Size = new Size(123, 15);
             label2.TabIndex = 1;
@@ -61,7 +61,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(17, 114);
+            label3.Location = new Point(184, 111);
             label3.Name = "label3";
             label3.Size = new Size(171, 15);
             label3.TabIndex = 2;
@@ -70,7 +70,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(17, 218);
+            label6.Location = new Point(184, 215);
             label6.Name = "label6";
             label6.Size = new Size(104, 15);
             label6.TabIndex = 5;
@@ -78,14 +78,14 @@
             // 
             // txtDominio
             // 
-            txtDominio.Location = new Point(191, 70);
+            txtDominio.Location = new Point(358, 67);
             txtDominio.Name = "txtDominio";
             txtDominio.Size = new Size(172, 23);
             txtDominio.TabIndex = 6;
             // 
             // txtEvaluacion
             // 
-            txtEvaluacion.Location = new Point(191, 106);
+            txtEvaluacion.Location = new Point(358, 103);
             txtEvaluacion.Multiline = true;
             txtEvaluacion.Name = "txtEvaluacion";
             txtEvaluacion.Size = new Size(172, 94);
@@ -94,14 +94,14 @@
             // cmbEstadoStock
             // 
             cmbEstadoStock.FormattingEnabled = true;
-            cmbEstadoStock.Location = new Point(191, 215);
+            cmbEstadoStock.Location = new Point(358, 212);
             cmbEstadoStock.Name = "cmbEstadoStock";
             cmbEstadoStock.Size = new Size(172, 23);
             cmbEstadoStock.TabIndex = 11;
             // 
             // btnBuscarOferta
             // 
-            btnBuscarOferta.Location = new Point(375, 70);
+            btnBuscarOferta.Location = new Point(542, 67);
             btnBuscarOferta.Name = "btnBuscarOferta";
             btnBuscarOferta.Size = new Size(138, 23);
             btnBuscarOferta.TabIndex = 12;
@@ -111,7 +111,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(191, 288);
+            btnRegistrar.Location = new Point(358, 285);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(172, 41);
             btnRegistrar.TabIndex = 13;
@@ -133,7 +133,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "RegistrarDatos";
-            Size = new Size(516, 450);
+            Size = new Size(800, 426);
             ResumeLayout(false);
             PerformLayout();
         }

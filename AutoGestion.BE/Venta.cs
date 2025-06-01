@@ -6,6 +6,7 @@ namespace AutoGestion.BE
     public class Venta
     {
         public int ID { get; set; } // ID único para la venta
+        public Vendedor Vendedor { get; set; }
         public Cliente Cliente { get; set; }
         public Vehiculo Vehiculo { get; set; }
         public Pago Pago { get; set; }

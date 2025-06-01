@@ -11,9 +11,13 @@ namespace AutoGestion.BE
     {
         public int ID { get; set; }
         public Venta Venta { get; set; }
+        public Vendedor Vendedor { get; set; }
         public decimal Porcentaje { get; set; }
-        public decimal Monto => Venta != null ? Venta.Total * (Porcentaje / 100) : 0;
+        public decimal Monto { get; set; }
+        public string Estado { get; set; } // Aprobada o Rechazada
         public DateTime Fecha { get; set; } = DateTime.Now;
-        public string Estado { get; set; } // Pendiente / Pagada
+
+        public string MotivoRechazo { get; set; } // <-- NUEVO
     }
+
 }

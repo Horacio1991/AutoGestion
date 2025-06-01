@@ -27,16 +27,16 @@ namespace AutoGestion.Vista
                 return;
             }
 
-            _comisiones = _comisionBLL.ObtenerComisionesPorVendedor(nombre);
+           // _comisiones = _comisionBLL.ObtenerComisionesPorVendedor(nombre);
 
             string estado = cmbEstado.SelectedItem?.ToString();
             DateTime? desde = dtpDesde.Checked ? dtpDesde.Value.Date : null;
             DateTime? hasta = dtpHasta.Checked ? dtpHasta.Value.Date : null;
 
-            var filtradas = _comisionBLL.FiltrarComisiones(_comisiones, estado, desde, hasta);
+           // var filtradas = _comisionBLL.FiltrarComisiones(_comisiones, estado, desde, hasta);
 
             dgvComisiones.DataSource = null;
-            dgvComisiones.DataSource = filtradas;
+           //dgvComisiones.DataSource = filtradas;
             dgvComisiones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 

@@ -104,12 +104,16 @@ namespace AutoGestion.BLL
             }
         }
 
-        public List<Venta> ObtenerVentasSinComision(List<Comision> comisiones)
+        public List<Venta> ObtenerVentasSinComisionAsignada()
         {
-            var ventas = _repo.ObtenerTodos().Where(v => v.Estado == "Entregada").ToList();
-            var idsConComision = comisiones.Select(c => c.Venta.ID);
-            return ventas.Where(v => !idsConComision.Contains(v.ID)).ToList();
+            var comisiones = new XmlRepository<Comision>("comisiones.xml").ObtenerTodos();
+            var idsConComision = comisiones.Select(c => c.Venta.ID).ToList();
+
+            return _repo.ObtenerTodos()
+                        .Where(v => v.Estado == "Entregada" && !idsConComision.Contains(v.ID))
+                        .ToList();
         }
+
 
         public void FinalizarVenta(Venta venta)
         {

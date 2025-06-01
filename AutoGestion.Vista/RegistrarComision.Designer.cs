@@ -30,11 +30,12 @@
         {
             label1 = new Label();
             dgvVentas = new DataGridView();
+            label = new Label();
+            txtComisionFinal = new TextBox();
+            btnConfirmar = new Button();
+            btnRechazar = new Button();
+            txtMotivoRechazo = new TextBox();
             label2 = new Label();
-            label3 = new Label();
-            txtPorcentaje = new TextBox();
-            cmbEstado = new ComboBox();
-            btnRegistrar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvVentas).BeginInit();
             SuspendLayout();
             // 
@@ -46,72 +47,83 @@
             label1.Name = "label1";
             label1.Size = new Size(184, 54);
             label1.TabIndex = 0;
-            label1.Text = "REgistrar Comisión";
+            label1.Text = "Registrar Comisión";
             // 
             // dgvVentas
             // 
             dgvVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvVentas.Location = new Point(11, 40);
             dgvVentas.Name = "dgvVentas";
-            dgvVentas.Size = new Size(414, 270);
+            dgvVentas.Size = new Size(774, 270);
             dgvVentas.TabIndex = 1;
+            // 
+            // label
+            // 
+            label.AutoSize = true;
+            label.Location = new Point(161, 368);
+            label.Name = "label";
+            label.Size = new Size(89, 15);
+            label.TabIndex = 2;
+            label.Text = "Comision Final:";
+            // 
+            // txtComisionFinal
+            // 
+            txtComisionFinal.Location = new Point(256, 360);
+            txtComisionFinal.Name = "txtComisionFinal";
+            txtComisionFinal.Size = new Size(138, 23);
+            txtComisionFinal.TabIndex = 4;
+            // 
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(182, 319);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.Size = new Size(146, 28);
+            btnConfirmar.TabIndex = 6;
+            btnConfirmar.Text = "Aprobar Comisión";
+            btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click_1;
+            // 
+            // btnRechazar
+            // 
+            btnRechazar.Location = new Point(478, 319);
+            btnRechazar.Name = "btnRechazar";
+            btnRechazar.Size = new Size(139, 28);
+            btnRechazar.TabIndex = 7;
+            btnRechazar.Text = "Rechazar Comisión";
+            btnRechazar.UseVisualStyleBackColor = true;
+            btnRechazar.Click += btnRechazar_Click;
+            // 
+            // txtMotivoRechazo
+            // 
+            txtMotivoRechazo.Location = new Point(424, 350);
+            txtMotivoRechazo.Multiline = true;
+            txtMotivoRechazo.Name = "txtMotivoRechazo";
+            txtMotivoRechazo.Size = new Size(194, 70);
+            txtMotivoRechazo.TabIndex = 8;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(16, 338);
+            label2.Location = new Point(424, 332);
             label2.Name = "label2";
-            label2.Size = new Size(66, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Porcentaje:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(228, 338);
-            label3.Name = "label3";
-            label3.Size = new Size(45, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Estado:";
-            // 
-            // txtPorcentaje
-            // 
-            txtPorcentaje.Location = new Point(84, 330);
-            txtPorcentaje.Name = "txtPorcentaje";
-            txtPorcentaje.Size = new Size(138, 23);
-            txtPorcentaje.TabIndex = 4;
-            // 
-            // cmbEstado
-            // 
-            cmbEstado.FormattingEnabled = true;
-            cmbEstado.Location = new Point(279, 330);
-            cmbEstado.Name = "cmbEstado";
-            cmbEstado.Size = new Size(121, 23);
-            cmbEstado.TabIndex = 5;
-            // 
-            // btnRegistrar
-            // 
-            btnRegistrar.Location = new Point(226, 374);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(174, 42);
-            btnRegistrar.TabIndex = 6;
-            btnRegistrar.Text = "Registrar Comisión";
-            btnRegistrar.UseVisualStyleBackColor = true;
-            btnRegistrar.Click += btnRegistrar_Click;
+            label2.Size = new Size(48, 15);
+            label2.TabIndex = 9;
+            label2.Text = "Motivo:";
             // 
             // RegistrarComision
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(btnRegistrar);
-            Controls.Add(cmbEstado);
-            Controls.Add(txtPorcentaje);
-            Controls.Add(label3);
             Controls.Add(label2);
+            Controls.Add(txtMotivoRechazo);
+            Controls.Add(btnRechazar);
+            Controls.Add(btnConfirmar);
+            Controls.Add(txtComisionFinal);
+            Controls.Add(label);
             Controls.Add(dgvVentas);
             Controls.Add(label1);
             Name = "RegistrarComision";
-            Size = new Size(438, 430);
+            Size = new Size(800, 426);
             ((System.ComponentModel.ISupportInitialize)dgvVentas).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -121,10 +133,13 @@
 
         private Label label1;
         private DataGridView dgvVentas;
-        private Label label2;
+        private Label label;
         private Label label3;
-        private TextBox txtPorcentaje;
+        private TextBox txtComisionFinal;
         private ComboBox cmbEstado;
-        private Button btnRegistrar;
+        private Button btnConfirmar;
+        private Button btnRechazar;
+        private TextBox txtMotivoRechazo;
+        private Label label2;
     }
 }

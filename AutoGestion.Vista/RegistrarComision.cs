@@ -1,5 +1,6 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Vista.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,60 +10,108 @@ namespace AutoGestion.Vista
 {
     public partial class RegistrarComision : UserControl
     {
-        private readonly ComisionBLL _comisionBLL = new();
         private readonly VentaBLL _ventaBLL = new();
-        private List<Venta> _ventasDisponibles;
+        private readonly ComisionBLL _comisionBLL = new();
+
+        private List<Venta> _ventasSinComision;
 
         public RegistrarComision()
         {
             InitializeComponent();
-            cmbEstado.Items.AddRange(new[] { "Pendiente", "Pagada" });
             CargarVentas();
         }
 
         private void CargarVentas()
         {
-            var comisiones = _comisionBLL.ObtenerTodas();
-            _ventasDisponibles = _ventaBLL.ObtenerVentasSinComision(comisiones);
+            _ventasSinComision = _ventaBLL.ObtenerVentasSinComisionAsignada();
+
+            List<VentaComisionVista> vista = _ventasSinComision.Select(v => new VentaComisionVista
+            {
+                ID = v.ID,
+                Cliente = $"{v.Cliente?.Nombre} {v.Cliente?.Apellido}",
+                Vendedor = v.Vendedor?.Nombre,
+                Vehiculo = $"{v.Vehiculo?.Marca} {v.Vehiculo?.Modelo}",
+                MontoVenta = v.Total,
+                ComisionSugerida = v.Total * 0.05m,
+                Fecha = v.Fecha.ToShortDateString()
+            }).ToList();
 
             dgvVentas.DataSource = null;
-            dgvVentas.DataSource = _ventasDisponibles;
+            dgvVentas.DataSource = vista;
             dgvVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
-            if (dgvVentas.CurrentRow == null)
+            var seleccion = dgvVentas.CurrentRow?.DataBoundItem as VentaComisionVista;
+            if (seleccion == null) return;
+
+            if (!decimal.TryParse(txtComisionFinal.Text, out decimal valorFinal))
             {
-                MessageBox.Show("Seleccione una venta.");
+                MessageBox.Show("Ingrese un valor válido para la comisión.");
                 return;
             }
 
-            if (!decimal.TryParse(txtPorcentaje.Text, out decimal porcentaje) || porcentaje <= 0)
+            var venta = _ventasSinComision.FirstOrDefault(v => v.ID == seleccion.ID);
+
+            if (venta == null)
             {
-                MessageBox.Show("Ingrese un porcentaje válido.");
+                MessageBox.Show("No se encontró la venta seleccionada.");
                 return;
             }
-
-            if (cmbEstado.SelectedIndex == -1)
-            {
-                MessageBox.Show("Seleccione el estado de la comisión.");
-                return;
-            }
-
-            int index = dgvVentas.CurrentRow.Index;
-            var venta = _ventasDisponibles[index];
 
             var comision = new Comision
             {
                 Venta = venta,
-                Porcentaje = porcentaje,
-                Estado = cmbEstado.SelectedItem.ToString()
+                Vendedor = venta.Vendedor,
+                Porcentaje = valorFinal / venta.Total,
+                Monto = valorFinal,
+                Estado = "Aprobada"
             };
 
-            _comisionBLL.RegistrarComision(comision);
+            _comisionBLL.Registrar(comision);
             MessageBox.Show("Comisión registrada correctamente.");
+
             CargarVentas();
         }
+
+        private void btnRechazar_Click(object sender, EventArgs e)
+        {
+            var seleccion = dgvVentas.CurrentRow?.DataBoundItem as VentaComisionVista;
+            if (seleccion == null) return;
+
+            string motivo = txtMotivoRechazo.Text.Trim();
+            if (string.IsNullOrEmpty(motivo))
+            {
+                MessageBox.Show("Debe ingresar el motivo del rechazo.");
+                return;
+            }
+
+            var venta = _ventasSinComision.FirstOrDefault(v => v.ID == seleccion.ID);
+
+            if (venta == null)
+            {
+                MessageBox.Show("No se encontró la venta seleccionada.");
+                return;
+            }
+
+            var comision = new Comision
+            {
+                Venta = venta,
+                Vendedor = venta.Vendedor,
+                Porcentaje = 0,
+                Monto = 0,
+                Estado = "Rechazada",
+                MotivoRechazo = motivo
+            };
+
+            _comisionBLL.Registrar(comision);
+            MessageBox.Show("Comisión rechazada correctamente.");
+
+            CargarVentas();
+            txtMotivoRechazo.Clear();  // Limpiar campo después
+        }
+
+        
     }
 }
