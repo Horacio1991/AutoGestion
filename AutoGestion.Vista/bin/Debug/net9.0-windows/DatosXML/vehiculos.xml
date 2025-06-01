@@ -8,7 +8,7 @@
     <Color>Gris</Color>
     <Km>15000</Km>
     <Dominio>ABC123</Dominio>
-    <Estado>En Proceso</Estado>
+    <Estado>Disponible</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>2</ID>
@@ -199,5 +199,15 @@
     <Km>2000</Km>
     <Dominio>FGH808</Dominio>
     <Estado>Disponible</Estado>
+  </Vehiculo>
+  <Vehiculo>
+    <ID>21</ID>
+    <Marca>Chevrolet</Marca>
+    <Modelo>Corsa II</Modelo>
+    <Año>100</Año>
+    <Color>Verde</Color>
+    <Km>100</Km>
+    <Dominio>IWY960</Dominio>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
 </ArrayOfVehiculo>

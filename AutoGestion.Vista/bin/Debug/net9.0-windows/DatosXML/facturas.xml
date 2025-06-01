@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfFactura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
- 
+  <Factura>
+    <ID>1</ID>
+    <Cliente>
+      <ID>11</ID>
+      <Dni>36084790</Dni>
+      <Nombre>Horacio</Nombre>
+      <Apellido>Ortiz</Apellido>
+      <Contacto>horacio0291@gmail.com</Contacto>
+      <FechaRegistro>2025-05-29T09:28:19.7256203-03:00</FechaRegistro>
+    </Cliente>
+    <Vehiculo>
+      <ID>21</ID>
+      <Marca>Chevrolet</Marca>
+      <Modelo>Corsa II</Modelo>
+      <Año>100</Año>
+      <Color>Verde</Color>
+      <Km>100</Km>
+      <Dominio>IWY960</Dominio>
+      <Estado>Disponible</Estado>
+    </Vehiculo>
+    <FormaPago>Efectivo</FormaPago>
+    <Precio>10000000000</Precio>
+    <Fecha>2025-06-01T10:03:20.0501137-03:00</Fecha>
+  </Factura>
 </ArrayOfFactura>

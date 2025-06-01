@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {}
+    "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {
+    "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
+        "projectUniqueName": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
         "projectName": "AutoGestion.BE",
-        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
-        "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\obj\\",
+        "projectPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\AutoGestion.BE.csproj",
+        "packagesPath": "C:\\Users\\hory_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion.BE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Educaccion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hory_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

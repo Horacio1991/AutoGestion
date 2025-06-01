@@ -49,6 +49,22 @@ namespace AutoGestion.BLL
                 .ToList();
         }
 
+        public OfertaCompra BuscarOfertaPorDominio(string dominio)
+        {
+            return _repo.ObtenerTodos()
+                        .FirstOrDefault(o => o.Vehiculo.Dominio.Equals(dominio, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public List<OfertaCompra> ObtenerOfertasSinRegistrar()
+        {
+            var ofertas = ObtenerTodas();
+            var vehiculosRegistrados = new VehiculoBLL().ObtenerTodos().Select(v => v.Dominio).ToList();
+
+            return ofertas.Where(o => !vehiculosRegistrados.Contains(o.Vehiculo.Dominio)).ToList();
+        }
+
+
+
 
     }
 }

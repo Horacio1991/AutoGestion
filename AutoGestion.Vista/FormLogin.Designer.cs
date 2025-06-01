@@ -68,14 +68,14 @@
             txtUsuario.Location = new Point(288, 151);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(191, 23);
-            txtUsuario.TabIndex = 3;
+            txtUsuario.TabIndex = 1;
             // 
             // btnIngresar
             // 
             btnIngresar.Location = new Point(288, 254);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(191, 44);
-            btnIngresar.TabIndex = 4;
+            btnIngresar.TabIndex = 3;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = true;
             btnIngresar.Click += btnIngresar_Click;

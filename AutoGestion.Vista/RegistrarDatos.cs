@@ -1,6 +1,8 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Vista.Modelos;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace AutoGestion.Vista
@@ -8,72 +10,86 @@ namespace AutoGestion.Vista
     public partial class RegistrarDatos : UserControl
     {
         private readonly OfertaBLL _ofertaBLL = new();
+        private readonly EvaluacionBLL _evaluacionBLL = new();
         private readonly VehiculoBLL _vehiculoBLL = new();
-        private readonly PagoBLL _pagoBLL = new();
-        private OfertaCompra _ofertaActual = null;
+
+        private OfertaCompra _ofertaSeleccionada;
 
         public RegistrarDatos()
         {
             InitializeComponent();
-            cmbTipoPago.Items.AddRange(new[] { "Contado", "Transferencia", "Cheque" });
             cmbEstadoStock.Items.AddRange(new[] { "Disponible", "Requiere reacondicionamiento" });
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void btnBuscarOferta_Click(object sender, EventArgs e)
         {
             string dominio = txtDominio.Text.Trim();
-            _ofertaActual = _ofertaBLL.ObtenerTodas()
-                .Find(o => o.Vehiculo.Dominio == dominio);
 
-            if (_ofertaActual == null)
+            if (string.IsNullOrEmpty(dominio))
             {
-                MessageBox.Show("Oferta no encontrada.");
+                MessageBox.Show("Ingrese un dominio.");
                 return;
             }
 
-            MessageBox.Show("Oferta encontrada. Complete los datos.");
+            var ofertasSinRegistrar = _ofertaBLL.ObtenerOfertasSinRegistrar();
+            var oferta = ofertasSinRegistrar
+                .FirstOrDefault(o => o.Vehiculo.Dominio.Equals(dominio, StringComparison.OrdinalIgnoreCase));
+
+            if (oferta == null)
+            {
+                MessageBox.Show("No se encontró ninguna oferta pendiente para ese dominio.");
+                LimpiarCampos();
+                return;
+            }
+
+            var evaluacion = _evaluacionBLL.ObtenerEvaluacionAsociada(oferta);
+
+            if (evaluacion == null)
+            {
+                MessageBox.Show("No se encontró evaluación técnica para la oferta.");
+                LimpiarCampos();
+                return;
+            }
+
+            _ofertaSeleccionada = oferta;
+
+            txtEvaluacion.Text = $"Motor: {evaluacion.EstadoMotor}, Chasis: {evaluacion.EstadoInterior}, Documentación: {evaluacion.EstadoDocumentacion}";
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            if (_ofertaActual == null)
+            if (_ofertaSeleccionada == null)
             {
-                MessageBox.Show("Busque una oferta válida primero.");
+                MessageBox.Show("Debe buscar una oferta primero.");
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txtDatosTecnicos.Text) ||
-                cmbTipoPago.SelectedIndex == -1 || cmbEstadoStock.SelectedIndex == -1)
+            if (cmbEstadoStock.SelectedIndex == -1)
             {
-                MessageBox.Show("Complete todos los campos.");
+                MessageBox.Show("Seleccione el estado final del vehículo.");
                 return;
             }
 
-            _vehiculoBLL.ActualizarDatosVehiculo(_ofertaActual.Vehiculo, txtDatosTecnicos.Text);
-            _vehiculoBLL.ActualizarEstadoStock(_ofertaActual.Vehiculo, cmbEstadoStock.SelectedItem.ToString());
+            // Actualiza el estado elegido
+            string estadoElegido = cmbEstadoStock.SelectedItem.ToString();
+            _vehiculoBLL.ActualizarEstadoVehiculo(_ofertaSeleccionada.Vehiculo, estadoElegido);
 
-            var pago = new Pago
+            // Si el estado es "Disponible", lo agregamos al stock
+            if (estadoElegido == "Disponible")
             {
-                TipoPago = cmbTipoPago.SelectedItem.ToString(),
-                Monto = 0,
-                Cuotas = 1,
-                Detalles = txtDetallesPago.Text
-            };
+                _vehiculoBLL.AgregarVehiculoAlStock(_ofertaSeleccionada.Vehiculo);
+            }
 
-            _pagoBLL.RegistrarPago(pago);
-
-            MessageBox.Show("Datos registrados correctamente.");
-            Limpiar();
+            MessageBox.Show("Vehículo registrado correctamente en el sistema.");
+            LimpiarCampos();
         }
 
-        private void Limpiar()
+        private void LimpiarCampos()
         {
             txtDominio.Clear();
-            txtDatosTecnicos.Clear();
-            txtDetallesPago.Clear();
-            cmbTipoPago.SelectedIndex = -1;
+            txtEvaluacion.Clear();
             cmbEstadoStock.SelectedIndex = -1;
-            _ofertaActual = null;
+            _ofertaSeleccionada = null;
         }
     }
 }

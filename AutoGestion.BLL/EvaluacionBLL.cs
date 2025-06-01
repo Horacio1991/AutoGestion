@@ -1,4 +1,5 @@
 ﻿using AutoGestion.BE;
+using AutoGestion.BLL;
 using AutoGestion.DAO;
 using AutoGestion.Servicios;
 
@@ -27,4 +28,11 @@ public class EvaluacionBLL
         var lista = _repo.ObtenerTodos();
         return lista.FirstOrDefault(e => e.ID == oferta.ID);
     }
+
+    public void IngresarVehiculoAlStock(Vehiculo vehiculo, string estado)
+    {
+        vehiculo.Estado = estado;
+        new VehiculoBLL().ActualizarVehiculo(vehiculo);
+    }
+
 }

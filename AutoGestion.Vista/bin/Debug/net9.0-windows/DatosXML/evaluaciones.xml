@@ -16,4 +16,12 @@
     <EstadoDocumentacion>Excelente</EstadoDocumentacion>
     <Observaciones>El auto esta Perfecto</Observaciones>
   </EvaluacionTecnica>
+  <EvaluacionTecnica>
+    <ID>1</ID>
+    <EstadoMotor>bien</EstadoMotor>
+    <EstadoCarroceria>bien</EstadoCarroceria>
+    <EstadoInterior>bien</EstadoInterior>
+    <EstadoDocumentacion>bien</EstadoDocumentacion>
+    <Observaciones>El auto esta Bien</Observaciones>
+  </EvaluacionTecnica>
 </ArrayOfEvaluacionTecnica>

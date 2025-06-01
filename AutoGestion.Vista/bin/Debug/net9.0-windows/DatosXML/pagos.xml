@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPago xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  
+  <Pago>
+    <ID>1</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>10000000000</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-06-01T10:03:01.8848735-03:00</FechaPago>
+  </Pago>
 </ArrayOfPago>
