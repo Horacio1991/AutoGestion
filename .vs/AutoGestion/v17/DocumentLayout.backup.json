@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\modelos\\turovista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\modelos\\turovista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\seguridad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\seguridad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.bll\\turnobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C661C29-F9BD-423A-B47B-F2F32ED6EC56}|AutoGestion.BLL\\AutoGestion.BLL.csproj|solutionrelative:autogestion.bll\\turnobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\seguridad\\permisocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\seguridad\\permisocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\registrarturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\registrarturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\seguridad\\permisosimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\seguridad\\permisosimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\seguridad\\ipermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\seguridad\\ipermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,99 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TuroVista.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Modelos\\TuroVista.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Modelos\\TuroVista.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Modelos\\TuroVista.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\Modelos\\TuroVista.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AsignarRoles.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\AsignarRoles.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAqwP4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T17:22:45.604Z",
+              "WhenOpened": "2025-06-02T18:09:12.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegistrarAsistencia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarAsistencia.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarAsistencia.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarAsistencia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarAsistencia.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "AsignarRoles.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Vista\\AsignarRoles.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T17:09:02.746Z",
+              "WhenOpened": "2025-06-02T17:54:04.735Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegistrarAsistencia.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarAsistencia.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarAsistencia.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarAsistencia.cs",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarAsistencia.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAiwEUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\Usuario.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\Usuario.cs",
+              "RelativeToolTip": "AutoGestion.BE\\Seguridad\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:04:30.055Z",
+              "WhenOpened": "2025-06-02T17:52:57.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TurnoBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\TurnoBLL.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BLL\\TurnoBLL.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BLL\\TurnoBLL.cs",
-              "RelativeToolTip": "AutoGestion.BLL\\TurnoBLL.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Title": "PermisoCompuesto.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "RelativeToolTip": "AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T14:58:08.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Turno.cs",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Turno.cs",
-              "RelativeDocumentMoniker": "AutoGestion.BE\\Turno.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Turno.cs",
-              "RelativeToolTip": "AutoGestion.BE\\Turno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T14:57:14.202Z",
+              "WhenOpened": "2025-06-02T17:52:45.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RegistrarTurno.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarTurno.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\RegistrarTurno.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\RegistrarTurno.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\RegistrarTurno.cs [Dise\u00F1o]",
+              "Title": "PermisoSimple.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\PermisoSimple.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\PermisoSimple.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\PermisoSimple.cs",
+              "RelativeToolTip": "AutoGestion.BE\\Seguridad\\PermisoSimple.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T14:49:36.689Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-06-02T17:47:43.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Form1.cs",
-              "RelativeDocumentMoniker": "AutoGestion.Vista\\Form1.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AutoGestion.Vista\\Form1.cs [Dise\u00F1o]",
+              "DocumentIndex": 5,
+              "Title": "IPermiso.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\IPermiso.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\IPermiso.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\IPermiso.cs",
+              "RelativeToolTip": "AutoGestion.BE\\Seguridad\\IPermiso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T14:49:26.308Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-06-02T17:46:35.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         },
