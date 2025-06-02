@@ -38,13 +38,15 @@
             dtpFecha = new DateTimePicker();
             dtpHora = new DateTimePicker();
             btnRegistrar = new Button();
+            dgvVehiculos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvVehiculos).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sans Serif Collection", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(143, 14);
+            label1.Location = new Point(3, 0);
             label1.Name = "label1";
             label1.Size = new Size(155, 54);
             label1.TabIndex = 0;
@@ -115,6 +117,7 @@
             dtpHora.Name = "dtpHora";
             dtpHora.Size = new Size(185, 23);
             dtpHora.TabIndex = 8;
+            dtpHora.ValueChanged += dtpHora_ValueChanged_1;
             // 
             // btnRegistrar
             // 
@@ -126,10 +129,20 @@
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
+            // dgvVehiculos
+            // 
+            dgvVehiculos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvVehiculos.Location = new Point(403, 71);
+            dgvVehiculos.Name = "dgvVehiculos";
+            dgvVehiculos.Size = new Size(332, 162);
+            dgvVehiculos.TabIndex = 10;
+            dgvVehiculos.CellClick += dgvVehiculos_CellClick_1;
+            // 
             // RegistrarTurno
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dgvVehiculos);
             Controls.Add(btnRegistrar);
             Controls.Add(dtpHora);
             Controls.Add(dtpFecha);
@@ -141,7 +154,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "RegistrarTurno";
-            Size = new Size(438, 428);
+            Size = new Size(800, 426);
+            Load += RegistrarTurno_Load_1;
+            ((System.ComponentModel.ISupportInitialize)dgvVehiculos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -158,5 +173,6 @@
         private DateTimePicker dtpFecha;
         private DateTimePicker dtpHora;
         private Button btnRegistrar;
+        private DataGridView dgvVehiculos;
     }
 }

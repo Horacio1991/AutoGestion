@@ -20,7 +20,7 @@ namespace AutoGestion.Vista
 
         private void CargarTurnos()
         {
-            _turnosVencidos = _turnoBLL.ObtenerTurnosVencidos();
+         //   _turnosVencidos = _turnoBLL.ObtenerTurnosVencidos();
             dgvTurnos.DataSource = null;
             dgvTurnos.DataSource = _turnosVencidos;
             dgvTurnos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -37,11 +37,11 @@ namespace AutoGestion.Vista
             int index = dgvTurnos.CurrentRow.Index;
             var turno = _turnosVencidos[index];
 
-            _turnoBLL.RegistrarAsistencia(turno.ID, cmbEstado.SelectedItem.ToString());
+          //  _turnoBLL.RegistrarAsistencia(turno.ID, cmbEstado.SelectedItem.ToString());
 
             if (!string.IsNullOrWhiteSpace(txtObservaciones.Text))
             {
-                _turnoBLL.RegistrarObservaciones(turno.ID, txtObservaciones.Text);
+               // _turnoBLL.RegistrarObservaciones(turno.ID, txtObservaciones.Text);
             }
 
             MessageBox.Show("Asistencia actualizada.");

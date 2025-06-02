@@ -1,5 +1,7 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Entidades.Seguridad;
+using AutoGestion.Servicios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,55 +12,64 @@ namespace AutoGestion.Vista
     public partial class ConsultarComisiones : UserControl
     {
         private readonly ComisionBLL _comisionBLL = new();
-        private List<Comision> _comisiones = new();
+        private List<Comision> _comisionesFiltradas;
 
         public ConsultarComisiones()
         {
             InitializeComponent();
-            cmbEstado.Items.AddRange(new[] { "", "Pendiente", "Pagada" });
+            ConfigurarControles();
         }
 
-        private void btnFiltrar_Click(object sender, EventArgs e)
+        private void ConfigurarControles()
         {
-            string nombre = txtVendedor.Text.Trim();
-            if (string.IsNullOrEmpty(nombre))
+            txtVendedor.Text = Sesion.UsuarioActual.Nombre;
+            cmbEstado.Items.AddRange(new[] { "Aprobada", "Rechazada" });
+            cmbEstado.SelectedIndex = 0;
+            dtpDesde.Value = DateTime.Today.AddMonths(-1);
+            dtpHasta.Value = DateTime.Today;
+        }
+
+        private void btnFiltrar_Click_1(object sender, EventArgs e)
+        {
+            string estado = cmbEstado.SelectedItem.ToString();
+            DateTime desde = dtpDesde.Value.Date;
+            DateTime hasta = dtpHasta.Value.Date;
+
+            _comisionesFiltradas = _comisionBLL.ObtenerComisionesPorVendedorYFiltros(
+                Sesion.UsuarioActual.ID, estado, desde, hasta);
+
+            dgvComisiones.DataSource = _comisionesFiltradas.Select(c => new
             {
-                MessageBox.Show("Ingrese el nombre del vendedor.");
-                return;
-            }
+                ID = c.ID,
+                Fecha = c.Fecha.ToShortDateString(),
+                Cliente = $"{c.Venta.Cliente.Nombre} {c.Venta.Cliente.Apellido}",
+                Vehiculo = $"{c.Venta.Vehiculo.Marca} {c.Venta.Vehiculo.Modelo}",
+                Monto = c.Monto,
+                Estado = c.Estado
+            }).ToList();
 
-           // _comisiones = _comisionBLL.ObtenerComisionesPorVendedor(nombre);
-
-            string estado = cmbEstado.SelectedItem?.ToString();
-            DateTime? desde = dtpDesde.Checked ? dtpDesde.Value.Date : null;
-            DateTime? hasta = dtpHasta.Checked ? dtpHasta.Value.Date : null;
-
-           // var filtradas = _comisionBLL.FiltrarComisiones(_comisiones, estado, desde, hasta);
-
-            dgvComisiones.DataSource = null;
-           //dgvComisiones.DataSource = filtradas;
             dgvComisiones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            if (dgvComisiones.CurrentRow == null)
+            if (dgvComisiones.CurrentRow == null) return;
+
+            int id = Convert.ToInt32(dgvComisiones.CurrentRow.Cells["ID"].Value);
+            var comision = _comisionesFiltradas.FirstOrDefault(c => c.ID == id);
+
+            if (comision == null) return;
+
+            if (comision.Estado == "Aprobada")
             {
-                MessageBox.Show("Seleccione una comisión.");
-                return;
+                MessageBox.Show("✅ Comisión aprobada.");
             }
-
-            int index = dgvComisiones.CurrentRow.Index;
-            var comision = ((List<Comision>)dgvComisiones.DataSource)[index];
-
-            MessageBox.Show(
-                $"Venta ID: {comision.Venta.ID}\n" +
-                $"Porcentaje: {comision.Porcentaje}%\n" +
-                $"Monto: {comision.Monto:C}\n" +
-                $"Fecha: {comision.Fecha:d}\n" +
-                $"Estado: {comision.Estado}",
-                "Detalle de Comisión"
-            );
+            else
+            {
+                MessageBox.Show($"❌ Comisión rechazada. Motivo: {comision.MotivoRechazo}");
+            }
         }
+
+        
     }
 }

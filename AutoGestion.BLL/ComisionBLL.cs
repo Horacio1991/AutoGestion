@@ -21,5 +21,18 @@ namespace AutoGestion.BLL
         {
             return _repo.ObtenerTodos();
         }
+
+        public List<Comision> ObtenerComisionesPorVendedorYFiltros(int idVendedor, string estado, DateTime desde, DateTime hasta)
+        {
+            return _repo.ObtenerTodos()
+                        .Where(c =>
+                            c.Venta?.Vendedor != null &&
+                            c.Venta.Vendedor.ID == idVendedor &&
+                            c.Estado == estado &&
+                            c.Fecha.Date >= desde.Date &&
+                            c.Fecha.Date <= hasta.Date)
+                        .ToList();
+        }
+
     }
 }

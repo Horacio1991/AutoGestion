@@ -125,14 +125,14 @@
             dgvComisiones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvComisiones.Location = new Point(12, 118);
             dgvComisiones.Name = "dgvComisiones";
-            dgvComisiones.Size = new Size(660, 150);
+            dgvComisiones.Size = new Size(785, 231);
             dgvComisiones.TabIndex = 9;
             // 
             // btnDetalle
             // 
-            btnDetalle.Location = new Point(570, 274);
+            btnDetalle.Location = new Point(312, 355);
             btnDetalle.Name = "btnDetalle";
-            btnDetalle.Size = new Size(102, 33);
+            btnDetalle.Size = new Size(159, 49);
             btnDetalle.TabIndex = 10;
             btnDetalle.Text = "Ver detalle";
             btnDetalle.UseVisualStyleBackColor = true;
@@ -146,6 +146,7 @@
             btnFiltrar.TabIndex = 11;
             btnFiltrar.Text = "Aplicar Filtros";
             btnFiltrar.UseVisualStyleBackColor = true;
+            btnFiltrar.Click += btnFiltrar_Click_1;
             // 
             // ConsultarComisiones
             // 
@@ -164,7 +165,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "ConsultarComisiones";
-            Size = new Size(675, 322);
+            Size = new Size(800, 426);
             ((System.ComponentModel.ISupportInitialize)dgvComisiones).EndInit();
             ResumeLayout(false);
             PerformLayout();

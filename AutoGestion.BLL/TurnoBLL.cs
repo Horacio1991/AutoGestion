@@ -1,5 +1,6 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.DAO;
+using AutoGestion.Servicios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,57 +11,33 @@ namespace AutoGestion.BLL
     {
         private readonly XmlRepository<Turno> _repo = new("turnos.xml");
 
-        public bool VerificarDisponibilidad(DateTime fecha, TimeSpan hora)
+        public bool EstaDisponible(DateTime fecha, TimeSpan hora, Vehiculo vehiculo)
         {
-            return !_repo.ObtenerTodos().Any(t => t.Fecha.Date == fecha.Date && t.Hora == hora);
+            return !_repo.ObtenerTodos().Any(t =>
+                t.Fecha.Date == fecha.Date &&
+                t.Hora == hora &&
+                t.Vehiculo.Dominio == vehiculo.Dominio);
         }
 
-        public void RegistrarTurno(Turno turno)
+        public void RegistrarTurno(Cliente cliente, Vehiculo vehiculo, DateTime fecha, TimeSpan hora)
         {
-            turno.ID = ObtenerNuevoID();
-            turno.Asistencia = "Pendiente";
+            var turno = new Turno
+            {
+                ID = GeneradorID.ObtenerID<Turno>(),
+                Cliente = cliente,
+                Vehiculo = vehiculo,
+                Fecha = fecha.Date,
+                Hora = hora,
+                Asistencia = "Pendiente",
+                Observaciones = ""
+            };
+
             _repo.Agregar(turno);
-        }
-
-        private int ObtenerNuevoID()
-        {
-            var lista = _repo.ObtenerTodos();
-            return lista.Any() ? lista.Max(t => t.ID) + 1 : 1;
         }
 
         public List<Turno> ObtenerTodos()
         {
             return _repo.ObtenerTodos();
         }
-
-        public List<Turno> ObtenerTurnosVencidos()
-        {
-            return _repo.ObtenerTodos()
-                .Where(t => t.Fecha.Date <= DateTime.Today && t.Asistencia == "Pendiente")
-                .ToList();
-        }
-
-        public void RegistrarAsistencia(int id, string estado)
-        {
-            var lista = _repo.ObtenerTodos();
-            var turno = lista.FirstOrDefault(t => t.ID == id);
-            if (turno != null)
-            {
-                turno.Asistencia = estado;
-                _repo.GuardarLista(lista);
-            }
-        }
-
-        public void RegistrarObservaciones(int id, string texto)
-        {
-            var lista = _repo.ObtenerTodos();
-            var turno = lista.FirstOrDefault(t => t.ID == id);
-            if (turno != null)
-            {
-                turno.Asistencia = texto; 
-                _repo.GuardarLista(lista);
-            }
-        }
-
     }
 }

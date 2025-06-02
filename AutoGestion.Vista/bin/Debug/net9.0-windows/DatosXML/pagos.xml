@@ -80,4 +80,12 @@
     <Detalles>pago financiado</Detalles>
     <FechaPago>2025-06-02T10:03:14.5247749-03:00</FechaPago>
   </Pago>
+  <Pago>
+    <ID>11</ID>
+    <TipoPago>Efectivo</TipoPago>
+    <Monto>400000000</Monto>
+    <Cuotas>0</Cuotas>
+    <Detalles />
+    <FechaPago>2025-06-02T11:41:21.3498402-03:00</FechaPago>
+  </Pago>
 </ArrayOfPago>
