@@ -35,6 +35,26 @@ namespace AutoGestion.BLL
             _repo.Agregar(turno);
         }
 
+        public List<Turno> ObtenerTurnosCumplidos()
+        {
+            var lista = _repo.ObtenerTodos();
+            return lista.Where(t => t.Fecha.Date < DateTime.Today ||
+                                   (t.Fecha.Date == DateTime.Today && t.Hora < DateTime.Now.TimeOfDay)).ToList();
+        }
+
+        public void RegistrarAsistencia(int turnoId, string estado, string observaciones)
+        {
+            var lista = _repo.ObtenerTodos();
+            var turno = lista.FirstOrDefault(t => t.ID == turnoId);
+            if (turno != null)
+            {
+                turno.Asistencia = estado;
+                turno.Observaciones = observaciones;
+                _repo.GuardarLista(lista);
+            }
+        }
+
+
         public List<Turno> ObtenerTodos()
         {
             return _repo.ObtenerTodos();

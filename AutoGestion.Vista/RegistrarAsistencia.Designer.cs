@@ -43,7 +43,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sans Serif Collection", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(122, 23);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(191, 54);
             label1.TabIndex = 0;
@@ -69,7 +69,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(17, 296);
+            label3.Location = new Point(451, 90);
             label3.Name = "label3";
             label3.Size = new Size(45, 15);
             label3.TabIndex = 3;
@@ -78,7 +78,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(17, 326);
+            label4.Location = new Point(451, 120);
             label4.Name = "label4";
             label4.Size = new Size(87, 15);
             label4.TabIndex = 4;
@@ -87,14 +87,14 @@
             // cmbEstado
             // 
             cmbEstado.FormattingEnabled = true;
-            cmbEstado.Location = new Point(122, 293);
+            cmbEstado.Location = new Point(521, 82);
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(175, 23);
             cmbEstado.TabIndex = 5;
             // 
             // txtObservaciones
             // 
-            txtObservaciones.Location = new Point(122, 328);
+            txtObservaciones.Location = new Point(451, 138);
             txtObservaciones.Multiline = true;
             txtObservaciones.Name = "txtObservaciones";
             txtObservaciones.Size = new Size(306, 72);
@@ -102,7 +102,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(122, 415);
+            btnGuardar.Location = new Point(510, 240);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(175, 40);
             btnGuardar.TabIndex = 7;
@@ -123,7 +123,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "RegistrarAsistencia";
-            Size = new Size(431, 458);
+            Size = new Size(800, 426);
             ((System.ComponentModel.ISupportInitialize)dgvTurnos).EndInit();
             ResumeLayout(false);
             PerformLayout();

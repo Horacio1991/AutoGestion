@@ -1,7 +1,9 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Vista.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace AutoGestion.Vista
@@ -9,43 +11,59 @@ namespace AutoGestion.Vista
     public partial class RegistrarAsistencia : UserControl
     {
         private readonly TurnoBLL _turnoBLL = new();
-        private List<Turno> _turnosVencidos;
+        private List<Turno> _turnosCumplidos;
 
         public RegistrarAsistencia()
         {
             InitializeComponent();
             cmbEstado.Items.AddRange(new[] { "Asistió", "No asistió" });
-            CargarTurnos();
+            CargarTurnosCumplidos();
         }
 
-        private void CargarTurnos()
+        private void CargarTurnosCumplidos()
         {
-         //   _turnosVencidos = _turnoBLL.ObtenerTurnosVencidos();
+            _turnosCumplidos = _turnoBLL.ObtenerTurnosCumplidos();
+
+            var vista = _turnosCumplidos.Select(t => new TurnoVista
+            {
+                ID = t.ID,
+                Cliente = $"{t.Cliente?.Nombre} {t.Cliente?.Apellido}",
+                Vehiculo = $"{t.Vehiculo?.Marca} {t.Vehiculo?.Modelo} ({t.Vehiculo?.Dominio})",
+                Fecha = t.Fecha.ToShortDateString(),
+                Hora = t.Hora.ToString(@"hh\:mm"),
+                Asistencia = t.Asistencia ?? "Pendiente"
+            }).ToList();
+
             dgvTurnos.DataSource = null;
-            dgvTurnos.DataSource = _turnosVencidos;
+            dgvTurnos.DataSource = vista;
             dgvTurnos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvTurnos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvTurnos.ReadOnly = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (dgvTurnos.CurrentRow == null || cmbEstado.SelectedIndex == -1)
+            if (dgvTurnos.CurrentRow == null)
             {
-                MessageBox.Show("Seleccione un turno y un estado.");
+                MessageBox.Show("Seleccione un turno.");
                 return;
             }
 
-            int index = dgvTurnos.CurrentRow.Index;
-            var turno = _turnosVencidos[index];
-
-          //  _turnoBLL.RegistrarAsistencia(turno.ID, cmbEstado.SelectedItem.ToString());
-
-            if (!string.IsNullOrWhiteSpace(txtObservaciones.Text))
+            if (cmbEstado.SelectedIndex == -1)
             {
-               // _turnoBLL.RegistrarObservaciones(turno.ID, txtObservaciones.Text);
+                MessageBox.Show("Seleccione el estado de asistencia.");
+                return;
             }
 
-            MessageBox.Show("Asistencia actualizada.");
-            CargarTurnos();
+            var seleccion = dgvTurnos.CurrentRow.DataBoundItem as TurnoVista;
+            string observaciones = txtObservaciones.Text.Trim();
+
+            _turnoBLL.RegistrarAsistencia(seleccion.ID, cmbEstado.SelectedItem.ToString(), observaciones);
+            MessageBox.Show("Asistencia registrada correctamente.");
+
+            cmbEstado.SelectedIndex = -1;
+            txtObservaciones.Clear();
+            CargarTurnosCumplidos();
         }
     }
 }

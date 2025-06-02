@@ -18,6 +18,7 @@ namespace AutoGestion.Vista
             dtpFecha.Format = DateTimePickerFormat.Short;
             dtpHora.Format = DateTimePickerFormat.Time;
             dtpHora.ShowUpDown = true; // Para que no tenga selector de calendario
+            dtpHora.Value = DateTime.Today; //para la hora en 00:00:00
         }
 
         private void RegistrarTurno_Load_1(object sender, EventArgs e)
