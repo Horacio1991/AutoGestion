@@ -137,31 +137,6 @@ namespace AutoGestion.Vista
             // Si es superadmin, ve todo
             if (usuario.Nombre.ToLower() == "admin")
                 return;
-
-            // -------- GESTIÓN DE VENTAS --------
-            mnuSolicitarModelo.Visible = usuario.TienePermiso("Solicitar Modelo");
-            mnuRealizarPago.Visible = usuario.TienePermiso("Realizar Pago");
-            mnuAutorizarVenta.Visible = usuario.TienePermiso("Autorizar Venta");
-            mnuEmitirFactura.Visible = usuario.TienePermiso("Emitir Factura");
-            mnuRealizarEntrega.Visible = usuario.TienePermiso("Realizar Entrega");
-            mnuRegistrarCliente.Visible = usuario.TienePermiso("Registrar Cliente");
-
-            // -------- GESTIÓN DE COMPRAS --------
-            mnuRegistrarOferta.Visible = usuario.TienePermiso("Registrar Oferta");
-            mnuEvaluarVehiculo.Visible = usuario.TienePermiso("Evaluar Vehículo");
-            mnuTasarVehiculo.Visible = usuario.TienePermiso("Tasar Vehículo");
-            mnuRegistrarCompra.Visible = usuario.TienePermiso("Registrar Compra");
-
-            // -------- GESTIÓN DE COMISIONES --------
-            mnuRegistrarComision.Visible = usuario.TienePermiso("Registrar Comisión");
-            mnuConsultarComisiones.Visible = usuario.TienePermiso("Consultar Comisiones");
-
-            // -------- GESTIÓN DE TURNOS --------
-            mnuRegistrarTurno.Visible = usuario.TienePermiso("Registrar Turno");
-            mnuRegistrarAsistencia.Visible = usuario.TienePermiso("Registrar Asistencia");
-
-            // -------- SEGURIDAD --------
-            mnuAsignarRoles.Visible = usuario.TienePermiso("Asignar Roles");
         }
 
         private void mnuCerrarSesion_Click(object sender, EventArgs e)

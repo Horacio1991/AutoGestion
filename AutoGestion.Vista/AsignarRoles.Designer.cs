@@ -212,6 +212,7 @@
             btnAltaRol.TabIndex = 14;
             btnAltaRol.Text = "Alta";
             btnAltaRol.UseVisualStyleBackColor = true;
+            btnAltaRol.Click += btnAltaRol_Click_1;
             // 
             // btnEliminarRol
             // 
@@ -372,6 +373,7 @@
             btnAltaPermiso.TabIndex = 34;
             btnAltaPermiso.Text = "Alta Permiso";
             btnAltaPermiso.UseVisualStyleBackColor = true;
+            btnAltaPermiso.Click += btnAltaPermiso_Click;
             // 
             // btnEliminarPermiso
             // 
@@ -399,7 +401,6 @@
             btnAsociarPermisoRol.TabIndex = 36;
             btnAsociarPermisoRol.Text = "Asociar Permiso a Rol";
             btnAsociarPermisoRol.UseVisualStyleBackColor = true;
-            btnAsociarPermisoRol.Click += button7_Click;
             // 
             // btnQuitarPermisoRol
             // 
