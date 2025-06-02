@@ -8,7 +8,7 @@
     <Color>Gris</Color>
     <Km>15000</Km>
     <Dominio>ABC123</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>2</ID>
@@ -28,7 +28,7 @@
     <Color>Rojo</Color>
     <Km>30000</Km>
     <Dominio>GHI789</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>4</ID>
@@ -38,7 +38,7 @@
     <Color>Blanco</Color>
     <Km>5000</Km>
     <Dominio>JKL111</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>5</ID>
@@ -48,7 +48,7 @@
     <Color>Azul</Color>
     <Km>3000</Km>
     <Dominio>MNO222</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>6</ID>
@@ -58,7 +58,7 @@
     <Color>Gris</Color>
     <Km>12000</Km>
     <Dominio>PQR333</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>7</ID>
@@ -68,7 +68,7 @@
     <Color>Negro</Color>
     <Km>35000</Km>
     <Dominio>STU444</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>8</ID>
@@ -78,7 +78,7 @@
     <Color>Rojo</Color>
     <Km>25000</Km>
     <Dominio>VWX555</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>9</ID>
@@ -88,7 +88,7 @@
     <Color>Azul</Color>
     <Km>27000</Km>
     <Dominio>YZA666</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>10</ID>
@@ -98,7 +98,7 @@
     <Color>Blanco</Color>
     <Km>8000</Km>
     <Dominio>BCD777</Dominio>
-    <Estado>Disponible</Estado>
+    <Estado>En Proceso</Estado>
   </Vehiculo>
   <Vehiculo>
     <ID>11</ID>

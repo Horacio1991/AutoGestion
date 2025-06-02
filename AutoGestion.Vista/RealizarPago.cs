@@ -1,5 +1,6 @@
 ﻿using AutoGestion.BE;
 using AutoGestion.BLL;
+using AutoGestion.Entidades.Seguridad;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,12 @@ namespace AutoGestion.Vista
         private readonly PagoBLL _pagoBLL = new();
 
         private Cliente clienteSeleccionado = null;
+
+        Vendedor vendedor = new Vendedor
+        {
+            ID = Sesion.UsuarioActual.ID,
+            Nombre = Sesion.UsuarioActual.Nombre
+        };
 
         public RealizarPago()
         {
@@ -109,7 +116,8 @@ namespace AutoGestion.Vista
                     Vehiculo = vehiculo,
                     Pago = pago,
                     Fecha = DateTime.Now,
-                    Estado = "Pendiente"
+                    Estado = "Pendiente",
+                    Vendedor = vendedor
                 };
 
                 _ventaBLL.FinalizarVenta(venta);

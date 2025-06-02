@@ -4,115 +4,129 @@
     <ID>1</ID>
     <Venta>
       <ID>1</ID>
-      <Cliente>
-        <ID>11</ID>
-        <Dni>36084790</Dni>
+      <Vendedor>
+        <ID>2</ID>
         <Nombre>Horacio</Nombre>
-        <Apellido>Ortiz</Apellido>
-        <Contacto>horacio0291@gmail.com</Contacto>
-        <FechaRegistro>2025-05-29T09:28:19.7256203-03:00</FechaRegistro>
+        <FechaAlta>2025-06-02T09:59:36.230825-03:00</FechaAlta>
+      </Vendedor>
+      <Cliente>
+        <ID>1</ID>
+        <Dni>30000001</Dni>
+        <Nombre>Juan</Nombre>
+        <Apellido>Pérez</Apellido>
+        <Contacto>juan.perez@mail.com</Contacto>
+        <FechaRegistro>2024-05-01T00:00:00</FechaRegistro>
       </Cliente>
       <Vehiculo>
-        <ID>1</ID>
-        <Marca>Ford</Marca>
-        <Modelo>Focus</Modelo>
-        <Año>2021</Año>
-        <Color>Gris</Color>
-        <Km>15000</Km>
-        <Dominio>ABC123</Dominio>
+        <ID>8</ID>
+        <Marca>Toyota</Marca>
+        <Modelo>Yaris</Modelo>
+        <Año>2020</Año>
+        <Color>Rojo</Color>
+        <Km>25000</Km>
+        <Dominio>VWX555</Dominio>
         <Estado>Disponible</Estado>
       </Vehiculo>
       <Pago>
-        <ID>1</ID>
+        <ID>8</ID>
         <TipoPago>Efectivo</TipoPago>
-        <Monto>100</Monto>
+        <Monto>10000000</Monto>
         <Cuotas>0</Cuotas>
-        <Detalles />
-        <FechaPago>2025-05-30T09:04:10.7374449-03:00</FechaPago>
+        <Detalles>Compra en efectivo, sin cuotas.</Detalles>
+        <FechaPago>2025-06-02T10:00:08.2471696-03:00</FechaPago>
       </Pago>
       <Estado>Entregada</Estado>
-      <Fecha>2025-05-30T09:04:10.7889333-03:00</Fecha>
+      <Fecha>2025-06-02T10:00:08.2537065-03:00</Fecha>
     </Venta>
-    <Porcentaje>100</Porcentaje>
-    <Monto>10000</Monto>
+    <Porcentaje>0.005</Porcentaje>
+    <Monto>50000</Monto>
     <Estado>Aprobada</Estado>
-    <Fecha>2025-06-01T10:33:13.7256776-03:00</Fecha>
+    <Fecha>2025-06-02T10:44:11.7682492-03:00</Fecha>
   </Comision>
   <Comision>
     <ID>2</ID>
     <Venta>
       <ID>2</ID>
-      <Cliente>
-        <ID>12</ID>
-        <Dni>36168344</Dni>
+      <Vendedor>
+        <ID>3</ID>
         <Nombre>Belen</Nombre>
-        <Apellido>Uronich</Apellido>
-        <Contacto>beluronich@gmail.com</Contacto>
-        <FechaRegistro>2025-05-29T09:28:55.5673067-03:00</FechaRegistro>
+        <FechaAlta>2025-06-02T10:01:02.8047323-03:00</FechaAlta>
+      </Vendedor>
+      <Cliente>
+        <ID>2</ID>
+        <Dni>30000002</Dni>
+        <Nombre>Lucía</Nombre>
+        <Apellido>Gómez</Apellido>
+        <Contacto>lucia.gomez@mail.com</Contacto>
+        <FechaRegistro>2024-05-02T00:00:00</FechaRegistro>
       </Cliente>
       <Vehiculo>
-        <ID>2</ID>
-        <Marca>Chevrolet</Marca>
-        <Modelo>Cruze</Modelo>
-        <Año>2020</Año>
-        <Color>Negro</Color>
-        <Km>20000</Km>
-        <Dominio>DEF456</Dominio>
+        <ID>9</ID>
+        <Marca>Nissan</Marca>
+        <Modelo>Versa</Modelo>
+        <Año>2019</Año>
+        <Color>Azul</Color>
+        <Km>27000</Km>
+        <Dominio>YZA666</Dominio>
         <Estado>Disponible</Estado>
       </Vehiculo>
       <Pago>
-        <ID>2</ID>
-        <TipoPago>Transferencia</TipoPago>
-        <Monto>200</Monto>
-        <Cuotas>0</Cuotas>
-        <Detalles />
-        <FechaPago>2025-05-30T09:04:26.1173431-03:00</FechaPago>
+        <ID>9</ID>
+        <TipoPago>Tarjeta de Crédito</TipoPago>
+        <Monto>15000000</Monto>
+        <Cuotas>24</Cuotas>
+        <Detalles>Pago  a 2 años</Detalles>
+        <FechaPago>2025-06-02T10:01:28.097273-03:00</FechaPago>
       </Pago>
       <Estado>Entregada</Estado>
-      <Fecha>2025-05-30T09:04:26.132645-03:00</Fecha>
+      <Fecha>2025-06-02T10:01:28.1045575-03:00</Fecha>
     </Venta>
     <Porcentaje>0.05</Porcentaje>
-    <Monto>10</Monto>
+    <Monto>750000</Monto>
     <Estado>Aprobada</Estado>
-    <Fecha>2025-06-01T10:33:28.7842952-03:00</Fecha>
+    <Fecha>2025-06-02T10:44:36.5120905-03:00</Fecha>
   </Comision>
   <Comision>
     <ID>3</ID>
     <Venta>
-      <ID>4</ID>
-      <Cliente>
-        <ID>11</ID>
-        <Dni>36084790</Dni>
+      <ID>3</ID>
+      <Vendedor>
+        <ID>2</ID>
         <Nombre>Horacio</Nombre>
-        <Apellido>Ortiz</Apellido>
-        <Contacto>horacio0291@gmail.com</Contacto>
-        <FechaRegistro>2025-05-29T09:28:19.7256203-03:00</FechaRegistro>
+        <FechaAlta>2025-06-02T10:02:52.7479689-03:00</FechaAlta>
+      </Vendedor>
+      <Cliente>
+        <ID>3</ID>
+        <Dni>30000003</Dni>
+        <Nombre>Carlos</Nombre>
+        <Apellido>Sosa</Apellido>
+        <Contacto>carlos.sosa@mail.com</Contacto>
+        <FechaRegistro>2024-05-03T00:00:00</FechaRegistro>
       </Cliente>
       <Vehiculo>
-        <ID>21</ID>
-        <Marca>Chevrolet</Marca>
-        <Modelo>Corsa II</Modelo>
-        <Año>100</Año>
-        <Color>Verde</Color>
-        <Km>100</Km>
-        <Dominio>IWY960</Dominio>
+        <ID>10</ID>
+        <Marca>Citroën</Marca>
+        <Modelo>C3</Modelo>
+        <Año>2022</Año>
+        <Color>Blanco</Color>
+        <Km>8000</Km>
+        <Dominio>BCD777</Dominio>
         <Estado>Disponible</Estado>
       </Vehiculo>
       <Pago>
-        <ID>1</ID>
-        <TipoPago>Efectivo</TipoPago>
-        <Monto>10000000000</Monto>
-        <Cuotas>0</Cuotas>
-        <Detalles />
-        <FechaPago>2025-06-01T10:03:01.8848735-03:00</FechaPago>
+        <ID>10</ID>
+        <TipoPago>Financiación</TipoPago>
+        <Monto>34000000</Monto>
+        <Cuotas>48</Cuotas>
+        <Detalles>pago financiado</Detalles>
+        <FechaPago>2025-06-02T10:03:14.5247749-03:00</FechaPago>
       </Pago>
       <Estado>Entregada</Estado>
-      <Fecha>2025-06-01T10:03:01.9374877-03:00</Fecha>
+      <Fecha>2025-06-02T10:03:14.5265665-03:00</Fecha>
     </Venta>
-    <Porcentaje>0</Porcentaje>
-    <Monto>0</Monto>
-    <Estado>Rechazada</Estado>
-    <Fecha>2025-06-01T10:34:37.9324728-03:00</Fecha>
-    <MotivoRechazo>Se calculo mal el valor del auto</MotivoRechazo>
+    <Porcentaje>0.05</Porcentaje>
+    <Monto>1700000</Monto>
+    <Estado>Aprobada</Estado>
+    <Fecha>2025-06-02T10:44:42.3757468-03:00</Fecha>
   </Comision>
 </ArrayOfComision>

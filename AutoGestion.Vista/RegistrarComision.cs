@@ -63,7 +63,6 @@ namespace AutoGestion.Vista
             var comision = new Comision
             {
                 Venta = venta,
-                Vendedor = venta.Vendedor,
                 Porcentaje = valorFinal / venta.Total,
                 Monto = valorFinal,
                 Estado = "Aprobada"
@@ -98,7 +97,6 @@ namespace AutoGestion.Vista
             var comision = new Comision
             {
                 Venta = venta,
-                Vendedor = venta.Vendedor,
                 Porcentaje = 0,
                 Monto = 0,
                 Estado = "Rechazada",

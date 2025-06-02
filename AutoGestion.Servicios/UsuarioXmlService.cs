@@ -13,50 +13,61 @@ namespace AutoGestion.Servicios
 
         public static void Guardar(List<Usuario> usuarios)
         {
-            List<UsuarioSerializable> serializables = usuarios.Select(u => new UsuarioSerializable
+            // Asignar IDs si no tienen
+            int siguienteID = usuarios.Any() ? usuarios.Max(u => u.ID) + 1 : 1;
+            foreach (var u in usuarios.Where(x => x.ID == 0))
+                u.ID = siguienteID++;
+
+            var serializables = usuarios.Select(u => new UsuarioSerializable
             {
+                ID = u.ID,                                    // IMPORTANTE
                 Nombre = u.Nombre,
                 Clave = u.Clave,
-                RolNombre = u.Rol?.Nombre ?? "SinRol",
                 Permisos = u.Rol != null ? ObtenerPermisos(u.Rol) : new List<string>()
             }).ToList();
 
-            string carpeta = Path.GetDirectoryName(ruta);
-            if (!Directory.Exists(carpeta))
-                Directory.CreateDirectory(carpeta);
-
-            var serializer = new XmlSerializer(typeof(List<UsuarioSerializable>));
             using var writer = new StreamWriter(ruta);
+            var serializer = new XmlSerializer(typeof(List<UsuarioSerializable>));
             serializer.Serialize(writer, serializables);
-            
         }
+
 
 
         public static List<Usuario> Leer()
         {
-            if (!File.Exists(ruta))
-                return AgregarAdmin(new List<Usuario>());
+            if (!File.Exists(ruta)) return new List<Usuario>();
 
-            try
+            using var reader = new StreamReader(ruta);
+            var serializer = new XmlSerializer(typeof(List<UsuarioSerializable>));
+            var serializables = (List<UsuarioSerializable>)serializer.Deserialize(reader);
+
+            List<Usuario> usuarios = new();
+            foreach (var s in serializables)
             {
-                var serializer = new XmlSerializer(typeof(List<UsuarioSerializable>));
-                using var reader = new StreamReader(ruta);
-                var serializables = (List<UsuarioSerializable>)serializer.Deserialize(reader);
-
-                var lista = serializables.Select(us => new Usuario
+                var usuario = new Usuario
                 {
-                    Nombre = us.Nombre,
-                    Clave = us.Clave,
-                    Rol = CrearRolDesdePermisos(us.RolNombre, us.Permisos)
-                }).ToList();
+                    ID = s.ID,                                 // IMPORTANTE
+                    Nombre = s.Nombre,
+                    Clave = s.Clave
+                };
 
-                return AgregarAdmin(lista);
+                // Reconstruir Rol (si corresponde)
+                var permisos = s.Permisos.Select(nombre => new PermisoSimple { Nombre = nombre }).ToList<IPermiso>();
+                if (permisos.Any())
+                {
+                    var compuesto = new PermisoCompuesto { Nombre = "Rol Recuperado" };
+                    foreach (var p in permisos)
+                        compuesto.Agregar(p);
+
+                    usuario.Rol = compuesto;
+                }
+
+                usuarios.Add(usuario);
             }
-            catch
-            {
-                return AgregarAdmin(new List<Usuario>());
-            }
+
+            return usuarios;
         }
+
 
         private static List<string> ObtenerPermisos(IPermiso permiso)
         {

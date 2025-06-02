@@ -11,7 +11,6 @@ namespace AutoGestion.BE
     {
         public int ID { get; set; }
         public Venta Venta { get; set; }
-        public Vendedor Vendedor { get; set; }
         public decimal Porcentaje { get; set; }
         public decimal Monto { get; set; }
         public string Estado { get; set; } // Aprobada o Rechazada
