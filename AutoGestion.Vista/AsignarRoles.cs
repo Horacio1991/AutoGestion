@@ -138,7 +138,10 @@ namespace AutoGestion.Vista
 
             foreach (var permiso in _permisos)
             {
-                TreeNode permisoNode = new TreeNode(permiso.Nombre);
+                TreeNode permisoNode = new TreeNode(permiso.Nombre)
+                {
+                    Tag = permiso // ✅ ASIGNAMOS EL OBJETO AL NODO
+                };
 
                 foreach (var menu in permiso.MenuItems)
                 {
@@ -153,5 +156,34 @@ namespace AutoGestion.Vista
                 tvPermisos.Nodes.Add(permisoNode);
             }
         }
+
+
+        private void tvPermisos_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (e.Node?.Tag is PermisoCompleto permiso)
+            {
+                txtNombrePermiso.Text = permiso.Nombre;
+            }
+        }
+
+
+        private void btnEliminarPermiso_Click(object sender, EventArgs e)
+        {
+            if (tvPermisos.SelectedNode == null || tvPermisos.SelectedNode.Tag is not PermisoCompleto permisoSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un permiso válido para eliminar.");
+                return;
+            }
+
+            var confirmar = MessageBox.Show($"¿Seguro que deseas eliminar el permiso '{permisoSeleccionado.Nombre}'?", "Confirmar", MessageBoxButtons.YesNo);
+            if (confirmar != DialogResult.Yes) return;
+
+            _permisos.RemoveAll(p => p.ID == permisoSeleccionado.ID);
+            PermisoCompletoXmlService.Guardar(_permisos);
+            CargarTreeViewPermisos();
+            txtNombrePermiso.Clear();
+            MessageBox.Show("Permiso eliminado correctamente.");
+        }
+
     }
 }

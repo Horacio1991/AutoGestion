@@ -383,6 +383,7 @@
             btnEliminarPermiso.TabIndex = 33;
             btnEliminarPermiso.Text = "Eliminar Permiso";
             btnEliminarPermiso.UseVisualStyleBackColor = true;
+            btnEliminarPermiso.Click += btnEliminarPermiso_Click;
             // 
             // btnLimpiarCampos
             // 
@@ -557,6 +558,7 @@
             tvPermisos.Name = "tvPermisos";
             tvPermisos.Size = new Size(121, 226);
             tvPermisos.TabIndex = 54;
+            tvPermisos.AfterSelect += tvPermisos_AfterSelect;
             // 
             // tvPermisosPorRol
             // 
