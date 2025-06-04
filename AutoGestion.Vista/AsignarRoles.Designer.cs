@@ -212,7 +212,6 @@
             btnAltaRol.TabIndex = 14;
             btnAltaRol.Text = "Alta";
             btnAltaRol.UseVisualStyleBackColor = true;
-            btnAltaRol.Click += btnAltaRol_Click_1;
             // 
             // btnEliminarRol
             // 
@@ -347,6 +346,7 @@
             cmbPermisoMenu.Name = "cmbPermisoMenu";
             cmbPermisoMenu.Size = new Size(121, 23);
             cmbPermisoMenu.TabIndex = 30;
+            cmbPermisoMenu.SelectedIndexChanged += cmbPermisoMenu_SelectedIndexChanged;
             // 
             // cmbPermisoItem
             // 

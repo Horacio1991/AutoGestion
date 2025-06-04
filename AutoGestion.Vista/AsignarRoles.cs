@@ -9,60 +9,127 @@ namespace AutoGestion.Vista
 {
     public partial class AsignarRoles : UserControl
     {
-        private List<PermisoCompuesto> _roles = new();
-        private List<PermisoSimple> _permisos = new();
+        private List<PermisoCompleto> _permisos = new();
 
         public AsignarRoles()
         {
             InitializeComponent();
-
-            _roles = RolXmlService.Leer();
-            CargarTreeViewRoles();
-            _permisos = PermisoXmlService.Leer();
+            CargarCombos();
+            _permisos = PermisoCompletoXmlService.Leer();
             CargarTreeViewPermisos();
-
         }
-        private void CargarTreeViewRoles()
+
+        private void CargarCombos()
         {
-            tvRoles.Nodes.Clear();
-
-            foreach (var rol in _roles)
+            cmbPermisoMenu.Items.Clear();
+            cmbPermisoMenu.Items.AddRange(new[]
             {
-                TreeNode nodoRol = new TreeNode(rol.Nombre);
-                nodoRol.Tag = rol;
+                "Gestión Ventas",
+                "Gestión Compras",
+                "Gestión Comisiones",
+                "Gestión Turnos",
+                "Seguridad"
+            });
 
-                AgregarHijosAlNodo(nodoRol, rol);
+            cmbPermisoMenu.SelectedIndexChanged += cmbPermisoMenu_SelectedIndexChanged;
+        }
 
-                tvRoles.Nodes.Add(nodoRol);
+        private void cmbPermisoMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbPermisoItem.Items.Clear();
+
+            switch (cmbPermisoMenu.SelectedItem.ToString())
+            {
+                case "Gestión Ventas":
+                    cmbPermisoItem.Items.AddRange(new[]
+                    {
+                        "Solicitar Modelo", "Registrar Cliente", "Realizar Pago", "Autorizar Venta",
+                        "Emitir Factura", "Realizar Entrega"
+                    });
+                    break;
+                case "Gestión Compras":
+                    cmbPermisoItem.Items.AddRange(new[]
+                    {
+                        "Registrar Vehículo", "Evaluar Estado", "Tasar Vehículo", "Registrar Datos"
+                    });
+                    break;
+                case "Gestión Comisiones":
+                    cmbPermisoItem.Items.AddRange(new[]
+                    {
+                        "Registrar Comisión", "Consultar Comisiones"
+                    });
+                    break;
+                case "Gestión Turnos":
+                    cmbPermisoItem.Items.AddRange(new[]
+                    {
+                        "Registrar Turno", "Registrar Asistencia"
+                    });
+                    break;
+                case "Seguridad":
+                    cmbPermisoItem.Items.Add("Asignar Roles");
+                    break;
             }
         }
 
-        private void AgregarHijosAlNodo(TreeNode nodoPadre, IPermiso permiso)
+        private void btnAltaPermiso_Click(object sender, EventArgs e)
         {
-            foreach (var hijo in permiso.ObtenerHijos())
+            string nombrePermiso = txtNombrePermiso.Text.Trim();
+            string menuSeleccionado = cmbPermisoMenu.SelectedItem?.ToString();
+            string itemSeleccionado = cmbPermisoItem.SelectedItem?.ToString();
+
+            if (string.IsNullOrEmpty(nombrePermiso) || string.IsNullOrEmpty(menuSeleccionado) || string.IsNullOrEmpty(itemSeleccionado))
             {
-                TreeNode nodoHijo = new TreeNode(hijo.Nombre);
-                nodoHijo.Tag = hijo;
-
-                if (hijo is PermisoCompuesto)
-                    AgregarHijosAlNodo(nodoHijo, hijo);
-
-                nodoPadre.Nodes.Add(nodoHijo);
+                MessageBox.Show("Complete todos los campos.");
+                return;
             }
-        }
 
-        private void btnAltaRol_Click_1(object sender, EventArgs e)
-        {
-            string nombre = txtNombreRol.Text.Trim();
-            if (string.IsNullOrEmpty(nombre)) return;
+            var permisoExistente = _permisos.FirstOrDefault(p => p.Nombre == nombrePermiso);
 
-            var nuevoRol = new PermisoCompuesto { Nombre = nombre };
-            _roles.Add(nuevoRol);
-            RolXmlService.Guardar(_roles);
-            CargarTreeViewRoles();
+            if (permisoExistente != null)
+            {
+                var menuExistente = permisoExistente.MenuItems.FirstOrDefault(m => m.Menu == menuSeleccionado);
+                if (menuExistente != null)
+                {
+                    if (!menuExistente.Items.Contains(itemSeleccionado))
+                    {
+                        menuExistente.Items.Add(itemSeleccionado);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este ítem ya está asignado.");
+                        return;
+                    }
+                }
+                else
+                {
+                    permisoExistente.MenuItems.Add(new MenuPermiso
+                    {
+                        Menu = menuSeleccionado,
+                        Items = new List<string> { itemSeleccionado }
+                    });
+                }
+            }
+            else
+            {
+                var nuevoPermiso = new PermisoCompleto
+                {
+                    ID = GeneradorID.ObtenerID<PermisoCompleto>(),
+                    Nombre = nombrePermiso,
+                    MenuItems = new List<MenuPermiso>
+                    {
+                        new MenuPermiso
+                        {
+                            Menu = menuSeleccionado,
+                            Items = new List<string> { itemSeleccionado }
+                        }
+                    }
+                };
 
-            txtNombreRol.Clear();
-            txtIdRol.Clear();
+                _permisos.Add(nuevoPermiso);
+            }
+
+            PermisoCompletoXmlService.Guardar(_permisos);
+            CargarTreeViewPermisos();
         }
 
         private void CargarTreeViewPermisos()
@@ -71,30 +138,20 @@ namespace AutoGestion.Vista
 
             foreach (var permiso in _permisos)
             {
-                TreeNode nodo = new TreeNode(permiso.Nombre);
-                nodo.Tag = permiso;
-                tvPermisos.Nodes.Add(nodo);
+                TreeNode permisoNode = new TreeNode(permiso.Nombre);
+
+                foreach (var menu in permiso.MenuItems)
+                {
+                    TreeNode menuNode = new TreeNode(menu.Menu);
+                    foreach (var item in menu.Items)
+                    {
+                        menuNode.Nodes.Add(new TreeNode(item));
+                    }
+                    permisoNode.Nodes.Add(menuNode);
+                }
+
+                tvPermisos.Nodes.Add(permisoNode);
             }
         }
-
-        private void btnAltaPermiso_Click(object sender, EventArgs e)
-        {
-            string nombre = txtNombrePermiso.Text.Trim();
-            if (string.IsNullOrEmpty(nombre)) return;
-
-            if (_permisos.Any(p => p.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase)))
-            {
-                MessageBox.Show("Ese permiso ya existe.");
-                return;
-            }
-
-            var nuevo = new PermisoSimple { Nombre = nombre };
-            _permisos.Add(nuevo);
-            PermisoXmlService.Guardar(_permisos);
-            CargarTreeViewPermisos();
-
-            txtNombrePermiso.Clear();
-        }
-
     }
 }

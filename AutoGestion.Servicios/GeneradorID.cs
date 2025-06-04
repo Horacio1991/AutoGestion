@@ -21,7 +21,8 @@ namespace AutoGestion.Servicios
             { "Turno", "turnos.xml" },
             { "Comision", "comisiones.xml" },
             { "ComprobanteEntrega", "comprobantes.xml" },
-            { "Oferente", "oferentes.xml" }
+            { "Oferente", "oferentes.xml" },
+            { "PermisoCompleto", "permisos.xml" }
         };
 
         public static int ObtenerID<T>()

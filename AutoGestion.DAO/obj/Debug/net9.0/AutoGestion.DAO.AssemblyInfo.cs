@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoGestion.DAO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8ea4865c5eb6f7db7de8cadde01634fdc609ee8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9476a8fe337b088dff0f7ae40c953a17183835d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoGestion.DAO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoGestion.DAO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

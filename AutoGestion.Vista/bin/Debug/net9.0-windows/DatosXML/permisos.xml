@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPermisoCompleto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PermisoCompleto>
+    <ID>1</ID>
+    <Nombre>prueba 1</Nombre>
+    <Menus>
+      <MenuPermiso>
+        <Menu>Gestión Ventas</Menu>
+        <Items>
+          <Item>Solicitar Modelo</Item>
+        </Items>
+      </MenuPermiso>
+    </Menus>
+  </PermisoCompleto>
+  <PermisoCompleto>
+    <ID>2</ID>
+    <Nombre>prueba 2</Nombre>
+    <Menus>
+      <MenuPermiso>
+        <Menu>Gestión Compras</Menu>
+        <Items>
+          <Item>Evaluar Estado</Item>
+        </Items>
+      </MenuPermiso>
+    </Menus>
+  </PermisoCompleto>
+</ArrayOfPermisoCompleto>
