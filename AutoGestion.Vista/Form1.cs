@@ -153,5 +153,15 @@ namespace AutoGestion.Vista
                 this.Close(); // cerrar el FormMain
             }
         }
+
+        private void aBMUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            panelContenido.Controls.Clear();
+            var control = new ABMUsuarios();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
+
+        }
     }
 }

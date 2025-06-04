@@ -3,50 +3,13 @@
   <UsuarioSerializable>
     <ID>1</ID>
     <Nombre>admin</Nombre>
-    <Clave>123</Clave>
-    <Permisos>
-      <string>Registrar Cliente</string>
-      <string>Solicitar Modelo</string>
-      <string>Realizar Pago</string>
-      <string>Autorizar Venta</string>
-      <string>Emitir Factura</string>
-      <string>Realizar Entrega</string>
-      <string>Registrar Vehículo</string>
-      <string>Evaluar Estado</string>
-      <string>Tasar Vehículo</string>
-      <string>Registrar Datos</string>
-      <string>Registrar Comisión</string>
-      <string>Consultar Comisiones</string>
-      <string>Registrar Turno</string>
-      <string>Registrar Asistencia</string>
-    </Permisos>
+    <Clave>MQAyADMA</Clave>
+    <Permisos />
   </UsuarioSerializable>
   <UsuarioSerializable>
     <ID>2</ID>
     <Nombre>Horacio</Nombre>
-    <Clave>123</Clave>
-    <Permisos>
-      <string>Solicitar Modelo</string>
-      <string>Realizar Pago</string>
-      <string>Realizar Entrega</string>
-      <string>Registrar Datos</string>
-      <string>Consultar Comisiones</string>
-      <string>Registrar Turno</string>
-      <string>Registrar Asistencia</string>
-    </Permisos>
-  </UsuarioSerializable>
-  <UsuarioSerializable>
-    <ID>3</ID>
-    <Nombre>Belen</Nombre>
-    <Clave>123</Clave>
-    <Permisos>
-      <string>Registrar Cliente</string>
-      <string>Solicitar Modelo</string>
-      <string>Realizar Pago</string>
-      <string>Realizar Entrega</string>
-      <string>Consultar Comisiones</string>
-      <string>Registrar Turno</string>
-      <string>Registrar Asistencia</string>
-    </Permisos>
+    <Clave>YQBzAGQAMQAyADMA</Clave>
+    <Permisos />
   </UsuarioSerializable>
 </ArrayOfUsuarioSerializable>

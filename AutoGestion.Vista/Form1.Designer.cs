@@ -49,14 +49,16 @@
             mnuRegistrarAsistencia = new ToolStripMenuItem();
             seguridadToolStripMenuItem = new ToolStripMenuItem();
             mnuAsignarRoles = new ToolStripMenuItem();
-            panelContenido = new Panel();
             mnuCerrarSesion = new ToolStripMenuItem();
+            panelContenido = new Panel();
+            usuariosToolStripMenuItem = new ToolStripMenuItem();
+            aBMUsToolStripMenuItem = new ToolStripMenuItem();
             menuPrincipal.SuspendLayout();
             SuspendLayout();
             // 
             // menuPrincipal
             // 
-            menuPrincipal.Items.AddRange(new ToolStripItem[] { gestionVentasToolStripMenuItem, gestiónComprasToolStripMenuItem, gestionComisionesToolStripMenuItem, gestiónTurnosToolStripMenuItem, seguridadToolStripMenuItem });
+            menuPrincipal.Items.AddRange(new ToolStripItem[] { gestionVentasToolStripMenuItem, gestiónComprasToolStripMenuItem, gestionComisionesToolStripMenuItem, gestiónTurnosToolStripMenuItem, seguridadToolStripMenuItem, usuariosToolStripMenuItem });
             menuPrincipal.Location = new Point(0, 0);
             menuPrincipal.Name = "menuPrincipal";
             menuPrincipal.Size = new Size(800, 24);
@@ -73,42 +75,42 @@
             // mnuSolicitarModelo
             // 
             mnuSolicitarModelo.Name = "mnuSolicitarModelo";
-            mnuSolicitarModelo.Size = new Size(180, 22);
+            mnuSolicitarModelo.Size = new Size(160, 22);
             mnuSolicitarModelo.Text = "Solicitar Modelo";
             mnuSolicitarModelo.Click += mnuSolicitarModelo_Click;
             // 
             // mnuRegistrarCliente
             // 
             mnuRegistrarCliente.Name = "mnuRegistrarCliente";
-            mnuRegistrarCliente.Size = new Size(180, 22);
+            mnuRegistrarCliente.Size = new Size(160, 22);
             mnuRegistrarCliente.Text = "Registrar Cliente";
             mnuRegistrarCliente.Click += mnuRegistrarCliente_Click;
             // 
             // mnuRealizarPago
             // 
             mnuRealizarPago.Name = "mnuRealizarPago";
-            mnuRealizarPago.Size = new Size(180, 22);
+            mnuRealizarPago.Size = new Size(160, 22);
             mnuRealizarPago.Text = "Realizar Pago";
             mnuRealizarPago.Click += mnuRealizarPago_Click;
             // 
             // mnuAutorizarVenta
             // 
             mnuAutorizarVenta.Name = "mnuAutorizarVenta";
-            mnuAutorizarVenta.Size = new Size(180, 22);
+            mnuAutorizarVenta.Size = new Size(160, 22);
             mnuAutorizarVenta.Text = "Autorizar Venta";
             mnuAutorizarVenta.Click += mnuAutorizarVenta_Click;
             // 
             // mnuEmitirFactura
             // 
             mnuEmitirFactura.Name = "mnuEmitirFactura";
-            mnuEmitirFactura.Size = new Size(180, 22);
+            mnuEmitirFactura.Size = new Size(160, 22);
             mnuEmitirFactura.Text = "Emitir Factura";
             mnuEmitirFactura.Click += mnuEmitirFactura_Click;
             // 
             // mnuRealizarEntrega
             // 
             mnuRealizarEntrega.Name = "mnuRealizarEntrega";
-            mnuRealizarEntrega.Size = new Size(180, 22);
+            mnuRealizarEntrega.Size = new Size(160, 22);
             mnuRealizarEntrega.Text = "Realizar Entrega";
             mnuRealizarEntrega.Click += mnuRealizarEntrega_Click;
             // 
@@ -203,6 +205,13 @@
             mnuAsignarRoles.Text = "Asignar Roles";
             mnuAsignarRoles.Click += asignarRolesToolStripMenuItem_Click;
             // 
+            // mnuCerrarSesion
+            // 
+            mnuCerrarSesion.Name = "mnuCerrarSesion";
+            mnuCerrarSesion.Size = new Size(180, 22);
+            mnuCerrarSesion.Text = "Cerrar Sesión";
+            mnuCerrarSesion.Click += mnuCerrarSesion_Click;
+            // 
             // panelContenido
             // 
             panelContenido.BorderStyle = BorderStyle.FixedSingle;
@@ -212,12 +221,19 @@
             panelContenido.Size = new Size(800, 426);
             panelContenido.TabIndex = 1;
             // 
-            // mnuCerrarSesion
+            // usuariosToolStripMenuItem
             // 
-            mnuCerrarSesion.Name = "mnuCerrarSesion";
-            mnuCerrarSesion.Size = new Size(180, 22);
-            mnuCerrarSesion.Text = "Cerrar Sesión";
-            mnuCerrarSesion.Click += mnuCerrarSesion_Click;
+            usuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aBMUsToolStripMenuItem });
+            usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            usuariosToolStripMenuItem.Size = new Size(64, 20);
+            usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // aBMUsToolStripMenuItem
+            // 
+            aBMUsToolStripMenuItem.Name = "aBMUsToolStripMenuItem";
+            aBMUsToolStripMenuItem.Size = new Size(180, 22);
+            aBMUsToolStripMenuItem.Text = "ABM Usuarios";
+            aBMUsToolStripMenuItem.Click += aBMUsToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -261,5 +277,7 @@
         private ToolStripMenuItem seguridadToolStripMenuItem;
         private ToolStripMenuItem mnuAsignarRoles;
         private ToolStripMenuItem mnuCerrarSesion;
+        private ToolStripMenuItem usuariosToolStripMenuItem;
+        private ToolStripMenuItem aBMUsToolStripMenuItem;
     }
 }

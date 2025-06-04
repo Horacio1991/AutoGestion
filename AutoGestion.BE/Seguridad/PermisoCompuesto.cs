@@ -1,16 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace AutoGestion.Entidades.Seguridad
 {
+    [Serializable]
     public class PermisoCompuesto : IPermiso
     {
+        public int ID { get; set; } // ✅ NECESARIO PARA GeneradorID
+
         public string Nombre { get; set; }
-        private readonly List<IPermiso> _hijos = new();
+
+        private List<IPermiso> _hijos = new();
 
         public void Agregar(IPermiso permiso)
         {
-            if (!_hijos.Contains(permiso))
-                _hijos.Add(permiso);
+            _hijos.Add(permiso);
         }
 
         public void Quitar(IPermiso permiso)

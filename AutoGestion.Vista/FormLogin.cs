@@ -21,7 +21,6 @@ namespace AutoGestion.Vista
         {
             _usuarios = UsuarioXmlService.Leer();
 
-            // Opcional: mostrar usuarios cargados (para pruebas)
             if (_usuarios.Count == 0)
                 MessageBox.Show("No hay usuarios cargados en el sistema.");
         }
@@ -29,11 +28,14 @@ namespace AutoGestion.Vista
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             string nombre = txtUsuario.Text.Trim();
-            string clave = txtClave.Text.Trim();
+            string claveIngresada = txtClave.Text.Trim();
+
+            // Encriptar la clave ingresada antes de compararla
+            string claveEncriptada = Encriptacion.EncriptarPassword(claveIngresada);
 
             var usuario = _usuarios.FirstOrDefault(u =>
                 u.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase) &&
-                u.Clave == clave);
+                u.Clave == claveEncriptada);
 
             if (usuario == null)
             {

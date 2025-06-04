@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoGestion.Entidades.Seguridad;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,12 +23,15 @@ namespace AutoGestion.Servicios
             { "Comision", "comisiones.xml" },
             { "ComprobanteEntrega", "comprobantes.xml" },
             { "Oferente", "oferentes.xml" },
-            { "PermisoCompleto", "permisos.xml" }
+            { "PermisoCompleto", "permisos.xml" },
+            { "Usuario", "usuarios.xml" }
+
         };
 
         public static int ObtenerID<T>()
         {
             string tipo = typeof(T).Name;
+
             string archivo = NombresArchivos.ContainsKey(tipo)
                 ? NombresArchivos[tipo]
                 : tipo.ToLower() + "s.xml";
@@ -37,19 +41,30 @@ namespace AutoGestion.Servicios
             if (!File.Exists(ruta))
                 return 1;
 
-            var serializer = new XmlSerializer(typeof(List<T>));
-            using var stream = new FileStream(ruta, FileMode.Open);
-            var lista = (List<T>)serializer.Deserialize(stream);
+            // Si es Usuario, usamos UsuarioSerializable
+            if (typeof(T).Name == "Usuario")
+            {
+                var serializer = new XmlSerializer(typeof(List<UsuarioSerializable>));
+                using var stream = new FileStream(ruta, FileMode.Open);
+                var lista = (List<UsuarioSerializable>)serializer.Deserialize(stream);
+                return lista.Any() ? lista.Max(u => u.ID) + 1 : 1;
+            }
+
+            var serializerT = new XmlSerializer(typeof(List<T>));
+            using var streamT = new FileStream(ruta, FileMode.Open);
+            var listaT = (List<T>)serializerT.Deserialize(streamT);
 
             var prop = typeof(T).GetProperty("ID");
             if (prop == null) return 1;
 
-            var ids = lista
+            var ids = listaT
                 .Select(item => (int?)prop.GetValue(item))
                 .Where(id => id.HasValue)
                 .Select(id => id.Value);
 
             return ids.Any() ? ids.Max() + 1 : 1;
         }
+
+
     }
 }

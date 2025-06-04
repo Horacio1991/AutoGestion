@@ -14,13 +14,13 @@ namespace AutoGestion.Servicios
         public static void Guardar(List<Usuario> usuarios)
         {
             // Asignar IDs si no tienen
-            int siguienteID = usuarios.Any() ? usuarios.Max(u => u.ID) + 1 : 1;
-            foreach (var u in usuarios.Where(x => x.ID == 0))
-                u.ID = siguienteID++;
+            //int siguienteID = usuarios.Any() ? usuarios.Max(u => u.ID) + 1 : 1;
+            //foreach (var u in usuarios.Where(x => x.ID == 0))
+            //    u.ID = siguienteID++;
 
             var serializables = usuarios.Select(u => new UsuarioSerializable
             {
-                ID = u.ID,                                    // IMPORTANTE
+                ID = u.ID,
                 Nombre = u.Nombre,
                 Clave = u.Clave,
                 Permisos = u.Rol != null ? ObtenerPermisos(u.Rol) : new List<string>()
@@ -31,43 +31,47 @@ namespace AutoGestion.Servicios
             serializer.Serialize(writer, serializables);
         }
 
-
-
         public static List<Usuario> Leer()
         {
-            if (!File.Exists(ruta)) return new List<Usuario>();
+            if (!File.Exists(ruta))
+                return AgregarUsuarioAdmin(new List<Usuario>());
 
-            using var reader = new StreamReader(ruta);
+            using var stream = new FileStream(ruta, FileMode.Open, FileAccess.Read, FileShare.Read);
             var serializer = new XmlSerializer(typeof(List<UsuarioSerializable>));
-            var serializables = (List<UsuarioSerializable>)serializer.Deserialize(reader);
+            var serializables = (List<UsuarioSerializable>)serializer.Deserialize(stream);
 
             List<Usuario> usuarios = new();
             foreach (var s in serializables)
             {
                 var usuario = new Usuario
                 {
-                    ID = s.ID,                                 // IMPORTANTE
+                    ID = s.ID,
                     Nombre = s.Nombre,
                     Clave = s.Clave
                 };
 
-                // Reconstruir Rol (si corresponde)
-                var permisos = s.Permisos.Select(nombre => new PermisoSimple { Nombre = nombre }).ToList<IPermiso>();
+                var permisos = s.Permisos.Select(nombre => new PermisoSimple { Nombre = nombre }).Cast<IPermiso>().ToList();
+
                 if (permisos.Any())
                 {
                     var compuesto = new PermisoCompuesto { Nombre = "Rol Recuperado" };
                     foreach (var p in permisos)
                         compuesto.Agregar(p);
-
                     usuario.Rol = compuesto;
                 }
 
                 usuarios.Add(usuario);
             }
 
-            return usuarios;
+            return AgregarUsuarioAdmin(usuarios);
         }
 
+        public static void Eliminar(string nombreUsuario)
+        {
+            var usuarios = Leer();
+            usuarios.RemoveAll(u => u.Nombre.Equals(nombreUsuario, StringComparison.OrdinalIgnoreCase));
+            Guardar(usuarios);
+        }
 
         private static List<string> ObtenerPermisos(IPermiso permiso)
         {
@@ -89,35 +93,33 @@ namespace AutoGestion.Servicios
             return rol;
         }
 
-
-        private static List<Usuario> AgregarAdmin(List<Usuario> lista)
+        private static List<Usuario> AgregarUsuarioAdmin(List<Usuario> lista)
         {
             if (!lista.Any(u => u.Nombre.Equals("admin", StringComparison.OrdinalIgnoreCase)))
             {
-                var todos = new PermisoCompuesto { Nombre = "SuperAdmin" };
+                var permisos = PermisoCompletoXmlService.Leer();
 
-                // Agregá todos los permisos del sistema
-                string[] permisos = {
-            "Solicitar Modelo", "Realizar Pago", "Autorizar Venta", "Emitir Factura", "Realizar Entrega",
-            "Registrar Oferta", "Evaluar Vehículo", "Tasar Vehículo", "Registrar Compra",
-            "Registrar Comisión", "Consultar Comisiones",
-            "Registrar Turno", "Registrar Asistencia",
-            "Asignar Roles"
-        };
+                var todos = new PermisoCompuesto
+                {
+                    ID = GeneradorID.ObtenerID<PermisoCompuesto>(),
+                    Nombre = "SuperAdmin"
+                };
 
-                foreach (var p in permisos)
-                    todos.Agregar(new PermisoSimple { Nombre = p });
+                foreach (var permiso in permisos)
+                    todos.Agregar(permiso); // Composite
 
                 lista.Add(new Usuario
                 {
+                    ID = GeneradorID.ObtenerID<Usuario>(),
                     Nombre = "admin",
-                    Clave = "123",
+                    Clave = Encriptacion.EncriptarPassword("123"),
                     Rol = todos
                 });
+
+                Guardar(lista); // lo guarda automáticamente
             }
 
             return lista;
         }
-
     }
 }
