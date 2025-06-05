@@ -153,6 +153,7 @@
             chkEncriptar.TabIndex = 7;
             chkEncriptar.Text = "Decifrar/Cifrar Clave";
             chkEncriptar.UseVisualStyleBackColor = true;
+            chkEncriptar.CheckedChanged += chkEncriptar_CheckedChanged;
             // 
             // label5
             // 
@@ -544,6 +545,7 @@
             tvUsuarios.Name = "tvUsuarios";
             tvUsuarios.Size = new Size(121, 226);
             tvUsuarios.TabIndex = 52;
+            tvUsuarios.AfterSelect += tvUsuarios_AfterSelect;
             // 
             // tvRoles
             // 

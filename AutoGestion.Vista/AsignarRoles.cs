@@ -17,6 +17,7 @@ namespace AutoGestion.Vista
             CargarCombos();
             _permisos = PermisoCompletoXmlService.Leer();
             CargarTreeViewPermisos();
+            CargarTreeViewUsuarios();
         }
 
         private void CargarCombos()
@@ -185,5 +186,39 @@ namespace AutoGestion.Vista
             MessageBox.Show("Permiso eliminado correctamente.");
         }
 
+        private void CargarTreeViewUsuarios()
+        {
+            tvUsuarios.Nodes.Clear();
+            var usuarios = UsuarioXmlService.Leer();
+
+            foreach (var usuario in usuarios)
+            {
+                TreeNode nodo = new TreeNode(usuario.Nombre)
+                {
+                    Tag = usuario
+                };
+                tvUsuarios.Nodes.Add(nodo);
+            }
+        }
+
+        private void tvUsuarios_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (e.Node?.Tag is not Usuario usuario) return;
+
+            txtIdUsuario.Text = usuario.ID.ToString();
+            txtNombreUsuario.Text = usuario.Nombre;
+            txtContrasenaUsuario.Text = usuario.Clave; // Mostramos encriptada por defecto
+            chkEncriptar.Checked = false;
+        }
+
+        private void chkEncriptar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (tvUsuarios.SelectedNode?.Tag is not Usuario usuario) return;
+
+            if (chkEncriptar.Checked)
+                txtContrasenaUsuario.Text = Encriptacion.DesencriptarPassword(usuario.Clave);
+            else
+                txtContrasenaUsuario.Text = usuario.Clave;
+        }
     }
 }
