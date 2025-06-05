@@ -28,4 +28,38 @@
       </MenuPermiso>
     </Menus>
   </PermisoCompleto>
+  <PermisoCompleto>
+    <ID>2</ID>
+    <Nombre>Compradores</Nombre>
+    <Menus>
+      <MenuPermiso>
+        <Menu>Gestión Compras</Menu>
+        <Items>
+          <Item>Registrar Vehículo</Item>
+          <Item>Evaluar Estado</Item>
+          <Item>Tasar Vehículo</Item>
+          <Item>Registrar Datos</Item>
+        </Items>
+      </MenuPermiso>
+    </Menus>
+  </PermisoCompleto>
+  <PermisoCompleto>
+    <ID>3</ID>
+    <Nombre>Administradores</Nombre>
+    <Menus>
+      <MenuPermiso>
+        <Menu>Gestión Ventas</Menu>
+        <Items>
+          <Item>Autorizar Venta</Item>
+          <Item>Emitir Factura</Item>
+        </Items>
+      </MenuPermiso>
+      <MenuPermiso>
+        <Menu>Gestión Comisiones</Menu>
+        <Items>
+          <Item>Registrar Comisión</Item>
+        </Items>
+      </MenuPermiso>
+    </Menus>
+  </PermisoCompleto>
 </ArrayOfPermisoCompleto>

@@ -213,6 +213,7 @@ namespace AutoGestion.Vista
             txtNombreUsuario.Text = usuario.Nombre;
             txtContrasenaUsuario.Text = usuario.Clave; // Mostramos encriptada por defecto
             chkEncriptar.Checked = false;
+            CargarTreeViewRolesPermisosDelUsuario(usuario); // ✅
         }
 
         private void chkEncriptar_CheckedChanged(object sender, EventArgs e)
@@ -305,6 +306,122 @@ namespace AutoGestion.Vista
             txtNombreRol.Clear();
         }
 
+        private void CargarTreeViewRolesPermisosDelUsuario(Usuario usuario)
+        {
+            tvRolesPermisosUsuario.Nodes.Clear();
+
+            TreeNode nodoUsuario = new TreeNode(usuario.Nombre);
+
+            if (usuario.Rol != null)
+            {
+                TreeNode nodoRol = new TreeNode(usuario.Rol.Nombre);
+
+                foreach (var permiso in usuario.Rol.ObtenerHijos())
+                {
+                    if (permiso is PermisoCompleto pc)
+                    {
+                        TreeNode nodoPermiso = new TreeNode(pc.Nombre);
+                        foreach (var menu in pc.MenuItems)
+                        {
+                            TreeNode nodoMenu = new TreeNode(menu.Menu);
+                            foreach (var item in menu.Items)
+                                nodoMenu.Nodes.Add(new TreeNode(item));
+                            nodoPermiso.Nodes.Add(nodoMenu);
+                        }
+                        nodoRol.Nodes.Add(nodoPermiso);
+                    }
+                    else
+                    {
+                        nodoRol.Nodes.Add(new TreeNode(permiso.Nombre));
+                    }
+                }
+
+                nodoUsuario.Nodes.Add(nodoRol);
+            }
+
+            tvRolesPermisosUsuario.Nodes.Add(nodoUsuario);
+            tvRolesPermisosUsuario.ExpandAll();
+        }
+
+        private void btnAsociarRolUsuario_Click(object sender, EventArgs e)
+        {
+            // Validación: selección de usuario
+            if (tvUsuarios.SelectedNode == null || tvUsuarios.SelectedNode.Tag is not Usuario usuarioSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un usuario.");
+                return;
+            }
+
+            // Validación: selección de rol
+            if (tvRoles.SelectedNode == null || tvRoles.SelectedNode.Tag is not PermisoCompuesto rolSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un rol.");
+                return;
+            }
+
+            // Asociar el rol al usuario
+            usuarioSeleccionado.Rol = rolSeleccionado;
+
+            // Guardar en XML
+            var usuarios = UsuarioXmlService.Leer();
+            var usuario = usuarios.FirstOrDefault(u => u.ID == usuarioSeleccionado.ID);
+            if (usuario != null)
+            {
+                usuario.Rol = rolSeleccionado;
+                UsuarioXmlService.Guardar(usuarios);
+                MessageBox.Show("Rol asignado correctamente.");
+            }
+
+            CargarTreeViewRolesPermisosUsuario(usuarioSeleccionado);
+
+        }
+
+        private void CargarTreeViewRolesPermisosUsuario(Usuario usuario)
+        {
+            tvRolesPermisosUsuario.Nodes.Clear();
+
+            TreeNode usuarioNode = new TreeNode(usuario.Nombre);
+
+            if (usuario.Rol is PermisoCompuesto rol)
+            {
+                TreeNode rolNode = new TreeNode("Rol: " + rol.Nombre);
+
+                foreach (var permiso in rol.ObtenerHijos())
+                {
+                    TreeNode permisoNode = new TreeNode(permiso.Nombre);
+                    rolNode.Nodes.Add(permisoNode);
+                }
+
+                usuarioNode.Nodes.Add(rolNode);
+            }
+
+            tvRolesPermisosUsuario.Nodes.Add(usuarioNode);
+            tvRolesPermisosUsuario.ExpandAll();
+        }
+
+        private void btnQuitarRolUsuario_Click(object sender, EventArgs e)
+        {
+            if (tvUsuarios.SelectedNode == null || tvUsuarios.SelectedNode.Tag is not Usuario usuarioSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un usuario.");
+                return;
+            }
+
+            var confirmar = MessageBox.Show("¿Estás seguro que querés quitar el rol de este usuario?", "Confirmar", MessageBoxButtons.YesNo);
+            if (confirmar != DialogResult.Yes) return;
+
+            var usuarios = UsuarioXmlService.Leer();
+            var usuario = usuarios.FirstOrDefault(u => u.ID == usuarioSeleccionado.ID);
+            if (usuario != null)
+            {
+                usuario.Rol = null;
+                UsuarioXmlService.Guardar(usuarios);
+                MessageBox.Show("Rol quitado correctamente.");
+            }
+
+            tvRolesPermisosUsuario.Nodes.Clear();
+
+        }
     }
 
 

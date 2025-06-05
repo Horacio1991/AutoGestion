@@ -418,6 +418,7 @@
             btnAsociarRolUsuario.TabIndex = 44;
             btnAsociarRolUsuario.Text = "Asociar Rol a Usuario";
             btnAsociarRolUsuario.UseVisualStyleBackColor = true;
+            btnAsociarRolUsuario.Click += btnAsociarRolUsuario_Click;
             // 
             // btnQuitarRolUsuario
             // 
@@ -427,6 +428,7 @@
             btnQuitarRolUsuario.TabIndex = 43;
             btnQuitarRolUsuario.Text = "Quitar Rol a Usuario";
             btnQuitarRolUsuario.UseVisualStyleBackColor = true;
+            btnQuitarRolUsuario.Click += btnQuitarRolUsuario_Click;
             // 
             // btnAsociarPermisoUsuario
             // 
