@@ -37,25 +37,19 @@
             label4 = new Label();
             chkEncriptar = new CheckBox();
             label5 = new Label();
-            label6 = new Label();
             label7 = new Label();
             txtNombreRol = new TextBox();
-            txtIdRol = new TextBox();
             btnModificarRol = new Button();
             btnAltaRol = new Button();
             btnEliminarRol = new Button();
             label8 = new Label();
             label9 = new Label();
             cmbRoles = new ComboBox();
-            txtIdRoles = new TextBox();
             txtNombresRoles = new TextBox();
             label10 = new Label();
-            label11 = new Label();
             label12 = new Label();
-            txtIdPermiso = new TextBox();
             txtNombrePermiso = new TextBox();
             label13 = new Label();
-            label14 = new Label();
             label15 = new Label();
             label16 = new Label();
             cmbPermisoMenu = new ComboBox();
@@ -164,19 +158,10 @@
             label5.TabIndex = 8;
             label5.Text = "Rol";
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(338, 24);
-            label6.Name = "label6";
-            label6.Size = new Size(21, 15);
-            label6.TabIndex = 9;
-            label6.Text = "ID:";
-            // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(407, 24);
+            label7.Location = new Point(335, 24);
             label7.Name = "label7";
             label7.Size = new Size(54, 15);
             label7.TabIndex = 10;
@@ -184,17 +169,10 @@
             // 
             // txtNombreRol
             // 
-            txtNombreRol.Location = new Point(467, 16);
+            txtNombreRol.Location = new Point(395, 16);
             txtNombreRol.Name = "txtNombreRol";
-            txtNombreRol.Size = new Size(113, 23);
+            txtNombreRol.Size = new Size(185, 23);
             txtNombreRol.TabIndex = 11;
-            // 
-            // txtIdRol
-            // 
-            txtIdRol.Location = new Point(365, 16);
-            txtIdRol.Name = "txtIdRol";
-            txtIdRol.Size = new Size(36, 23);
-            txtIdRol.TabIndex = 12;
             // 
             // btnModificarRol
             // 
@@ -249,37 +227,21 @@
             cmbRoles.Size = new Size(197, 23);
             cmbRoles.TabIndex = 18;
             // 
-            // txtIdRoles
-            // 
-            txtIdRoles.Location = new Point(365, 140);
-            txtIdRoles.Name = "txtIdRoles";
-            txtIdRoles.Size = new Size(36, 23);
-            txtIdRoles.TabIndex = 22;
-            // 
             // txtNombresRoles
             // 
-            txtNombresRoles.Location = new Point(467, 140);
+            txtNombresRoles.Location = new Point(399, 140);
             txtNombresRoles.Name = "txtNombresRoles";
-            txtNombresRoles.Size = new Size(113, 23);
+            txtNombresRoles.Size = new Size(181, 23);
             txtNombresRoles.TabIndex = 21;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(407, 148);
+            label10.Location = new Point(339, 148);
             label10.Name = "label10";
             label10.Size = new Size(54, 15);
             label10.TabIndex = 20;
             label10.Text = "Nombre:";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(338, 148);
-            label11.Name = "label11";
-            label11.Size = new Size(21, 15);
-            label11.TabIndex = 19;
-            label11.Text = "ID:";
             // 
             // label12
             // 
@@ -290,37 +252,21 @@
             label12.TabIndex = 23;
             label12.Text = "Permiso";
             // 
-            // txtIdPermiso
-            // 
-            txtIdPermiso.Location = new Point(652, 18);
-            txtIdPermiso.Name = "txtIdPermiso";
-            txtIdPermiso.Size = new Size(36, 23);
-            txtIdPermiso.TabIndex = 27;
-            // 
             // txtNombrePermiso
             // 
-            txtNombrePermiso.Location = new Point(754, 18);
+            txtNombrePermiso.Location = new Point(685, 16);
             txtNombrePermiso.Name = "txtNombrePermiso";
-            txtNombrePermiso.Size = new Size(113, 23);
+            txtNombrePermiso.Size = new Size(177, 23);
             txtNombrePermiso.TabIndex = 26;
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(694, 26);
+            label13.Location = new Point(625, 24);
             label13.Name = "label13";
             label13.Size = new Size(54, 15);
             label13.TabIndex = 25;
             label13.Text = "Nombre:";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(625, 26);
-            label14.Name = "label14";
-            label14.Size = new Size(21, 15);
-            label14.TabIndex = 24;
-            label14.Text = "ID:";
             // 
             // label15
             // 
@@ -609,25 +555,19 @@
             Controls.Add(cmbPermisoMenu);
             Controls.Add(label15);
             Controls.Add(label16);
-            Controls.Add(txtIdPermiso);
             Controls.Add(txtNombrePermiso);
             Controls.Add(label13);
-            Controls.Add(label14);
             Controls.Add(label12);
-            Controls.Add(txtIdRoles);
             Controls.Add(txtNombresRoles);
             Controls.Add(label10);
-            Controls.Add(label11);
             Controls.Add(cmbRoles);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(btnEliminarRol);
             Controls.Add(btnAltaRol);
             Controls.Add(btnModificarRol);
-            Controls.Add(txtIdRol);
             Controls.Add(txtNombreRol);
             Controls.Add(label7);
-            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(chkEncriptar);
             Controls.Add(txtContrasenaUsuario);
@@ -654,25 +594,19 @@
         private Label label4;
         private CheckBox chkEncriptar;
         private Label label5;
-        private Label label6;
         private Label label7;
         private TextBox txtNombreRol;
-        private TextBox txtIdRol;
         private Button btnModificarRol;
         private Button btnAltaRol;
         private Button btnEliminarRol;
         private Label label8;
         private Label label9;
         private ComboBox cmbRoles;
-        private TextBox txtIdRoles;
         private TextBox txtNombresRoles;
         private Label label10;
-        private Label label11;
         private Label label12;
-        private TextBox txtIdPermiso;
         private TextBox txtNombrePermiso;
         private Label label13;
-        private Label label14;
         private Label label15;
         private Label label16;
         private ComboBox cmbPermisoMenu;
