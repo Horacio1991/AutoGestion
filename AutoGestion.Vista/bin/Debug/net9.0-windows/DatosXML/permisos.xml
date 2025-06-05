@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPermisoCompleto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <PermisoCompleto>
-    <ID>2</ID>
-    <Nombre>prueba 2</Nombre>
+    <ID>1</ID>
+    <Nombre>Venedores</Nombre>
     <Menus>
       <MenuPermiso>
-        <Menu>Gestión Compras</Menu>
+        <Menu>Gestión Ventas</Menu>
         <Items>
-          <Item>Evaluar Estado</Item>
+          <Item>Solicitar Modelo</Item>
+          <Item>Registrar Cliente</Item>
+          <Item>Realizar Pago</Item>
+          <Item>Realizar Entrega</Item>
+        </Items>
+      </MenuPermiso>
+      <MenuPermiso>
+        <Menu>Gestión Comisiones</Menu>
+        <Items>
+          <Item>Consultar Comisiones</Item>
+        </Items>
+      </MenuPermiso>
+      <MenuPermiso>
+        <Menu>Gestión Turnos</Menu>
+        <Items>
+          <Item>Registrar Turno</Item>
+          <Item>Registrar Asistencia</Item>
         </Items>
       </MenuPermiso>
     </Menus>

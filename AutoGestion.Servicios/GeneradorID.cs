@@ -24,7 +24,8 @@ namespace AutoGestion.Servicios
             { "ComprobanteEntrega", "comprobantes.xml" },
             { "Oferente", "oferentes.xml" },
             { "PermisoCompleto", "permisos.xml" },
-            { "Usuario", "usuarios.xml" }
+            { "Usuario", "usuarios.xml" },
+            { "PermisoCompuesto" , "roles.xml" }
 
         };
 

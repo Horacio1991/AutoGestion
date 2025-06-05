@@ -50,15 +50,15 @@
             seguridadToolStripMenuItem = new ToolStripMenuItem();
             mnuAsignarRoles = new ToolStripMenuItem();
             mnuCerrarSesion = new ToolStripMenuItem();
-            panelContenido = new Panel();
             usuariosToolStripMenuItem = new ToolStripMenuItem();
             aBMUsToolStripMenuItem = new ToolStripMenuItem();
+            panelContenido = new Panel();
             menuPrincipal.SuspendLayout();
             SuspendLayout();
             // 
             // menuPrincipal
             // 
-            menuPrincipal.Items.AddRange(new ToolStripItem[] { gestionVentasToolStripMenuItem, gestiónComprasToolStripMenuItem, gestionComisionesToolStripMenuItem, gestiónTurnosToolStripMenuItem, seguridadToolStripMenuItem, usuariosToolStripMenuItem });
+            menuPrincipal.Items.AddRange(new ToolStripItem[] { usuariosToolStripMenuItem, gestionVentasToolStripMenuItem, gestiónComprasToolStripMenuItem, gestionComisionesToolStripMenuItem, gestiónTurnosToolStripMenuItem, seguridadToolStripMenuItem });
             menuPrincipal.Location = new Point(0, 0);
             menuPrincipal.Name = "menuPrincipal";
             menuPrincipal.Size = new Size(800, 24);
@@ -201,25 +201,16 @@
             // mnuAsignarRoles
             // 
             mnuAsignarRoles.Name = "mnuAsignarRoles";
-            mnuAsignarRoles.Size = new Size(180, 22);
+            mnuAsignarRoles.Size = new Size(145, 22);
             mnuAsignarRoles.Text = "Asignar Roles";
             mnuAsignarRoles.Click += asignarRolesToolStripMenuItem_Click;
             // 
             // mnuCerrarSesion
             // 
             mnuCerrarSesion.Name = "mnuCerrarSesion";
-            mnuCerrarSesion.Size = new Size(180, 22);
+            mnuCerrarSesion.Size = new Size(145, 22);
             mnuCerrarSesion.Text = "Cerrar Sesión";
             mnuCerrarSesion.Click += mnuCerrarSesion_Click;
-            // 
-            // panelContenido
-            // 
-            panelContenido.BorderStyle = BorderStyle.FixedSingle;
-            panelContenido.Dock = DockStyle.Fill;
-            panelContenido.Location = new Point(0, 24);
-            panelContenido.Name = "panelContenido";
-            panelContenido.Size = new Size(800, 426);
-            panelContenido.TabIndex = 1;
             // 
             // usuariosToolStripMenuItem
             // 
@@ -234,6 +225,15 @@
             aBMUsToolStripMenuItem.Size = new Size(180, 22);
             aBMUsToolStripMenuItem.Text = "ABM Usuarios";
             aBMUsToolStripMenuItem.Click += aBMUsToolStripMenuItem_Click;
+            // 
+            // panelContenido
+            // 
+            panelContenido.BorderStyle = BorderStyle.FixedSingle;
+            panelContenido.Dock = DockStyle.Fill;
+            panelContenido.Location = new Point(0, 24);
+            panelContenido.Name = "panelContenido";
+            panelContenido.Size = new Size(800, 426);
+            panelContenido.TabIndex = 1;
             // 
             // Form1
             // 

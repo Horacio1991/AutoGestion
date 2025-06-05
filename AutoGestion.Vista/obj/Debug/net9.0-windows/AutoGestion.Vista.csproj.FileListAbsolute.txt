@@ -226,3 +226,4 @@ C:\Users\hory_\OneDrive\Escritorio\TP\AutoGestion\AutoGestion\AutoGestion.Vista\
 C:\Users\hory_\OneDrive\Escritorio\TP\AutoGestion\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.genruntimeconfig.cache
 C:\Users\hory_\OneDrive\Escritorio\TP\AutoGestion\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\ref\AutoGestion.Vista.dll
 C:\Users\hory_\OneDrive\Escritorio\TP\AutoGestion\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.ABMUsuarios.resources
+C:\Users\Educaccion\Desktop\TP-FINAL\AutoGestion\AutoGestion.Vista\obj\Debug\net9.0-windows\AutoGestion.Vista.ABMUsuarios.resources

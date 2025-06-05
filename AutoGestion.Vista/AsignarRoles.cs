@@ -10,6 +10,8 @@ namespace AutoGestion.Vista
     public partial class AsignarRoles : UserControl
     {
         private List<PermisoCompleto> _permisos = new();
+        private List<PermisoCompuesto> _roles = new(); // lista de roles
+
 
         public AsignarRoles()
         {
@@ -18,6 +20,8 @@ namespace AutoGestion.Vista
             _permisos = PermisoCompletoXmlService.Leer();
             CargarTreeViewPermisos();
             CargarTreeViewUsuarios();
+            CargarTreeViewRoles();
+
         }
 
         private void CargarCombos()
@@ -220,5 +224,88 @@ namespace AutoGestion.Vista
             else
                 txtContrasenaUsuario.Text = usuario.Clave;
         }
+
+        private void CargarTreeViewRoles()
+        {
+            tvRoles.Nodes.Clear();
+            _roles = RolXmlService.Leer();
+
+            foreach (var rol in _roles)
+            {
+                TreeNode nodoRol = new TreeNode(rol.Nombre)
+                {
+                    Tag = rol
+                };
+                tvRoles.Nodes.Add(nodoRol);
+            }
+        }
+
+        private void btnAltaRol_Click(object sender, EventArgs e)
+        {
+            string nombreRol = txtNombreRol.Text.Trim();
+            if (string.IsNullOrEmpty(nombreRol))
+            {
+                MessageBox.Show("Ingresá un nombre para el rol.");
+                return;
+            }
+
+            var nuevoRol = new PermisoCompuesto
+            {
+                ID = GeneradorID.ObtenerID<PermisoCompuesto>(),
+                Nombre = nombreRol
+            };
+
+            _roles.Add(nuevoRol);
+            RolXmlService.Guardar(_roles);
+            CargarTreeViewRoles();
+            txtNombreRol.Clear();
+        }
+
+        private void tvRoles_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (e.Node?.Tag is PermisoCompuesto rol)
+                txtNombreRol.Text = rol.Nombre;
+        }
+
+        private void btnModificarRol_Click(object sender, EventArgs e)
+        {
+            if (tvRoles.SelectedNode?.Tag is not PermisoCompuesto rolSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un rol para modificar.");
+                return;
+            }
+
+            string nuevoNombre = txtNombreRol.Text.Trim();
+            if (string.IsNullOrEmpty(nuevoNombre))
+            {
+                MessageBox.Show("El nombre no puede estar vacío.");
+                return;
+            }
+
+            rolSeleccionado.Nombre = nuevoNombre;
+            RolXmlService.Guardar(_roles);
+            CargarTreeViewRoles();
+            txtNombreRol.Clear();
+        }
+
+        private void btnEliminarRol_Click(object sender, EventArgs e)
+        {
+            if (tvRoles.SelectedNode?.Tag is not PermisoCompuesto rolSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un rol para eliminar.");
+                return;
+            }
+
+            var confirmar = MessageBox.Show($"¿Eliminar el rol '{rolSeleccionado.Nombre}'?", "Confirmar", MessageBoxButtons.YesNo);
+            if (confirmar != DialogResult.Yes) return;
+
+            _roles.RemoveAll(r => r.ID == rolSeleccionado.ID);
+            RolXmlService.Guardar(_roles);
+            CargarTreeViewRoles();
+            txtNombreRol.Clear();
+        }
+
     }
+
+
 }

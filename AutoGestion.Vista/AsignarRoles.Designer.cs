@@ -103,6 +103,7 @@
             // 
             txtIdUsuario.Location = new Point(85, 16);
             txtIdUsuario.Name = "txtIdUsuario";
+            txtIdUsuario.ReadOnly = true;
             txtIdUsuario.Size = new Size(100, 23);
             txtIdUsuario.TabIndex = 2;
             // 
@@ -110,6 +111,7 @@
             // 
             txtNombreUsuario.Location = new Point(85, 50);
             txtNombreUsuario.Name = "txtNombreUsuario";
+            txtNombreUsuario.ReadOnly = true;
             txtNombreUsuario.Size = new Size(100, 23);
             txtNombreUsuario.TabIndex = 4;
             // 
@@ -126,6 +128,7 @@
             // 
             txtContrasenaUsuario.Location = new Point(85, 84);
             txtContrasenaUsuario.Name = "txtContrasenaUsuario";
+            txtContrasenaUsuario.ReadOnly = true;
             txtContrasenaUsuario.Size = new Size(100, 23);
             txtContrasenaUsuario.TabIndex = 6;
             // 
@@ -182,6 +185,7 @@
             btnModificarRol.TabIndex = 13;
             btnModificarRol.Text = "Modificar";
             btnModificarRol.UseVisualStyleBackColor = true;
+            btnModificarRol.Click += btnModificarRol_Click;
             // 
             // btnAltaRol
             // 
@@ -191,6 +195,7 @@
             btnAltaRol.TabIndex = 14;
             btnAltaRol.Text = "Alta";
             btnAltaRol.UseVisualStyleBackColor = true;
+            btnAltaRol.Click += btnAltaRol_Click;
             // 
             // btnEliminarRol
             // 
@@ -200,6 +205,7 @@
             btnEliminarRol.TabIndex = 15;
             btnEliminarRol.Text = "Eliminar";
             btnEliminarRol.UseVisualStyleBackColor = true;
+            btnEliminarRol.Click += btnEliminarRol_Click;
             // 
             // label8
             // 
@@ -499,6 +505,7 @@
             tvRoles.Name = "tvRoles";
             tvRoles.Size = new Size(121, 226);
             tvRoles.TabIndex = 53;
+            tvRoles.AfterSelect += tvRoles_AfterSelect;
             // 
             // tvPermisos
             // 

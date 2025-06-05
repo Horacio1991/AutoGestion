@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion\\",
+  "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\seguridad\\permisocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\seguridad\\permisocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.servicios\\generadorid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|solutionrelative:autogestion.servicios\\generadorid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\hory_\\onedrive\\escritorio\\tp\\autogestion\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.servicios\\rolxmlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|solutionrelative:autogestion.servicios\\rolxmlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GeneradorID.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Servicios\\GeneradorID.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Servicios\\GeneradorID.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Servicios\\GeneradorID.cs",
+              "RelativeToolTip": "AutoGestion.Servicios\\GeneradorID.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA0wBsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T11:17:19.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RolXmlService.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Servicios\\RolXmlService.cs",
+              "RelativeDocumentMoniker": "AutoGestion.Servicios\\RolXmlService.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Servicios\\RolXmlService.cs",
+              "RelativeToolTip": "AutoGestion.Servicios\\RolXmlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:59:00.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PermisoCompuesto.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "RelativeToolTip": "AutoGestion.BE\\Seguridad\\PermisoCompuesto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:58:15.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AsignarRoles.cs",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\AsignarRoles.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
               "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAawNwAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAACABAAAAAAAAAAAIwDIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T00:02:47.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AsignarRoles.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\AsignarRoles.cs",
-              "ToolTip": "C:\\Users\\hory_\\OneDrive\\Escritorio\\TP\\AutoGestion\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]",
               "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T23:57:01.85Z",
               "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             }
           ]
         }
