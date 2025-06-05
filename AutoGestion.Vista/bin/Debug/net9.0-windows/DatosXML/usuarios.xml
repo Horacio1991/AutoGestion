@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfUsuarioSerializable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <UsuarioSerializable>
+    <RolID xsi:nil="true" />
     <ID>1</ID>
     <Nombre>admin</Nombre>
     <Clave>MQAyADMA</Clave>
     <Permisos />
   </UsuarioSerializable>
   <UsuarioSerializable>
+    <RolID>1</RolID>
     <ID>2</ID>
     <Nombre>Horacio</Nombre>
     <Clave>MQAyADMA</Clave>
     <Permisos />
   </UsuarioSerializable>
   <UsuarioSerializable>
+    <RolID>2</RolID>
     <ID>3</ID>
     <Nombre>Belen</Nombre>
     <Clave>MQAyADMA</Clave>
     <Permisos />
   </UsuarioSerializable>
   <UsuarioSerializable>
+    <RolID>3</RolID>
     <ID>4</ID>
     <Nombre>Charo</Nombre>
     <Clave>MQAyADMA</Clave>

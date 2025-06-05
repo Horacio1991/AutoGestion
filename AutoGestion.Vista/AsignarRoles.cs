@@ -410,6 +410,7 @@ namespace AutoGestion.Vista
             var confirmar = MessageBox.Show("¿Estás seguro que querés quitar el rol de este usuario?", "Confirmar", MessageBoxButtons.YesNo);
             if (confirmar != DialogResult.Yes) return;
 
+            // Leer desde XML para tener la lista actualizada
             var usuarios = UsuarioXmlService.Leer();
             var usuario = usuarios.FirstOrDefault(u => u.ID == usuarioSeleccionado.ID);
             if (usuario != null)
@@ -417,11 +418,15 @@ namespace AutoGestion.Vista
                 usuario.Rol = null;
                 UsuarioXmlService.Guardar(usuarios);
                 MessageBox.Show("Rol quitado correctamente.");
+
+                // Actualizar en memoria también
+                usuarioSeleccionado.Rol = null;
+
+                // ✅ Volver a cargar el TreeView con usuario sin rol
+                CargarTreeViewRolesPermisosUsuario(usuarioSeleccionado);
             }
-
-            tvRolesPermisosUsuario.Nodes.Clear();
-
         }
+
     }
 
 

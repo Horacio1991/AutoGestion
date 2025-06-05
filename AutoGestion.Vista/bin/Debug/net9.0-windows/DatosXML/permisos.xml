@@ -62,4 +62,50 @@
       </MenuPermiso>
     </Menus>
   </PermisoCompleto>
+  <PermisoCompleto>
+    <ID>4</ID>
+    <Nombre>SuperAdmin</Nombre>
+    <Menus>
+      <MenuPermiso>
+        <Menu>Gestión Ventas</Menu>
+        <Items>
+          <Item>Solicitar Modelo</Item>
+          <Item>Registrar Cliente</Item>
+          <Item>Realizar Pago</Item>
+          <Item>Autorizar Venta</Item>
+          <Item>Emitir Factura</Item>
+          <Item>Realizar Entrega</Item>
+        </Items>
+      </MenuPermiso>
+      <MenuPermiso>
+        <Menu>Gestión Compras</Menu>
+        <Items>
+          <Item>Registrar Vehículo</Item>
+          <Item>Evaluar Estado</Item>
+          <Item>Tasar Vehículo</Item>
+          <Item>Registrar Datos</Item>
+        </Items>
+      </MenuPermiso>
+      <MenuPermiso>
+        <Menu>Gestión Comisiones</Menu>
+        <Items>
+          <Item>Registrar Comisión</Item>
+          <Item>Consultar Comisiones</Item>
+        </Items>
+      </MenuPermiso>
+      <MenuPermiso>
+        <Menu>Gestión Turnos</Menu>
+        <Items>
+          <Item>Registrar Turno</Item>
+          <Item>Registrar Asistencia</Item>
+        </Items>
+      </MenuPermiso>
+      <MenuPermiso>
+        <Menu>Seguridad</Menu>
+        <Items>
+          <Item>Asignar Roles</Item>
+        </Items>
+      </MenuPermiso>
+    </Menus>
+  </PermisoCompleto>
 </ArrayOfPermisoCompleto>

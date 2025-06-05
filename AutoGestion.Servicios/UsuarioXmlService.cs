@@ -13,17 +13,15 @@ namespace AutoGestion.Servicios
 
         public static void Guardar(List<Usuario> usuarios)
         {
-            // Asignar IDs si no tienen
-            //int siguienteID = usuarios.Any() ? usuarios.Max(u => u.ID) + 1 : 1;
-            //foreach (var u in usuarios.Where(x => x.ID == 0))
-            //    u.ID = siguienteID++;
 
             var serializables = usuarios.Select(u => new UsuarioSerializable
             {
                 ID = u.ID,
                 Nombre = u.Nombre,
                 Clave = u.Clave,
-                Permisos = u.Rol != null ? ObtenerPermisos(u.Rol) : new List<string>()
+                Permisos = u.Rol != null ? ObtenerPermisos(u.Rol) : new List<string>(),
+                RolID = u.Rol is PermisoCompuesto pc ? pc.ID : null
+
             }).ToList();
 
             using var writer = new StreamWriter(ruta);
@@ -49,6 +47,13 @@ namespace AutoGestion.Servicios
                     Nombre = s.Nombre,
                     Clave = s.Clave
                 };
+
+                if (s.RolID.HasValue)
+                {
+                    var rol = RolXmlService.Leer().FirstOrDefault(r => r.ID == s.RolID.Value);
+                    if (rol != null)
+                        usuario.Rol = rol;
+                }
 
                 var permisos = s.Permisos.Select(nombre => new PermisoSimple { Nombre = nombre }).Cast<IPermiso>().ToList();
 
