@@ -6,5 +6,7 @@
         public string Nombre { get; set; }
         public string Clave { get; set; } // Encriptado
         public IPermiso Rol { get; set; } // Composite Pattern
+
+        public List<PermisoCompleto> PermisosIndividuales { get; set; } = new();
     }
 }

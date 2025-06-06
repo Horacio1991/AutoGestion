@@ -13,15 +13,18 @@ namespace AutoGestion.Servicios
 
         public static void Guardar(List<Usuario> usuarios)
         {
-
-            var serializables = usuarios.Select(u => new UsuarioSerializable
+            var serializables = usuarios.Select(u =>
             {
-                ID = u.ID,
-                Nombre = u.Nombre,
-                Clave = u.Clave,
-                Permisos = u.Rol != null ? ObtenerPermisos(u.Rol) : new List<string>(),
-                RolID = u.Rol is PermisoCompuesto pc ? pc.ID : null
+                var permisos = ObtenerPermisosIndividuales(u.Rol);
 
+                return new UsuarioSerializable
+                {
+                    ID = u.ID,
+                    Nombre = u.Nombre,
+                    Clave = u.Clave,
+                    RolNombre = (u.Rol is PermisoCompuesto pc) ? pc.Nombre : null,
+                    Permisos = permisos
+                };
             }).ToList();
 
             using var writer = new StreamWriter(ruta);
@@ -39,6 +42,9 @@ namespace AutoGestion.Servicios
             var serializables = (List<UsuarioSerializable>)serializer.Deserialize(stream);
 
             List<Usuario> usuarios = new();
+            var roles = RolXmlService.Leer();
+            var permisos = PermisoCompletoXmlService.Leer();
+
             foreach (var s in serializables)
             {
                 var usuario = new Usuario
@@ -48,21 +54,35 @@ namespace AutoGestion.Servicios
                     Clave = s.Clave
                 };
 
-                if (s.RolID.HasValue)
+                // Rol por nombre (si existe)
+                if (!string.IsNullOrEmpty(s.RolNombre))
                 {
-                    var rol = RolXmlService.Leer().FirstOrDefault(r => r.ID == s.RolID.Value);
+                    var rol = roles.FirstOrDefault(r => r.Nombre == s.RolNombre);
                     if (rol != null)
                         usuario.Rol = rol;
                 }
 
-                var permisos = s.Permisos.Select(nombre => new PermisoSimple { Nombre = nombre }).Cast<IPermiso>().ToList();
-
-                if (permisos.Any())
+                // Permisos individuales adicionales
+                if (s.Permisos.Any())
                 {
-                    var compuesto = new PermisoCompuesto { Nombre = "Rol Recuperado" };
-                    foreach (var p in permisos)
-                        compuesto.Agregar(p);
-                    usuario.Rol = compuesto;
+                    var permisoCompuesto = new PermisoCompuesto { Nombre = "Permisos Individuales" };
+
+                    foreach (var nombre in s.Permisos)
+                    {
+                        var permiso = permisos.FirstOrDefault(p => p.Nombre == nombre);
+                        if (permiso != null)
+                            permisoCompuesto.Agregar(permiso);
+                    }
+
+                    if (usuario.Rol != null && usuario.Rol is PermisoCompuesto existente)
+                    {
+                        foreach (var p in permisoCompuesto.ObtenerHijos())
+                            existente.Agregar(p);
+                    }
+                    else
+                    {
+                        usuario.Rol = permisoCompuesto;
+                    }
                 }
 
                 usuarios.Add(usuario);
@@ -78,24 +98,21 @@ namespace AutoGestion.Servicios
             Guardar(usuarios);
         }
 
-        private static List<string> ObtenerPermisos(IPermiso permiso)
+        // ✅ Extrae solo nombres de permisos individuales
+        private static List<string> ObtenerPermisosIndividuales(IPermiso permiso)
         {
             List<string> permisos = new();
-            if (permiso is PermisoSimple)
-                permisos.Add(permiso.Nombre);
-            else
-                foreach (var hijo in permiso.ObtenerHijos())
-                    permisos.AddRange(ObtenerPermisos(hijo));
 
-            return permisos.Distinct().ToList();
-        }
+            if (permiso == null)
+                return permisos;
 
-        private static PermisoCompuesto CrearRolDesdePermisos(string nombreRol, List<string> permisos)
-        {
-            var rol = new PermisoCompuesto { Nombre = nombreRol };
-            foreach (var nombre in permisos)
-                rol.Agregar(new PermisoSimple { Nombre = nombre });
-            return rol;
+            foreach (var hijo in permiso.ObtenerHijos())
+            {
+                if (hijo is PermisoCompleto pc)
+                    permisos.Add(pc.Nombre);
+            }
+
+            return permisos;
         }
 
         private static List<Usuario> AgregarUsuarioAdmin(List<Usuario> lista)
@@ -106,12 +123,11 @@ namespace AutoGestion.Servicios
 
                 var todos = new PermisoCompuesto
                 {
-                    ID = GeneradorID.ObtenerID<PermisoCompuesto>(),
                     Nombre = "SuperAdmin"
                 };
 
                 foreach (var permiso in permisos)
-                    todos.Agregar(permiso); // Composite
+                    todos.Agregar(permiso);
 
                 lista.Add(new Usuario
                 {
@@ -121,7 +137,7 @@ namespace AutoGestion.Servicios
                     Rol = todos
                 });
 
-                Guardar(lista); // lo guarda automáticamente
+                Guardar(lista);
             }
 
             return lista;

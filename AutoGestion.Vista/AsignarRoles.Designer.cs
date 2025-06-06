@@ -42,11 +42,6 @@
             btnModificarRol = new Button();
             btnAltaRol = new Button();
             btnEliminarRol = new Button();
-            label8 = new Label();
-            label9 = new Label();
-            cmbRoles = new ComboBox();
-            txtNombresRoles = new TextBox();
-            label10 = new Label();
             label12 = new Label();
             txtNombrePermiso = new TextBox();
             label13 = new Label();
@@ -60,8 +55,6 @@
             btnLimpiarCampos = new Button();
             btnAsociarPermisoRol = new Button();
             btnQuitarPermisoRol = new Button();
-            btnAsociarRolesUsuario = new Button();
-            btnDesasociarRolesUsuario = new Button();
             label18 = new Label();
             label19 = new Label();
             label20 = new Label();
@@ -207,48 +200,6 @@
             btnEliminarRol.UseVisualStyleBackColor = true;
             btnEliminarRol.Click += btnEliminarRol_Click;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(335, 91);
-            label8.Name = "label8";
-            label8.Size = new Size(210, 15);
-            label8.TabIndex = 16;
-            label8.Text = "Rol para Asociar/Desasociar a otro Rol:";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(339, 115);
-            label9.Name = "label9";
-            label9.Size = new Size(38, 15);
-            label9.TabIndex = 17;
-            label9.Text = "Roles:";
-            // 
-            // cmbRoles
-            // 
-            cmbRoles.FormattingEnabled = true;
-            cmbRoles.Location = new Point(383, 107);
-            cmbRoles.Name = "cmbRoles";
-            cmbRoles.Size = new Size(197, 23);
-            cmbRoles.TabIndex = 18;
-            // 
-            // txtNombresRoles
-            // 
-            txtNombresRoles.Location = new Point(399, 140);
-            txtNombresRoles.Name = "txtNombresRoles";
-            txtNombresRoles.Size = new Size(181, 23);
-            txtNombresRoles.TabIndex = 21;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(339, 148);
-            label10.Name = "label10";
-            label10.Size = new Size(54, 15);
-            label10.TabIndex = 20;
-            label10.Text = "Nombre:";
-            // 
             // label12
             // 
             label12.AutoSize = true;
@@ -365,24 +316,6 @@
             btnQuitarPermisoRol.Text = "Quitar Permiso a Rol";
             btnQuitarPermisoRol.UseVisualStyleBackColor = true;
             // 
-            // btnAsociarRolesUsuario
-            // 
-            btnAsociarRolesUsuario.Location = new Point(339, 169);
-            btnAsociarRolesUsuario.Name = "btnAsociarRolesUsuario";
-            btnAsociarRolesUsuario.Size = new Size(110, 60);
-            btnAsociarRolesUsuario.TabIndex = 39;
-            btnAsociarRolesUsuario.Text = "Asociar Roles a Usuario";
-            btnAsociarRolesUsuario.UseVisualStyleBackColor = true;
-            // 
-            // btnDesasociarRolesUsuario
-            // 
-            btnDesasociarRolesUsuario.Location = new Point(470, 166);
-            btnDesasociarRolesUsuario.Name = "btnDesasociarRolesUsuario";
-            btnDesasociarRolesUsuario.Size = new Size(110, 60);
-            btnDesasociarRolesUsuario.TabIndex = 38;
-            btnDesasociarRolesUsuario.Text = "Desasociar Roles a Usuario";
-            btnDesasociarRolesUsuario.UseVisualStyleBackColor = true;
-            // 
             // label18
             // 
             label18.AutoSize = true;
@@ -438,6 +371,7 @@
             btnAsociarPermisoUsuario.TabIndex = 46;
             btnAsociarPermisoUsuario.Text = "Asociar Permiso a Usuario";
             btnAsociarPermisoUsuario.UseVisualStyleBackColor = true;
+            btnAsociarPermisoUsuario.Click += btnAsociarPermisoUsuario_Click;
             // 
             // btnQuitarPermisoUsuario
             // 
@@ -447,6 +381,7 @@
             btnQuitarPermisoUsuario.TabIndex = 45;
             btnQuitarPermisoUsuario.Text = "Quitar Permiso a Usuario";
             btnQuitarPermisoUsuario.UseVisualStyleBackColor = true;
+            btnQuitarPermisoUsuario.Click += btnQuitarPermisoUsuario_Click;
             // 
             // label21
             // 
@@ -497,7 +432,7 @@
             // 
             tvUsuarios.Location = new Point(10, 280);
             tvUsuarios.Name = "tvUsuarios";
-            tvUsuarios.Size = new Size(121, 226);
+            tvUsuarios.Size = new Size(163, 226);
             tvUsuarios.TabIndex = 52;
             tvUsuarios.AfterSelect += tvUsuarios_AfterSelect;
             // 
@@ -505,30 +440,30 @@
             // 
             tvRoles.Location = new Point(179, 280);
             tvRoles.Name = "tvRoles";
-            tvRoles.Size = new Size(121, 226);
+            tvRoles.Size = new Size(161, 226);
             tvRoles.TabIndex = 53;
             tvRoles.AfterSelect += tvRoles_AfterSelect;
             // 
             // tvPermisos
             // 
-            tvPermisos.Location = new Point(346, 283);
+            tvPermisos.Location = new Point(346, 280);
             tvPermisos.Name = "tvPermisos";
-            tvPermisos.Size = new Size(121, 226);
+            tvPermisos.Size = new Size(162, 226);
             tvPermisos.TabIndex = 54;
             tvPermisos.AfterSelect += tvPermisos_AfterSelect;
             // 
             // tvPermisosPorRol
             // 
-            tvPermisosPorRol.Location = new Point(514, 283);
+            tvPermisosPorRol.Location = new Point(514, 280);
             tvPermisosPorRol.Name = "tvPermisosPorRol";
-            tvPermisosPorRol.Size = new Size(121, 226);
+            tvPermisosPorRol.Size = new Size(163, 226);
             tvPermisosPorRol.TabIndex = 55;
             // 
             // tvRolesPermisosUsuario
             // 
-            tvRolesPermisosUsuario.Location = new Point(683, 283);
+            tvRolesPermisosUsuario.Location = new Point(683, 280);
             tvRolesPermisosUsuario.Name = "tvRolesPermisosUsuario";
-            tvRolesPermisosUsuario.Size = new Size(121, 226);
+            tvRolesPermisosUsuario.Size = new Size(210, 226);
             tvRolesPermisosUsuario.TabIndex = 56;
             // 
             // AsignarRoles
@@ -552,8 +487,6 @@
             Controls.Add(label20);
             Controls.Add(label19);
             Controls.Add(label18);
-            Controls.Add(btnAsociarRolesUsuario);
-            Controls.Add(btnDesasociarRolesUsuario);
             Controls.Add(btnLimpiarCampos);
             Controls.Add(btnAsociarPermisoRol);
             Controls.Add(btnQuitarPermisoRol);
@@ -567,11 +500,6 @@
             Controls.Add(txtNombrePermiso);
             Controls.Add(label13);
             Controls.Add(label12);
-            Controls.Add(txtNombresRoles);
-            Controls.Add(label10);
-            Controls.Add(cmbRoles);
-            Controls.Add(label9);
-            Controls.Add(label8);
             Controls.Add(btnEliminarRol);
             Controls.Add(btnAltaRol);
             Controls.Add(btnModificarRol);
@@ -608,11 +536,6 @@
         private Button btnModificarRol;
         private Button btnAltaRol;
         private Button btnEliminarRol;
-        private Label label8;
-        private Label label9;
-        private ComboBox cmbRoles;
-        private TextBox txtNombresRoles;
-        private Label label10;
         private Label label12;
         private TextBox txtNombrePermiso;
         private Label label13;
@@ -626,8 +549,6 @@
         private Button btnLimpiarCampos;
         private Button btnAsociarPermisoRol;
         private Button btnQuitarPermisoRol;
-        private Button btnAsociarRolesUsuario;
-        private Button btnDesasociarRolesUsuario;
         private Label label18;
         private Label label19;
         private Label label20;

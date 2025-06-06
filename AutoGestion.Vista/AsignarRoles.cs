@@ -388,8 +388,23 @@ namespace AutoGestion.Vista
 
                 foreach (var permiso in rol.ObtenerHijos())
                 {
-                    TreeNode permisoNode = new TreeNode(permiso.Nombre);
-                    rolNode.Nodes.Add(permisoNode);
+                    if (permiso is PermisoCompleto pc)
+                    {
+                        TreeNode nodoPermiso = new TreeNode(pc.Nombre);
+                        foreach (var menu in pc.MenuItems)
+                        {
+                            TreeNode nodoMenu = new TreeNode(menu.Menu);
+                            foreach (var item in menu.Items)
+                                nodoMenu.Nodes.Add(new TreeNode(item));
+                            nodoPermiso.Nodes.Add(nodoMenu);
+                        }
+                        rolNode.Nodes.Add(nodoPermiso);
+                    }
+                    else
+                    {
+                        rolNode.Nodes.Add(new TreeNode(permiso.Nombre));
+                    }
+
                 }
 
                 usuarioNode.Nodes.Add(rolNode);
@@ -425,6 +440,87 @@ namespace AutoGestion.Vista
                 // ✅ Volver a cargar el TreeView con usuario sin rol
                 CargarTreeViewRolesPermisosUsuario(usuarioSeleccionado);
             }
+        }
+
+        private void btnAsociarPermisoUsuario_Click(object sender, EventArgs e)
+        {
+            if (tvUsuarios.SelectedNode?.Tag is not Usuario usuarioSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un usuario.");
+                return;
+            }
+
+            if (tvPermisos.SelectedNode?.Tag is not PermisoCompleto permisoSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un permiso.");
+                return;
+            }
+
+            // Asegurar que el usuario tenga un rol asignado (como contenedor)
+            if (usuarioSeleccionado.Rol == null)
+                usuarioSeleccionado.Rol = new PermisoCompuesto { Nombre = "Permisos Individuales" };
+
+            // Evitar duplicados
+            if (!usuarioSeleccionado.Rol.ObtenerHijos().Any(p => p is PermisoCompleto pc && pc.Nombre == permisoSeleccionado.Nombre))
+            {
+                usuarioSeleccionado.Rol.Agregar(permisoSeleccionado);
+            }
+            else
+            {
+                MessageBox.Show("Este permiso ya fue asignado.");
+                return;
+            }
+
+            // Actualizar en XML
+            var usuarios = UsuarioXmlService.Leer();
+            var usuarioReal = usuarios.FirstOrDefault(u => u.ID == usuarioSeleccionado.ID);
+            if (usuarioReal != null)
+            {
+                usuarioReal.Rol = usuarioSeleccionado.Rol;
+                UsuarioXmlService.Guardar(usuarios);
+            }
+
+            MessageBox.Show("Permiso asignado correctamente.");
+            CargarTreeViewRolesPermisosUsuario(usuarioSeleccionado);
+        }
+
+
+        private void btnQuitarPermisoUsuario_Click(object sender, EventArgs e)
+        {
+            if (tvUsuarios.SelectedNode?.Tag is not Usuario usuarioSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un usuario.");
+                return;
+            }
+
+            if (tvPermisos.SelectedNode?.Tag is not PermisoCompleto permisoSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un permiso.");
+                return;
+            }
+
+            if (usuarioSeleccionado.Rol is not PermisoCompuesto compuesto) return;
+
+            var hijo = compuesto.ObtenerHijos().FirstOrDefault(p => p is PermisoCompleto pc && pc.ID == permisoSeleccionado.ID);
+            if (hijo == null)
+            {
+                MessageBox.Show("El usuario no tiene ese permiso asignado.");
+                return;
+            }
+
+            compuesto.Quitar(hijo);
+
+            // Actualizar en XML
+            var usuarios = UsuarioXmlService.Leer();
+            var usuarioReal = usuarios.FirstOrDefault(u => u.ID == usuarioSeleccionado.ID);
+            if (usuarioReal != null)
+            {
+                usuarioReal.Rol = compuesto;
+                UsuarioXmlService.Guardar(usuarios);
+            }
+
+            MessageBox.Show("Permiso eliminado del usuario.");
+            CargarTreeViewRolesPermisosUsuario(usuarioSeleccionado);
         }
 
     }
