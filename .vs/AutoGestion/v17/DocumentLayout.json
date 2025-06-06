@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\seguridad\\rolserializable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|solutionrelative:autogestion.be\\seguridad\\rolserializable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.servicios\\usuarioxmlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98546D1A-A4BA-47D2-BAB7-4F2D73A735B1}|AutoGestion.Servicios\\AutoGestion.Servicios.csproj|solutionrelative:autogestion.servicios\\usuarioxmlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7EE71F-097A-47B9-8D02-94D1CDCC41E6}|AutoGestion.Vista\\AutoGestion.Vista.csproj|solutionrelative:autogestion.vista\\asignarroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7F8D830-7521-4096-9E78-FB6287C52C74}|AutoGestion.BE\\AutoGestion.BE.csproj|c:\\users\\educaccion\\desktop\\tp-final\\autogestion\\autogestion.be\\seguridad\\usuarioserializable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RolSerializable.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\RolSerializable.cs",
+              "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\RolSerializable.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\RolSerializable.cs",
+              "RelativeToolTip": "AutoGestion.BE\\Seguridad\\RolSerializable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T11:26:21.359Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -42,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UsuarioXmlService.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Servicios\\UsuarioXmlService.cs",
               "RelativeDocumentMoniker": "AutoGestion.Servicios\\UsuarioXmlService.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\Usuario.cs",
               "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\Usuario.cs",
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UsuarioSerializable.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.BE\\Seguridad\\UsuarioSerializable.cs",
               "RelativeDocumentMoniker": "AutoGestion.BE\\Seguridad\\UsuarioSerializable.cs",
@@ -81,25 +98,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AsignarRoles.cs",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\AsignarRoles.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs*",
-              "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs*",
-              "ViewState": "AgIAAO0BAAAAAAAAAAAAAPsBAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
+              "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs",
+              "ViewState": "AgIAAFACAAAAAAAAAAAcwGMCAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T00:02:47.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AsignarRoles.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs",
               "RelativeDocumentMoniker": "AutoGestion.Vista\\AsignarRoles.cs",
-              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TP-FINAL\\AutoGestion\\AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AutoGestion.Vista\\AsignarRoles.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T23:57:01.85Z",
               "EditorCaption": " [Dise\u00F1o]"

@@ -52,7 +52,6 @@
             label17 = new Label();
             btnAltaPermiso = new Button();
             btnEliminarPermiso = new Button();
-            btnLimpiarCampos = new Button();
             btnAsociarPermisoRol = new Button();
             btnQuitarPermisoRol = new Button();
             label18 = new Label();
@@ -203,7 +202,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(617, 0);
+            label12.Location = new Point(335, 86);
             label12.Name = "label12";
             label12.Size = new Size(50, 15);
             label12.TabIndex = 23;
@@ -211,7 +210,7 @@
             // 
             // txtNombrePermiso
             // 
-            txtNombrePermiso.Location = new Point(685, 16);
+            txtNombrePermiso.Location = new Point(403, 102);
             txtNombrePermiso.Name = "txtNombrePermiso";
             txtNombrePermiso.Size = new Size(177, 23);
             txtNombrePermiso.TabIndex = 26;
@@ -219,7 +218,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(625, 24);
+            label13.Location = new Point(346, 110);
             label13.Name = "label13";
             label13.Size = new Size(54, 15);
             label13.TabIndex = 25;
@@ -228,7 +227,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(810, 66);
+            label15.Location = new Point(344, 166);
             label15.Name = "label15";
             label15.Size = new Size(34, 15);
             label15.TabIndex = 29;
@@ -237,7 +236,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(625, 66);
+            label16.Location = new Point(344, 139);
             label16.Name = "label16";
             label16.Size = new Size(41, 15);
             label16.TabIndex = 28;
@@ -246,7 +245,7 @@
             // cmbPermisoMenu
             // 
             cmbPermisoMenu.FormattingEnabled = true;
-            cmbPermisoMenu.Location = new Point(672, 58);
+            cmbPermisoMenu.Location = new Point(403, 129);
             cmbPermisoMenu.Name = "cmbPermisoMenu";
             cmbPermisoMenu.Size = new Size(121, 23);
             cmbPermisoMenu.TabIndex = 30;
@@ -255,7 +254,7 @@
             // cmbPermisoItem
             // 
             cmbPermisoItem.FormattingEnabled = true;
-            cmbPermisoItem.Location = new Point(850, 58);
+            cmbPermisoItem.Location = new Point(403, 158);
             cmbPermisoItem.Name = "cmbPermisoItem";
             cmbPermisoItem.Size = new Size(121, 23);
             cmbPermisoItem.TabIndex = 31;
@@ -263,7 +262,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(617, 148);
+            label17.Location = new Point(587, 166);
             label17.Name = "label17";
             label17.Size = new Size(141, 15);
             label17.TabIndex = 32;
@@ -271,9 +270,9 @@
             // 
             // btnAltaPermiso
             // 
-            btnAltaPermiso.Location = new Point(694, 94);
+            btnAltaPermiso.Location = new Point(346, 184);
             btnAltaPermiso.Name = "btnAltaPermiso";
-            btnAltaPermiso.Size = new Size(99, 36);
+            btnAltaPermiso.Size = new Size(75, 60);
             btnAltaPermiso.TabIndex = 34;
             btnAltaPermiso.Text = "Alta Permiso";
             btnAltaPermiso.UseVisualStyleBackColor = true;
@@ -281,40 +280,33 @@
             // 
             // btnEliminarPermiso
             // 
-            btnEliminarPermiso.Location = new Point(810, 94);
+            btnEliminarPermiso.Location = new Point(427, 184);
             btnEliminarPermiso.Name = "btnEliminarPermiso";
-            btnEliminarPermiso.Size = new Size(121, 36);
+            btnEliminarPermiso.Size = new Size(75, 60);
             btnEliminarPermiso.TabIndex = 33;
             btnEliminarPermiso.Text = "Eliminar Permiso";
             btnEliminarPermiso.UseVisualStyleBackColor = true;
             btnEliminarPermiso.Click += btnEliminarPermiso_Click;
             // 
-            // btnLimpiarCampos
-            // 
-            btnLimpiarCampos.Location = new Point(810, 166);
-            btnLimpiarCampos.Name = "btnLimpiarCampos";
-            btnLimpiarCampos.Size = new Size(75, 60);
-            btnLimpiarCampos.TabIndex = 37;
-            btnLimpiarCampos.Text = "Limpiar Campos";
-            btnLimpiarCampos.UseVisualStyleBackColor = true;
-            // 
             // btnAsociarPermisoRol
             // 
-            btnAsociarPermisoRol.Location = new Point(621, 166);
+            btnAsociarPermisoRol.Location = new Point(587, 184);
             btnAsociarPermisoRol.Name = "btnAsociarPermisoRol";
             btnAsociarPermisoRol.Size = new Size(67, 60);
             btnAsociarPermisoRol.TabIndex = 36;
             btnAsociarPermisoRol.Text = "Asociar Permiso a Rol";
             btnAsociarPermisoRol.UseVisualStyleBackColor = true;
+            btnAsociarPermisoRol.Click += btnAsociarPermisoRol_Click;
             // 
             // btnQuitarPermisoRol
             // 
-            btnQuitarPermisoRol.Location = new Point(706, 166);
+            btnQuitarPermisoRol.Location = new Point(660, 184);
             btnQuitarPermisoRol.Name = "btnQuitarPermisoRol";
             btnQuitarPermisoRol.Size = new Size(75, 60);
             btnQuitarPermisoRol.TabIndex = 35;
             btnQuitarPermisoRol.Text = "Quitar Permiso a Rol";
             btnQuitarPermisoRol.UseVisualStyleBackColor = true;
+            btnQuitarPermisoRol.Click += btnQuitarPermisoRol_Click;
             // 
             // label18
             // 
@@ -328,7 +320,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(17, 166);
+            label19.Location = new Point(9, 166);
             label19.Name = "label19";
             label19.Size = new Size(90, 15);
             label19.TabIndex = 41;
@@ -337,7 +329,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(191, 166);
+            label20.Location = new Point(176, 166);
             label20.Name = "label20";
             label20.Size = new Size(110, 15);
             label20.TabIndex = 42;
@@ -487,7 +479,6 @@
             Controls.Add(label20);
             Controls.Add(label19);
             Controls.Add(label18);
-            Controls.Add(btnLimpiarCampos);
             Controls.Add(btnAsociarPermisoRol);
             Controls.Add(btnQuitarPermisoRol);
             Controls.Add(btnAltaPermiso);
@@ -515,7 +506,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "AsignarRoles";
-            Size = new Size(975, 509);
+            Size = new Size(898, 509);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -546,7 +537,6 @@
         private Label label17;
         private Button btnAltaPermiso;
         private Button btnEliminarPermiso;
-        private Button btnLimpiarCampos;
         private Button btnAsociarPermisoRol;
         private Button btnQuitarPermisoRol;
         private Label label18;

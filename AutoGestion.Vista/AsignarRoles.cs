@@ -265,8 +265,12 @@ namespace AutoGestion.Vista
         private void tvRoles_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node?.Tag is PermisoCompuesto rol)
+            {
                 txtNombreRol.Text = rol.Nombre;
+                CargarTreeViewPermisosPorRol(rol); // ✅
+            }
         }
+
 
         private void btnModificarRol_Click(object sender, EventArgs e)
         {
@@ -521,6 +525,94 @@ namespace AutoGestion.Vista
 
             MessageBox.Show("Permiso eliminado del usuario.");
             CargarTreeViewRolesPermisosUsuario(usuarioSeleccionado);
+        }
+
+        private void btnAsociarPermisoRol_Click(object sender, EventArgs e)
+        {
+            if (tvRoles.SelectedNode?.Tag is not PermisoCompuesto rolSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un rol.");
+                return;
+            }
+
+            if (tvPermisos.SelectedNode?.Tag is not PermisoCompleto permisoSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un permiso.");
+                return;
+            }
+
+            // Verificamos si ya estaba agregado
+            if (!rolSeleccionado.ObtenerHijos().Any(p => p is PermisoCompleto pc && pc.Nombre == permisoSeleccionado.Nombre))
+            {
+                rolSeleccionado.Agregar(permisoSeleccionado);
+                RolXmlService.Guardar(_roles);
+                CargarTreeViewPermisosPorRol(rolSeleccionado);
+                MessageBox.Show("Permiso asociado al rol.");
+            }
+            else
+            {
+                MessageBox.Show("Ese permiso ya está asignado a este rol.");
+            }
+        }
+
+        private void CargarTreeViewPermisosPorRol(PermisoCompuesto rol)
+        {
+            tvPermisosPorRol.Nodes.Clear();
+
+            TreeNode rolNode = new TreeNode(rol.Nombre);
+
+            foreach (var permiso in rol.ObtenerHijos())
+            {
+                if (permiso is PermisoCompleto pc)
+                {
+                    TreeNode permisoNode = new TreeNode(pc.Nombre);
+
+                    foreach (var menu in pc.MenuItems)
+                    {
+                        TreeNode menuNode = new TreeNode(menu.Menu);
+                        foreach (var item in menu.Items)
+                        {
+                            menuNode.Nodes.Add(new TreeNode(item));
+                        }
+                        permisoNode.Nodes.Add(menuNode);
+                    }
+
+                    rolNode.Nodes.Add(permisoNode);
+                }
+            }
+
+            tvPermisosPorRol.Nodes.Add(rolNode);
+            tvPermisosPorRol.ExpandAll();
+        }
+
+        private void btnQuitarPermisoRol_Click(object sender, EventArgs e)
+        {
+            if (tvRoles.SelectedNode?.Tag is not PermisoCompuesto rolSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un rol.");
+                return;
+            }
+
+            if (tvPermisos.SelectedNode?.Tag is not PermisoCompleto permisoSeleccionado)
+            {
+                MessageBox.Show("Seleccioná un permiso.");
+                return;
+            }
+
+            var hijos = rolSeleccionado.ObtenerHijos();
+            var permisoARemover = hijos.FirstOrDefault(p => p is PermisoCompleto pc && pc.Nombre == permisoSeleccionado.Nombre);
+
+            if (permisoARemover != null)
+            {
+                rolSeleccionado.Quitar(permisoARemover);
+                RolXmlService.Guardar(_roles);
+                CargarTreeViewPermisosPorRol(rolSeleccionado);
+                MessageBox.Show("Permiso eliminado del rol.");
+            }
+            else
+            {
+                MessageBox.Show("El permiso no está asociado a este rol.");
+            }
         }
 
     }
