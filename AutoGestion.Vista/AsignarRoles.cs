@@ -29,11 +29,11 @@ namespace AutoGestion.Vista
             cmbPermisoMenu.Items.Clear();
             cmbPermisoMenu.Items.AddRange(new[]
             {
-                "Gestión Ventas",
-                "Gestión Compras",
-                "Gestión Comisiones",
-                "Gestión Turnos",
-                "Seguridad"
+                 "Gestión Ventas",
+                 "Gestión Compras",
+                 "Gestión Comisiones",
+                 "Gestión Turnos",
+                 "Seguridad"
             });
 
             cmbPermisoMenu.SelectedIndexChanged += cmbPermisoMenu_SelectedIndexChanged;
@@ -48,33 +48,54 @@ namespace AutoGestion.Vista
                 case "Gestión Ventas":
                     cmbPermisoItem.Items.AddRange(new[]
                     {
-                        "Solicitar Modelo", "Registrar Cliente", "Realizar Pago", "Autorizar Venta",
-                        "Emitir Factura", "Realizar Entrega"
-                    });
+                "Solicitar Modelo",
+                "Registrar Cliente",
+                "Realizar Pago",
+                "Autorizar Venta",
+                "Emitir Factura",
+                "Realizar Entrega"
+            });
                     break;
+
                 case "Gestión Compras":
                     cmbPermisoItem.Items.AddRange(new[]
                     {
-                        "Registrar Vehículo", "Evaluar Estado", "Tasar Vehículo", "Registrar Datos"
-                    });
+                "Registrar Oferta",
+                "Evaluar Vehículo",
+                "Tasar Vehículo",
+                "Registrar Compra"
+            });
                     break;
+
                 case "Gestión Comisiones":
                     cmbPermisoItem.Items.AddRange(new[]
                     {
-                        "Registrar Comisión", "Consultar Comisiones"
-                    });
+                "Registrar Comisión",
+                "Consultar Comisiones"
+            });
                     break;
+
                 case "Gestión Turnos":
                     cmbPermisoItem.Items.AddRange(new[]
                     {
-                        "Registrar Turno", "Registrar Asistencia"
-                    });
+                "Registrar Turno",
+                "Registrar Asistencia"
+            });
                     break;
+
                 case "Seguridad":
-                    cmbPermisoItem.Items.Add("Asignar Roles");
+                    cmbPermisoItem.Items.AddRange(new[]
+                    {
+                "Asignar Roles",
+                "Cerrar Sesión"
+            });
                     break;
             }
         }
+
+
+
+
 
         private void btnAltaPermiso_Click(object sender, EventArgs e)
         {

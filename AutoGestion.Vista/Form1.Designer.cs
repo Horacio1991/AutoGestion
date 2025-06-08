@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             menuPrincipal = new MenuStrip();
+            usuariosToolStripMenuItem = new ToolStripMenuItem();
+            aBMUsToolStripMenuItem = new ToolStripMenuItem();
             gestionVentasToolStripMenuItem = new ToolStripMenuItem();
             mnuSolicitarModelo = new ToolStripMenuItem();
             mnuRegistrarCliente = new ToolStripMenuItem();
@@ -50,8 +52,6 @@
             seguridadToolStripMenuItem = new ToolStripMenuItem();
             mnuAsignarRoles = new ToolStripMenuItem();
             mnuCerrarSesion = new ToolStripMenuItem();
-            usuariosToolStripMenuItem = new ToolStripMenuItem();
-            aBMUsToolStripMenuItem = new ToolStripMenuItem();
             panelContenido = new Panel();
             menuPrincipal.SuspendLayout();
             SuspendLayout();
@@ -64,6 +64,20 @@
             menuPrincipal.Size = new Size(800, 24);
             menuPrincipal.TabIndex = 0;
             menuPrincipal.Text = "menuStrip1";
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            usuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aBMUsToolStripMenuItem });
+            usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            usuariosToolStripMenuItem.Size = new Size(64, 20);
+            usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // aBMUsToolStripMenuItem
+            // 
+            aBMUsToolStripMenuItem.Name = "aBMUsToolStripMenuItem";
+            aBMUsToolStripMenuItem.Size = new Size(148, 22);
+            aBMUsToolStripMenuItem.Text = "ABM Usuarios";
+            aBMUsToolStripMenuItem.Click += aBMUsToolStripMenuItem_Click;
             // 
             // gestionVentasToolStripMenuItem
             // 
@@ -154,7 +168,7 @@
             gestionComisionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mnuRegistrarComision, mnuConsultarComisiones });
             gestionComisionesToolStripMenuItem.Name = "gestionComisionesToolStripMenuItem";
             gestionComisionesToolStripMenuItem.Size = new Size(124, 20);
-            gestionComisionesToolStripMenuItem.Text = "Gestion Comisiones";
+            gestionComisionesToolStripMenuItem.Text = "Gestión Comisiones";
             // 
             // mnuRegistrarComision
             // 
@@ -201,30 +215,16 @@
             // mnuAsignarRoles
             // 
             mnuAsignarRoles.Name = "mnuAsignarRoles";
-            mnuAsignarRoles.Size = new Size(145, 22);
+            mnuAsignarRoles.Size = new Size(180, 22);
             mnuAsignarRoles.Text = "Asignar Roles";
             mnuAsignarRoles.Click += asignarRolesToolStripMenuItem_Click;
             // 
             // mnuCerrarSesion
             // 
             mnuCerrarSesion.Name = "mnuCerrarSesion";
-            mnuCerrarSesion.Size = new Size(145, 22);
+            mnuCerrarSesion.Size = new Size(180, 22);
             mnuCerrarSesion.Text = "Cerrar Sesión";
             mnuCerrarSesion.Click += mnuCerrarSesion_Click;
-            // 
-            // usuariosToolStripMenuItem
-            // 
-            usuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aBMUsToolStripMenuItem });
-            usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            usuariosToolStripMenuItem.Size = new Size(64, 20);
-            usuariosToolStripMenuItem.Text = "Usuarios";
-            // 
-            // aBMUsToolStripMenuItem
-            // 
-            aBMUsToolStripMenuItem.Name = "aBMUsToolStripMenuItem";
-            aBMUsToolStripMenuItem.Size = new Size(180, 22);
-            aBMUsToolStripMenuItem.Text = "ABM Usuarios";
-            aBMUsToolStripMenuItem.Click += aBMUsToolStripMenuItem_Click;
             // 
             // panelContenido
             // 

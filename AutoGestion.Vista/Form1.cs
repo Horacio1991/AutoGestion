@@ -1,5 +1,9 @@
 using AutoGestion.Entidades.Seguridad;
-
+using AutoGestion.Servicios;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace AutoGestion.Vista
 {
@@ -9,6 +13,73 @@ namespace AutoGestion.Vista
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            var usuario = Sesion.UsuarioActual;
+
+            if (usuario == null) return;
+
+            if (usuario.Nombre.ToLower() == "admin")
+                return;
+
+            AplicarPermisos(usuario.Rol);
+        }
+
+        private void AplicarPermisos(IPermiso rol)
+        {
+            if (rol == null)
+            {
+                foreach (ToolStripMenuItem menu in menuPrincipal.Items)
+                {
+                    if (menu.Name != "mnuCerrarSesion")
+                        menu.Visible = false;
+                }
+                return;
+            }
+
+            foreach (ToolStripMenuItem menu in menuPrincipal.Items)
+            {
+                if (menu.Name == "mnuCerrarSesion") continue;
+
+                bool visible = TienePermiso(rol, menu.Text);
+                menu.Visible = visible;
+
+                foreach (ToolStripItem subItem in menu.DropDownItems)
+                {
+                    subItem.Visible = TienePermiso(rol, subItem.Text);
+                }
+            }
+        }
+
+        private bool TienePermiso(IPermiso rol, string texto)
+        {
+            if (rol == null || string.IsNullOrWhiteSpace(texto))
+                return false;
+
+            foreach (var hijo in rol.ObtenerHijos())
+            {
+                if (hijo is PermisoCompleto pc)
+                {
+                    // Coincidencia directa por nombre
+                    if (string.Equals(pc.Nombre, texto, StringComparison.OrdinalIgnoreCase))
+                        return true;
+
+                    // Coincidencia por menú
+                    foreach (var menu in pc.MenuItems)
+                    {
+                        if (string.Equals(menu.Menu, texto, StringComparison.OrdinalIgnoreCase))
+                            return true;
+
+                        if (menu.Items.Any(item => string.Equals(item, texto, StringComparison.OrdinalIgnoreCase)))
+                            return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
 
         private void mnuRegistrarCliente_Click(object sender, EventArgs e)
         {
@@ -130,13 +201,12 @@ namespace AutoGestion.Vista
             panelContenido.Controls.Add(control);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void aBMUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var usuario = Sesion.UsuarioActual;
-
-            // Si es superadmin, ve todo
-            if (usuario.Nombre.ToLower() == "admin")
-                return;
+            panelContenido.Controls.Clear();
+            var control = new ABMUsuarios();
+            control.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(control);
         }
 
         private void mnuCerrarSesion_Click(object sender, EventArgs e)
@@ -145,23 +215,10 @@ namespace AutoGestion.Vista
             if (confirm == DialogResult.Yes)
             {
                 Sesion.UsuarioActual = null;
-
-                // Volver al login
                 FormLogin login = new FormLogin();
                 login.Show();
-
-                this.Close(); // cerrar el FormMain
+                this.Close();
             }
-        }
-
-        private void aBMUsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-            panelContenido.Controls.Clear();
-            var control = new ABMUsuarios();
-            control.Dock = DockStyle.Fill;
-            panelContenido.Controls.Add(control);
-
         }
     }
 }

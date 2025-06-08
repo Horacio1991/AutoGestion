@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoGestion.BE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7542cfe356e3d8efec41e14f36974ccac94c660a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88bc29f88cc2a449e300bc32ff6b849b0861b427")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoGestion.BE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoGestion.BE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
